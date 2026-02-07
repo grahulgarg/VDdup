@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Health Blog | Vital Dental Dehradun</title>
+    <meta name="description"
+        content="Read the latest insights on dental health, cosmetic dentistry, and oral care tips from Dehradun's best dentists at Vital Dental.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        .blog-header {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            background-color: var(--color-bg-alt);
+            text-align: center;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: -40px;
+            padding-bottom: 80px;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(0, 0, 0, 0.02);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-img {
+            height: 240px;
+            background-color: #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .blog-card:hover .blog-img img {
+            transform: scale(1.05);
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--color-primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-heading);
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .blog-excerpt {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .read-more {
+            color: var(--color-primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .read-more::after {
+            content: '→';
+            transition: transform 0.2s ease;
+        }
+
+        .blog-card:hover .read-more::after {
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Vital<span>Dental</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="index.html#testimonials">Stories</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="index.html#contact" class="btn btn-primary">Book Appointment</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="blog-header">
+        <div class="container">
+            <h1>Dental Health Insights</h1>
+            <p>Expert advice, clinic updates, and oral health tips from Dehradun's finest.</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="blog-grid">
+            <!-- Article 1 -->
+            <a href="articles/best-dentist-dehradun.html" class="blog-card">
+                <div class="blog-img">
+                    <img src="assets/blog/blog_best_clinic_dehradun.png" alt="Best Dentist in Dehradun" loading="lazy">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Clinic News</span>
+                    <h3 class="blog-title">Why Vital Dental is the Best Dental Clinic in Dehradun</h3>
+                    <p class="blog-excerpt">Discover what sets Vital Dental apart, from advanced technology to our
+                        patient-first approach in the heart of Dehradun.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
+
+            <!-- Article 2 -->
+            <a href="articles/dental-implants-cost.html" class="blog-card">
+                <div class="blog-img">
+                    <img src="assets/blog/blog_dental_implants.png" alt="Dental Implants" loading="lazy">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Restorative</span>
+                    <h3 class="blog-title">Dental Implants in Dehradun: Cost, Procedure & Benefits</h3>
+                    <p class="blog-excerpt">Everything you need to know about replacing missing teeth permanently with
+                        world-class dental implants.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
+
+            <!-- Article 3 -->
+            <a href="articles/smile-makeover.html" class="blog-card">
+                <div class="blog-img">
+                    <img src="assets/blog/blog_smile_makeover.png" alt="Smile Makeover Dehradun" loading="lazy">
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Cosmetic</span>
+                    <h3 class="blog-title">Smile Makeover & Cosmetic Dentist in Dehradun</h3>
+                    <p class="blog-excerpt">Ready for your dream smile? Explore how veneers, whitening, and alignment
+                        can transform your confidence.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
+
+            <!-- Article 4 -->
+            <a href="articles/painless-root-canal.html" class="blog-card">
+                <div class="blog-img">
+                    <!-- Fallback if generation fails -->
+                    <div style="width:100%;height:100%;background:linear-gradient(45deg, #0e7490, #155e75);"></div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Treatments</span>
+                    <h3 class="blog-title">Painless Root Canal Treatment in Dehradun</h3>
+                    <p class="blog-excerpt">Forget the myths. Modern root canal therapy is comfortable and saves your
+                        natural teeth. Here's how we do it.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
+
+            <!-- Article 5 -->
+            <a href="articles/kids-dentistry.html" class="blog-card">
+                <div class="blog-img">
+                    <div style="width:100%;height:100%;background:linear-gradient(45deg, #c29b61, #e2e8f0);"></div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Pediatric</span>
+                    <h3 class="blog-title">Kids Dentistry in Dehradun: Creating Happy Smiles</h3>
+                    <p class="blog-excerpt">Early dental care is crucial. Learn how we make dental visits fun and
+                        fearless for your little ones.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
+
+            <!-- Article 6 -->
+            <a href="articles/oral-health-tips.html" class="blog-card">
+                <div class="blog-img">
+                    <div style="width:100%;height:100%;background:linear-gradient(45deg, #64748b, #94a3b8);"></div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Education</span>
+                    <h3 class="blog-title">Top Tips for Oral Health from Dehradun's Expert Dentists</h3>
+                    <p class="blog-excerpt">Simple daily habits that can prevent cavities and gum disease, recommended
+                        by our top specialists.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Vital<span>Dental</span></h3>
+                <p>Excellence in every detail.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Clinic</h4>
+                <ul>
+                    <li><a href="index.html#about">Team</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>123 Dental Park, Dehradun</p>
+                <p>+91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vital Dental Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

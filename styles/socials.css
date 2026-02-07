@@ -1,0 +1,29 @@
+/* Social Icons */
+.footer-social h4 {
+    color: var(--color-accent-light);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--color-white);
+    transition: var(--transition-base);
+}
+
+.social-link:hover {
+    background: var(--color-accent);
+    color: var(--color-white);
+    transform: translateY(-3px);
+}
