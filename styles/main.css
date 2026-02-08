@@ -1,51 +1,61 @@
 :root {
-    /* Colors - Deep Teal & Metallic Gold Theme */
-    --color-primary: #0B3B48;
-    /* Deeper, richer teal */
-    --color-primary-dark: #06232B;
-    /* Almost black teal */
-    --color-accent: #C5A065;
-    /* Metallic Brushed Gold */
-    --color-accent-light: #F4EBD9;
-    /* Soft Champagne */
-    --color-bg: #FCFCFC;
-    /* Clean off-white */
-    --color-bg-alt: #F2F8F9;
-    /* Very subtle cool tint */
-    --color-text: #475569;
-    /* Slate 600 */
-    --color-text-light: #94A3B8;
-    /* Slate 400 */
-    --color-heading: #1E293B;
-    /* Slate 800 */
+    /* Colors - Arcadia Dental Theme (Soft, clean, professional) */
+    --color-primary: #5D737E;
+    /* Deep Slate Blue - Professional & Calming */
+    --color-primary-dark: #374A56;
+    /* Dark Slate - For text contrast */
+    --color-accent: #9EA8B1;
+    /* Misty Blue - Soft accent */
+    --color-accent-light: #E8EEF2;
+    /* Cloud Grey - Sections/Backgrounds */
+    --color-bg: #FFFFFF;
+    /* Pure White */
+    --color-bg-alt: #F4F7F9;
+    /* Light Airy Background */
+    --color-text: #4A5568;
+    /* Slate Grey - Readable body text */
+    --color-text-light: #718096;
+    /* Lighter Grey */
+    --color-heading: #1A202C;
+    /* Charcoal Black - High contrast */
     --color-white: #ffffff;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #0B3B48 0%, #175464 100%);
-    --gradient-gold: linear-gradient(135deg, #C5A065 0%, #E6C693 100%);
+    /* Gradients (Soft, subtle gradients) */
+    --gradient-primary: linear-gradient(135deg, #5D737E 0%, #374A56 100%);
+    --gradient-gold: linear-gradient(135deg, #9EA8B1 0%, #BCC4CC 100%);
+    /* Replaced gold with misty gradient */
 
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    /* Geometric, modern, friendly */
+    --font-body: 'Urbanist', sans-serif;
+    /* Clean, highly readable */
 
     /* Spacing */
     --container-width: 1200px;
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 4rem;
+    --spacing-xs: 0.75rem;
+    --spacing-sm: 1.5rem;
+    --spacing-md: 3rem;
+    --spacing-lg: 5rem;
     --spacing-xl: 8rem;
 
-    /* Effects */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --glass: rgba(255, 255, 255, 0.7);
-    --glass-border: 1px solid rgba(255, 255, 255, 0.3);
-    --backdrop-blur: blur(12px);
+    /* Effects - Soft, rounded, airy */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-pill: 50px;
+
+    --shadow-sm: 0 2px 4px rgba(93, 115, 126, 0.05);
+    --shadow-md: 0 8px 16px rgba(93, 115, 126, 0.08);
+    /* Colored shadow for depth */
+    --shadow-lg: 0 16px 32px rgba(93, 115, 126, 0.12);
+    --glass: rgba(255, 255, 255, 0.85);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.5);
+    --backdrop-blur: blur(20px);
 
     /* Transitions */
-    --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    /* Smooth spring-like eased transition */
 }
 
 /* Reset & Base */
@@ -122,7 +132,7 @@ img {
     align-items: center;
     justify-content: center;
     padding: 0.875rem 2rem;
-    border-radius: 50px;
+    border-radius: var(--radius-pill);
     font-weight: 600;
     cursor: pointer;
     text-align: center;
@@ -131,15 +141,16 @@ img {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+    background: var(--color-primary);
     color: var(--color-white);
-    box-shadow: 0 4px 15px rgba(11, 59, 72, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid transparent;
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(15, 76, 92, 0.4);
+    background: var(--color-primary-dark);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .btn-outline {
@@ -218,7 +229,7 @@ img {
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: var(--color-accent);
+    background-color: var(--color-primary);
     transition: var(--transition-base);
 }
 
@@ -288,7 +299,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(14, 116, 144, 0.9) 0%, rgba(11, 59, 72, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(55, 74, 86, 0.9) 0%, rgba(26, 32, 44, 0.8) 100%);
     /* Stronger gradient for text readability */
     z-index: 1;
 }
@@ -315,7 +326,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(15, 76, 92, 0.95) 0%, rgba(15, 76, 92, 0.7) 50%, rgba(15, 76, 92, 0.2) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.1) 100%);
 }
 
 .hero-content {
@@ -408,7 +419,7 @@ img {
     display: block;
     width: 60px;
     height: 3px;
-    background: var(--color-accent);
+    background: var(--color-primary);
     margin: 10px auto 0;
     border-radius: 2px;
 }
@@ -424,8 +435,8 @@ img {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     padding: var(--spacing-md);
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.6);
@@ -449,8 +460,8 @@ img {
 
 .service-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
-    border-color: var(--color-accent-light);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent);
 }
 
 .service-card:hover::before {
@@ -468,7 +479,8 @@ img {
     height: 64px;
     margin: 0 auto var(--spacing-sm);
     color: var(--color-primary);
-    background: var(--color-bg-alt);
+    background: transparent;
+    border: 1px solid var(--color-accent-light);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -509,15 +521,16 @@ img {
 
 .about-image {
     position: relative;
-    border-radius: 24px;
+    border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-md);
 }
 
 .about-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: var(--radius-lg);
     transition: transform 0.5s ease;
 }
 
@@ -552,7 +565,7 @@ img {
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--color-accent);
+    color: var(--color-primary);
     font-weight: 700;
 }
 
@@ -576,8 +589,8 @@ img {
 .testimonial-card {
     background: var(--color-white);
     padding: var(--spacing-lg);
-    border-radius: 16px;
-    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
     border: 1px solid rgba(0, 0, 0, 0.03);
     position: relative;
     flex: 0 0 100%;
@@ -586,7 +599,7 @@ img {
 }
 
 .t-stars {
-    color: #fbbf24;
+    color: var(--color-primary);
     font-size: 1.2rem;
     margin-bottom: 1rem;
     letter-spacing: 2px;
@@ -610,7 +623,7 @@ img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: var(--gradient-gold);
+    background: var(--color-primary);
     color: var(--color-white);
     display: flex;
     align-items: center;
@@ -707,7 +720,7 @@ img {
 }
 
 .contact-info h2 {
-    color: var(--color-accent-light);
+    color: var(--color-heading);
     border-bottom: none;
 }
 
@@ -721,7 +734,7 @@ img {
 }
 
 .contact-details strong {
-    color: var(--color-accent);
+    color: var(--color-primary);
     display: block;
     margin-bottom: 0.25rem;
 }
@@ -1101,7 +1114,7 @@ img {
 }
 
 .gallery-item:hover::after {
-    background: rgba(15, 76, 92, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }
 
 /* Social Icons */
@@ -1129,7 +1142,7 @@ img {
 }
 
 .social-link:hover {
-    background: var(--color-accent);
+    background: var(--color-primary);
     color: var(--color-white);
     transform: translateY(-3px);
 }
