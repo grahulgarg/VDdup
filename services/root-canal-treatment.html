@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painless Root Canal Treatment in Dehradun | Vital Dental Care</title>
+    <meta name="description"
+        content="Get painless, single-sitting Root Canal Treatment (RCT) in Dehradun by Dr. Pragati Singh. Advanced endodontic care at Vital Dental, near GMS Road, Kanwali. Book your consultation today.">
+    <link rel="canonical" href="/services/root-canal-treatment" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Urbanist:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/main.css">
+    
+    <style>
+        .hero-service {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, rgba(93, 115, 126, 0.05) 0%, rgba(232, 238, 242, 0.6) 100%);
+            text-align: center;
+        }
+
+        .hero-service h1 {
+            color: var(--color-primary-dark);
+            margin-bottom: 24px;
+        }
+
+        .hero-service p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 32px;
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        .service-page-content {
+            padding: 80px 0;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .service-page-content p {
+            margin-bottom: 1.5rem;
+            color: #4A5568;
+        }
+
+        .service-page-content h2 {
+            color: var(--color-primary-dark);
+            margin-top: 60px;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .service-page-content h2::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: var(--color-primary);
+            margin-top: 8px;
+            border-radius: 2px;
+        }
+
+        .rct-services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .rct-card {
+            background: var(--color-white);
+            padding: 24px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-accent-light);
+            transition: var(--transition-base);
+        }
+
+        .rct-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-primary);
+        }
+
+        .rct-card h3 {
+            color: var(--color-primary);
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .choose-us-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 40px;
+        }
+
+        .choose-us-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-weight: 500;
+            color: var(--color-heading);
+        }
+
+        .choose-us-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--color-primary);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        /* Accordion CSS */
+        .faq-accordion {
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--color-accent-light);
+            border-radius: var(--radius-md);
+            margin-bottom: 16px;
+            background: var(--color-white);
+            overflow: hidden;
+            transition: var(--transition-base);
+        }
+
+        .faq-item:hover {
+            border-color: var(--color-primary);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--color-heading);
+            cursor: pointer;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            transition: transform 0.3s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            background: var(--color-bg-alt);
+        }
+
+        .faq-answer p {
+            padding: 0 20px 20px;
+            margin: 0;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+    </style>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MedicalWebPage",
+          "name": "Painless Root Canal Treatment in Dehradun",
+          "description": "Get painless, single-sitting Root Canal Treatment (RCT) in Dehradun by Dr. Pragati Singh. Advanced endodontic care at Vital Dental, near GMS Road, Kanwali.",
+          "url": "https://vitaldental.in/services/root-canal-treatment"
+        },
+        {
+          "@type": "Dentist",
+          "name": "Vital Dental Care and Implant center",
+          "image": "https://vitaldental.in/Photos/hero.webp",
+          "@id": "https://vitaldental.in/",
+          "url": "https://vitaldental.in/",
+          "telephone": "+91 92868 98353",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Haripuram Colony, 2, GMS Rd, Engineers Enclave, Kanwali",
+            "addressLocality": "Dehradun",
+            "addressRegion": "Uttarakhand",
+            "postalCode": "248001",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 30.307907664,
+            "longitude": 78.006083394
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is a root canal painful?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With modern anesthesia and advanced equipment, a root canal is essentially painless. Most patients compare it to having a routine filling. We ensure you are completely numb and comfortable before we begin."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How many visits does an RCT take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "At Vital Dental, we specialize in single-sitting Root Canal Treatments that usually take 45-60 minutes, removing the need for multiple painful visits."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the cost of a root canal in Dehradun?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The cost varies depending on the affected tooth (anterior, premolar, or molar) and the complexity of the canals. Book a consultation for an exact transparent estimate."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a crown after a root canal?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, a root-canal-treated tooth can become brittle over time since its nerve and blood supply have been removed. A custom crown restores its strength, shape, and function for long-lasting results."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="../index.html" class="logo">Vital<span>Dental</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#about">About Us</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../index.html#testimonials">Stories</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20for%20RCT."
+                            class="btn btn-primary" target="_blank">Book Appointment</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-service">
+            <div class="container">
+                <h1>Painless Root Canal Treatment in Dehradun</h1>
+                <p>Save your natural tooth and stop the pain with advanced, comfortable endodontic care led by Dr. Pragati Singh.</p>
+                <div style="margin-top: 30px;">
+                    <a href="https://wa.me/919286898353?text=Hello%2C%20I%20need%20tooth%20pain%20relief%20and%20want%20to%20book%20an%20RCT%20appointment." class="btn btn-primary" target="_blank">Book an Appointment</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Section -->
+        <section class="service-page-content">
+            <div class="container" style="max-width: 900px;">
+                
+                <p>When you hear the phrase "Root Canal", it is common to feel a sense of fear or anxiety. However, at Vital Dental, we are revolutionizing endodontic care. A root canal is simply a procedure to relieve extreme pain caused by deep tooth decay. When a cavity is left untreated, it reaches the inner pulp of your tooth, causing inflammation and sharp, severe tooth pain.</p>
+                
+                <p>Our approach is focused heavily on empathy and patient comfort. You no longer have to suffer through the old, painful techniques of the past. As the best endodontist near GMS Road, Dr. Pragati Singh utilizes state-of-the-art tools and profound local anesthesia to ensure your procedure feels as easy as getting a standard dental filling. If you are seeking immediate tooth pain relief Kanwali or nearby areas in Dehradun, our painless, modern approach will save your natural tooth and restore your smile.</p>
+
+                <h2>Our RCT Services</h2>
+                <p>We provide comprehensive endodontic treatments tailored to your specific clinical needs. The anatomical structure of your teeth differs greatly, requiring specialized precision for each type:</p>
+                <div class="rct-services-grid">
+                    <div class="rct-card">
+                        <h3>Root Canal Treatment (Anterior)</h3>
+                        <p>Specialized RCT for your front teeth (incisors and canines), ensuring the structural integrity and aesthetic appearance of your visible smile are flawlessly maintained.</p>
+                    </div>
+                    <div class="rct-card">
+                        <h3>Root Canal Treatment (Premolar)</h3>
+                        <p>Targeted root canal therapy for premolars, carefully navigating simpler canal systems to relieve pain and prepare the tooth for a protective crown.</p>
+                    </div>
+                    <div class="rct-card">
+                        <h3>Root Canal Treatment (Molar)</h3>
+                        <p>Advanced care for multi-rooted molars at the back of the mouth. We use precision rotary instruments to thoroughly clean complex, curved canals.</p>
+                    </div>
+                    <div class="rct-card">
+                        <h3>Root Canal (Wisdom/Calcified)</h3>
+                        <p>Specialized treatment for challenging wisdom teeth or calcified canals that require extreme expertise and high-magnification tools to save.</p>
+                    </div>
+                    <div class="rct-card">
+                        <h3>Custom Post Bonding</h3>
+                        <p>When a tooth is severely broken down, we place a custom fiber or metal post into the root canal space to rebuild the core before placing a crown.</p>
+                    </div>
+                </div>
+
+                <h2>Why Choose Dr. Pragati Singh for Your RCT?</h2>
+                <p>Choosing the right dentist is crucial when it comes to saving your teeth. Vital Dental stands out as a premier dental clinic for root canal therapy in Dehradun.</p>
+                <ul class="choose-us-list">
+                    <li><strong>Expertise & Experience:</strong> Led by Dr. Pragati Singh, who brings years of focused experience in diagnosing and treating complex dental pain and root infections.</li>
+                    <li><strong>Advanced Equipment:</strong> We use apex locators, digital RVG X-rays, and rotary endodontic motors for faster, more accurate, and successful treatments.</li>
+                    <li><strong>Strict Hygiene Protocols:</strong> Class B autoclaves and strict sterilization matching global standards are meticulously maintained to ensure zero cross-contamination.</li>
+                    <li><strong>Relaxing Environment:</strong> Designed to calm dental anxiety, our clinic environment uses soothing colors, comfortable seating, and an empathetic staff to keep you relaxed.</li>
+                </ul>
+
+                <h2>Patient FAQs</h2>
+                <p>We believe in keeping our patients thoroughly informed. Here are the most common questions we receive regarding root canal treatments:</p>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">Is a root canal painful?</div>
+                        <div class="faq-answer">
+                            <p>With modern anesthesia and advanced equipment, a root canal is essentially painless. Most patients compare it to having a routine filling. We ensure you are completely numb and comfortable before we begin.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How many visits does an RCT take?</div>
+                        <div class="faq-answer">
+                            <p>At Vital Dental, we specialize in single-sitting Root Canal Treatments. With our advanced rotary tools, the procedure usually takes 45-60 minutes, removing the need for multiple painful visits.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is the cost of a root canal in Dehradun?</div>
+                        <div class="faq-answer">
+                            <p>The cost varies depending on the affected tooth (anterior, premolar, or molar) and the complexity of the canals. Book a consultation for an exact transparent estimate.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Do I need a crown after a root canal?</div>
+                        <div class="faq-answer">
+                            <p>Yes, a root-canal-treated tooth can become brittle over time since its nerve and blood supply have been removed. A custom crown restores its strength, shape, and function for long-lasting results.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Vital<span>Dental</span></h3>
+                <p>Care & Implant Center</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Haripuram Colony, 2, GMS Rd,<br>Kanwali, Dehradun, 248001</p>
+                <p>+91 92868 98353</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/doonvitaldental?igsh=MTlpZHZhZmkza3Njeg==" target="_blank"
+                        class="social-link" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vital Dental Care and Implant center Dehradun. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
+        class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="../Photos/whatsapp_logo.png" alt="WhatsApp" class="whatsapp-icon"
+            style="width: 100%; height: 100%; border-radius: 50%;">
+    </a>
+
+    <!-- Accordion Script & Global App Script -->
+    <script src="../scripts/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
