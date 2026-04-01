@@ -13,9 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Close mobile menu when a link is clicked
+    // Close mobile menu when a non-dropdown link is clicked
     document.querySelectorAll('.nav-list a').forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', (e) => {
+            // If this link is the Services toggle on mobile, handle dropdown instead
+            const parentLi = link.closest('.nav-item.has-dropdown');
+            if (parentLi && window.innerWidth <= 768) {
+                e.preventDefault();
+                parentLi.classList.toggle('mobile-open');
+                return;
+            }
             if (nav.classList.contains('active')) {
                 nav.classList.remove('active');
                 mobileToggle.classList.remove('active');

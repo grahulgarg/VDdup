@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css?v=3">
 </head>
 
 <body>
@@ -25,8 +25,21 @@
             <a href="#" class="logo">Vital<span>Dental</span></a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#services">Services</a></li>
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About Us</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#services">Services <span class="dropdown-arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/root-canal-treatment.html">Root Canal Treatment</a></li>
+                            <li><a href="services/dental-implants.html">Dental Implants</a></li>
+                            <li><a href="services/orthodontics-and-braces.html">Orthodontics &amp; Braces</a></li>
+                            <li><a href="services/pediatric-dentistry.html">Pediatric Dentistry</a></li>
+                            <li><a href="services/oral-surgery-extractions.html">Oral Surgery &amp; Extractions</a></li>
+                            <li><a href="services/dental-crowns-dentures.html">Crowns, Bridges &amp; Dentures</a></li>
+                            <li><a href="services/cosmetic-fillings.html">Cosmetic Dentistry</a></li>
+                            <li><a href="services/teeth-cleaning-gum-care.html">Gum Care &amp; Teeth Cleaning</a></li>
+                        </ul>
+                    </li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="#testimonials">Stories</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -85,6 +98,7 @@
                         </div>
                         <h3>Cosmetic Dentistry</h3>
                         <p>Veneers, teeth whitening, and complete smile makeovers.</p>
+                        <a href="services/cosmetic-fillings.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
@@ -99,6 +113,7 @@
                         </div>
                         <h3>Dental Implants</h3>
                         <p>Permanent solutions for missing teeth with natural aesthetics.</p>
+                        <a href="services/dental-implants.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
@@ -122,6 +137,48 @@
                         </div>
                         <h3>Orthodontics</h3>
                         <p>Invisalign and braces for a perfectly aligned smile.</p>
+                        <a href="services/orthodontics-and-braces.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.866 8.21 8.21 0 003 2.48z" />
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+                            </svg>
+                        </div>
+                        <h3>Pediatric Dentistry</h3>
+                        <p>Child-friendly care, painless extractions, and cavity prevention.</p>
+                        <a href="services/pediatric-dentistry.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                            </svg>
+                        </div>
+                        <h3>Teeth Cleaning & Gum Care</h3>
+                        <p>Advanced scaling, bleeding gum treatment and deep cleanings.</p>
+                        <a href="services/teeth-cleaning-gum-care.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
+                            </svg>
+                        </div>
+                        <h3>Oral Surgery & Extractions</h3>
+                        <p>Painless wisdom tooth removal and safe oral cyst excisions.</p>
+                        <a href="services/oral-surgery-extractions.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" />
+                            </svg>
+                        </div>
+                        <h3>Crowns, Bridges & Dentures</h3>
+                        <p>Zirconia caps, comfortable complete dentures, and PFM restorations.</p>
+                        <a href="services/dental-crowns-dentures.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -306,25 +363,32 @@
                     <p>Expert advice from Dehradun's top dental team.</p>
                 </div>
                 <div class="blog-preview-grid">
-                    <a href="articles/best-dentist-dehradun.html" class="blog-card-mini">
-                        <img src="Photos/hero.webp" alt="Best Dental Clinic in Dehradun" class="mini-img"
+                    <a href="articles/wisdom-tooth-extraction.html" class="blog-card-mini">
+                        <img src="Photos/blog_wisdom_tooth.png" alt="Painless Wisdom Tooth Extraction" class="mini-img"
                             loading="lazy">
                         <div class="mini-content">
-                            <h4>Why Vital Dental is the Best Clinic in Dehradun</h4>
+                            <h4>Painless Wisdom Tooth Extraction</h4>
                             <span class="read-link">Read More &rarr;</span>
                         </div>
                     </a>
-                    <a href="articles/dental-implants-cost.html" class="blog-card-mini">
-                        <img src="Photos/new_4.jpg" alt="Dental Implants Cost" class="mini-img" loading="lazy">
+                    <a href="articles/teeth-whitening-guide.html" class="blog-card-mini">
+                        <img src="Photos/blog_teeth_whitening.png" alt="Teeth Whitening" class="mini-img" loading="lazy">
                         <div class="mini-content">
-                            <h4>Dental Implants: Cost & Procedure</h4>
+                            <h4>Professional Teeth Whitening vs Home Kits</h4>
                             <span class="read-link">Read More &rarr;</span>
                         </div>
                     </a>
-                    <a href="articles/painless-root-canal.html" class="blog-card-mini">
-                        <img src="Photos/new_1.jpg" alt="Painless Root Canal" class="mini-img" loading="lazy">
+                    <a href="articles/dental-crowns-and-bridges.html" class="blog-card-mini">
+                        <img src="Photos/blog_crowns.png" alt="Dental Crowns and Bridges" class="mini-img" loading="lazy">
                         <div class="mini-content">
-                            <h4>Painless Root Canal Treatment</h4>
+                            <h4>Dental Crowns and Bridges Guide</h4>
+                            <span class="read-link">Read More &rarr;</span>
+                        </div>
+                    </a>
+                    <a href="articles/clear-aligners-vs-braces.html" class="blog-card-mini">
+                        <img src="Photos/blog_aligners.png" alt="Clear Aligners vs Braces" class="mini-img" loading="lazy">
+                        <div class="mini-content">
+                            <h4>Clear Aligners vs Traditional Braces</h4>
                             <span class="read-link">Read More &rarr;</span>
                         </div>
                     </a>

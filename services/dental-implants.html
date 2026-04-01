@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Dental Implants in Dehradun | Permanent Tooth Replacement</title>
+    <meta name="description"
+        content="Restore your smile with premium dental implants at Vital Dental, Dehradun. Led by Dr. Pragati Singh, we offer painless implant placement, bone grafting, and zirconia crowns near GMS Road.">
+    <link rel="canonical" href="/services/dental-implants" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Urbanist:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/main.css?v=3">
+    
+    <style>
+        .hero-service {
+            padding: 160px 0 80px;
+            background: linear-gradient(135deg, rgba(93, 115, 126, 0.05) 0%, rgba(232, 238, 242, 0.6) 100%);
+            text-align: center;
+        }
+
+        .hero-service h1 {
+            color: var(--color-primary-dark);
+            margin-bottom: 24px;
+        }
+
+        .hero-service p {
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto 32px;
+            color: var(--color-text);
+            line-height: 1.6;
+        }
+
+        .service-page-content {
+            padding: 80px 0;
+            line-height: 1.8;
+            font-size: 1.15rem;
+            color: #4A5568;
+        }
+
+        .service-page-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .service-page-content h2 {
+            color: var(--color-primary-dark);
+            margin-top: 60px;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .service-page-content h2::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: var(--color-primary);
+            margin-top: 8px;
+            border-radius: 2px;
+        }
+        
+        .service-page-content h3 {
+            color: var(--color-primary);
+            margin-top: 30px;
+            font-size: 1.4rem;
+        }
+
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .step-card {
+            background: var(--color-white);
+            padding: 30px 20px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--color-accent-light);
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            background: var(--color-primary);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0 auto 20px;
+        }
+
+        /* Options Grid */
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .option-card {
+            background: var(--color-bg-alt);
+            padding: 24px;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--color-primary);
+        }
+
+        /* Accordion CSS */
+        .faq-accordion {
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--color-accent-light);
+            border-radius: var(--radius-md);
+            margin-bottom: 16px;
+            background: var(--color-white);
+            overflow: hidden;
+            transition: var(--transition-base);
+        }
+
+        .faq-item:hover {
+            border-color: var(--color-primary);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.15rem;
+            color: var(--color-heading);
+            cursor: pointer;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            transition: transform 0.3s;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            background: var(--color-bg-alt);
+        }
+
+        .faq-answer p {
+            padding: 0 20px 20px;
+            margin: 0;
+            font-size: 1.05rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+    </style>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MedicalWebPage",
+          "name": "Best Dental Implants in Dehradun | Permanent Tooth Replacement",
+          "description": "Restore your smile with premium dental implants at Vital Dental, Dehradun. Led by Dr. Pragati Singh, we offer painless implant placement, bone grafting, and zirconia crowns.",
+          "url": "https://vitaldental.in/services/dental-implants"
+        },
+        {
+          "@type": "Dentist",
+          "name": "Vital Dental Care and Implant center",
+          "image": "https://vitaldental.in/Photos/hero.webp",
+          "@id": "https://vitaldental.in/",
+          "url": "https://vitaldental.in/",
+          "telephone": "+91 92868 98353",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Haripuram Colony, 2, GMS Rd, Engineers Enclave, Kanwali",
+            "addressLocality": "Dehradun",
+            "addressRegion": "Uttarakhand",
+            "postalCode": "248001",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 30.307907664,
+            "longitude": 78.006083394
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Are dental implants painful?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The procedure is performed under profound local anesthesia, ensuring you feel no pain during placement. Minor soreness post-surgery is normal and easily managed with prescribed over-the-counter pain relievers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the affordable dental implant cost in Dehradun?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The cost of dental implants varies based on whether you need a single implant, bone grafting, or multiple placements. At Vital Dental, we offer highly competitive pricing and transparent estimates during your initial consultation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do dental implants last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With proper oral hygiene and regular dental checkups, a dental implant can last a lifetime. The ceramic crown may need replacement after 10-15 years depending on wear."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need a bone graft?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If a tooth has been missing for a long time, the jawbone may deteriorate. A 3D CBCT scan will determine if you have sufficient bone density or if a minor bone grafting procedure is needed before placement."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="../index.html" class="logo">Vital<span>Dental</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about">About Us</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="../index.html#services">Services <span class="dropdown-arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../services/root-canal-treatment.html">Root Canal Treatment</a></li>
+                            <li><a href="../services/dental-implants.html">Dental Implants</a></li>
+                            <li><a href="../services/orthodontics-and-braces.html">Orthodontics &amp; Braces</a></li>
+                            <li><a href="../services/pediatric-dentistry.html">Pediatric Dentistry</a></li>
+                            <li><a href="../services/oral-surgery-extractions.html">Oral Surgery &amp; Extractions</a></li>
+                            <li><a href="../services/dental-crowns-dentures.html">Crowns, Bridges &amp; Dentures</a></li>
+                            <li><a href="../services/cosmetic-fillings.html">Cosmetic Dentistry</a></li>
+                            <li><a href="../services/teeth-cleaning-gum-care.html">Gum Care &amp; Teeth Cleaning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                    <li><a href="../index.html#testimonials">Stories</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                            class="btn btn-primary" target="_blank">Book Appointment</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-service">
+            <div class="container">
+                <h1>Best Dental Implants in Dehradun</h1>
+                <p>Permanent, natural-looking tooth replacement. Rebuild your smile, confidence, and chewing ability with premium dental implants led by Dr. Pragati Singh.</p>
+                <div style="margin-top: 30px;">
+                    <a href="https://wa.me/919286898353" class="btn btn-primary" target="_blank">Book a Consultation</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Section -->
+        <section class="service-page-content">
+            <div class="container" style="max-width: 900px;">
+                
+                <p>Losing a tooth can deeply impact your self-esteem, your speech, and your ability to enjoy the foods you love. A missing tooth also causes the surrounding jawbone to shrink over time, which can alter your facial structure. Fortunately, modern dentistry provides the ultimate solution: <strong>Dental Implants</strong>.</p>
+                
+                <p>At Vital Dental, located near GMS Road, we specialize in providing permanent solutions for missing teeth in Kanwali and the greater Dehradun area. Unlike traditional dentures or dental bridges that might slip, require the alteration of adjacent healthy teeth, or feel uncomfortable, dental implants look, feel, and function exactly like your natural teeth. Our primary goal is to provide a seamless, stress-free clinical experience. We blend deep empathy with surgical precision so that our patients feel completely relaxed throughout their tooth restoration journey.</p>
+                
+                <h2>How It Works: The Implant Process</h2>
+                <p>The journey to a perfect, permanent smile requires meticulous planning and expert execution. Dr. Pragati Singh uses advanced digital imaging to plan every millimeter of the procedure, ensuring maximum safety and aesthetic success. Here is our step-by-step process:</p>
+                
+                <div class="process-steps">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Consultation & 3D Imaging</h3>
+                        <p>We begin with a thorough clinical examination and 3D CBCT scans to assess your jawbone density, nerve pathways, and overall oral health.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Surgical Placement</h3>
+                        <p>In a fully sterile environment, the titanium implant post is gently and precisely placed into the jawbone using profound local anesthesia.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Healing (Osseointegration)</h3>
+                        <p>Over the next 3 to 6 months, the biocompatible titanium naturally fuses with your jawbone, creating a rock-solid foundation.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Placing the Crown</h3>
+                        <p>Once healed, an abutment is attached, followed by a custom-milled, incredibly lifelike ceramic crown that perfectly matches your natural teeth.</p>
+                    </div>
+                </div>
+
+                <h2>Our Clinical Options</h2>
+                <p>Every mouth is unique. Because of this, we offer tailored clinical solutions to address the specific anatomical and restorative needs of our patients. Our comprehensive implant services include:</p>
+                
+                <div class="options-grid">
+                    <div class="option-card">
+                        <h3>Implant Placement</h3>
+                        <p>This is the core surgical procedure where a high-grade titanium screw is embedded into the jaw. We use globally recognized, premium implant brands to ensure longevity, rapid healing, and minimal post-operative discomfort. The procedure is highly precise and virtually painless.</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Bone Graft Placement (1 cc)</h3>
+                        <p>If you have suffered significant bone loss due to prolonged tooth absence or periodontal disease, your jaw may not be thick enough to hold an implant securely. We utilize state-of-the-art synthetic or natural bone graft material (typically 1 cc) to regenerate and fortify the area before or during implant placement.</p>
+                    </div>
+                    <div class="option-card">
+                        <h3>Implant Ceramic Crowns</h3>
+                        <p>The visible part of the tooth is just as important as the surgical foundation. We provide ultra-durable, highly aesthetic ceramic and Zirconia implant crowns. These crowns are custom-shaded and shaped to blend flawlessly with your existing teeth, resisting stains and mimicking natural light reflection.</p>
+                    </div>
+                </div>
+
+                <p>Whether you have lost a single tooth to an accident or require full-arch restoration, our sophisticated approach ensures a high success rate. We are committed to making top-tier restorative dentistry accessible, providing an affordable dental implant cost in Dehradun without ever compromising on clinical quality or safety.</p>
+
+                <h2>Patient FAQs</h2>
+                <p>We know that the thought of oral surgery can prompt many questions. Here are clear, honest answers to the most common inquiries regarding dental implants:</p>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">Are dental implants painful?</div>
+                        <div class="faq-answer">
+                            <p>The procedure is performed under profound local anesthesia, ensuring you feel absolutely no pain during placement. Most patients report that it is significantly less uncomfortable than a tooth extraction. Minor soreness post-surgery is normal and easily managed with prescribed over-the-counter pain relievers.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">What is the affordable dental implant cost in Dehradun?</div>
+                        <div class="faq-answer">
+                            <p>The total investment varies depending on individual factors, such as whether you need a single implant, multiple implants, or a prerequisite bone grafting procedure. At Vital Dental, we emphasize transparent, high-value pricing. We will provide a completely itemized estimate during your initial diagnostic consultation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">How long do dental implants last?</div>
+                        <div class="faq-answer">
+                            <p>The titanium implant post acts as an artificial root and, when successfully integrated with the bone, can last an entire lifetime. The customized ceramic crown attached to the top is subject to daily wear and tear, and may need to be replaced after 10 to 15 years, provided you maintain excellent oral hygiene.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Do I need a bone graft?</div>
+                        <div class="faq-answer">
+                            <p>It depends entirely on the current state of your jawbone. When a tooth is removed, the bone in that specific area naturally shrinks. Our advanced 3D CBCT scans will clearly reveal your bone density. If it is too thin, a simple bone graft placement (often 1 cc) will rebuild the necessary volume.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Vital<span>Dental</span></h3>
+                <p>Care & Implant Center</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Haripuram Colony, 2, GMS Rd,<br>Kanwali, Dehradun, 248001</p>
+                <p>+91 92868 98353</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919286898353" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <img src="../Photos/whatsapp_logo.png" alt="WhatsApp" class="whatsapp-icon" style="width: 100%; height: 100%; border-radius: 50%;">
+    </a>
+
+    <!-- Accordion Script & Global App Script -->
+    <script src="../scripts/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

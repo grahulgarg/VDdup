@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css?v=3">
     <style>
         .blog-header {
             padding-top: 120px;
@@ -116,6 +116,22 @@
         .blog-card:hover .read-more::after {
             transform: translateX(4px);
         }
+        .featured-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--color-primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .featured-blog {
+            border: 2px solid var(--color-primary-light);
+        }
     </style>
 </head>
 
@@ -126,7 +142,19 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#services">Services</a></li>
+                    <li class="dropdown">
+    <a href="index.html#services" class="dropdown-toggle">Services <span class="arrow">&#9662;</span></a>
+    <ul class="dropdown-menu">
+        <li><a href="services/dental-implants.html">Dental Implants</a></li>
+        <li><a href="services/orthodontics-and-braces.html">Orthodontics &amp; Braces</a></li>
+        <li><a href="services/root-canal-treatment.html">General Care</a></li>
+        <li><a href="services/pediatric-dentistry.html">Pediatric Dentistry</a></li>
+        <li><a href="services/dental-crowns-dentures.html">Crowns, Bridges &amp; Dentures</a></li>
+        <li><a href="services/cosmetic-fillings.html">Cosmetic Dentistry</a></li>
+        <li><a href="services/teeth-cleaning-gum-care.html">Teeth Cleaning &amp; Gum Care</a></li>
+        <li><a href="services/oral-surgery-extractions.html">Oral Surgery &amp; Extractions</a></li>
+    </ul>
+</li>
                     <li><a href="index.html#about">About Us</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="index.html#testimonials">Stories</a></li>
@@ -149,6 +177,75 @@
 
     <main class="container">
         <div class="blog-grid">
+            <!-- New Article 1 -->
+            <a href="articles/wisdom-tooth-extraction.html" class="blog-card featured-blog">
+                <div class="blog-img">
+                    <img src="Photos/blog_wisdom_tooth.png" alt="Wisdom Tooth Extraction" loading="lazy">
+                    <span class="featured-badge">Latest</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Oral Surgery</span>
+                    <h3 class="blog-title">Painless Wisdom Tooth Extraction in Dehradun</h3>
+                    <p class="blog-excerpt">What to expect when your third molars cause problems. Expert care by Dr. Pragati Singh.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
+            
+            <!-- New Article 2 -->
+            <a href="articles/teeth-whitening-guide.html" class="blog-card featured-blog">
+                <div class="blog-img">
+                    <img src="Photos/blog_teeth_whitening.png" alt="Teeth Whitening" loading="lazy">
+                    <span class="featured-badge">Latest</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Cosmetic</span>
+                    <h3 class="blog-title">Professional Teeth Whitening vs Home Kits</h3>
+                    <p class="blog-excerpt">A comprehensive guide to achieving your brightest, most radiant smile safely.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
+            
+            <!-- New Article 3 -->
+            <a href="articles/clear-aligners-vs-braces.html" class="blog-card featured-blog">
+                <div class="blog-img">
+                    <img src="Photos/blog_aligners.png" alt="Clear Aligners vs Braces" loading="lazy">
+                    <span class="featured-badge">Latest</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Orthodontics</span>
+                    <h3 class="blog-title">Clear Aligners vs Traditional Braces</h3>
+                    <p class="blog-excerpt">A clear comparison of orthodontic options available right here in Dehradun.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
+            
+            <!-- New Article 4 -->
+            <a href="articles/dental-crowns-and-bridges.html" class="blog-card featured-blog">
+                <div class="blog-img">
+                    <img src="Photos/blog_crowns.png" alt="Crowns and Bridges" loading="lazy">
+                    <span class="featured-badge">Latest</span>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Restorative</span>
+                    <h3 class="blog-title">Dental Crowns and Bridges</h3>
+                    <p class="blog-excerpt">Restoring your smile's function and beauty at Vital Dental Care.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
+
+            <!-- Previously Added Article -->
+            <a href="articles/best-foods-for-teeth.html" class="blog-card">
+                <div class="blog-img">
+                    <div style="width:100%;height:100%;background:linear-gradient(135deg, #4ade80, #16a34a);"></div>
+                </div>
+                <div class="blog-content">
+                    <span class="blog-tag">Nutrition</span>
+                    <h3 class="blog-title">7 Superfoods for Stronger Teeth & Gums</h3>
+                    <p class="blog-excerpt">What you eat matters. Discover the best local foods in Dehradun for a
+                        healthier smile.</p>
+                    <span class="read-more">Read Article</span>
+                </div>
+            </a>
             <!-- Article 1 -->
             <a href="articles/best-dentist-dehradun.html" class="blog-card">
                 <div class="blog-img">
