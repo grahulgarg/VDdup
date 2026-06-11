@@ -4,29 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vital Dental Care and Implant center Dehradun</title>
-    <meta name="description"
-        content="Experience world-class dental care at Vital Dental. Advanced treatments in a comfortable, premium environment.">
+    <title>Vital Dental Care and Implant Center | Best Dental Clinic in Dehradun</title>
+    <meta name="description" content="Experience world-class dental care at Vital Dental. Doon's leading clinic for dental implants, painless root canals, clear aligners, and cosmetic smile design by Dr. Pragati Singh.">
+    <link rel="canonical" href="https://doonvitaldental.com">
 
-    <!-- Fonts -->
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Vital Dental Care and Implant Center | Best Dental Clinic in Dehradun">
+    <meta property="og:description" content="Experience world-class dental care at Vital Dental. Painless root canals, dental implants, clear aligners, and cosmetic smile design by Dr. Pragati Singh.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://doonvitaldental.com">
+    <meta property="og:image" content="https://doonvitaldental.com/Photos/about.webp">
+
+    <!-- Fonts preconnect and preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Urbanist:wght@400;500;600&display=swap"
-        rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Herr+Von+Muellerhoff&family=Inter:wght@400;500;600&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Herr+Von+Muellerhoff&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css?v=3">
+    <link rel="stylesheet" href="styles/main.css?v=4">
+
+    <!-- Scripts (Deferred to prevent render-blocking) -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie_light.min.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+    <script src="lottie/toothclean.js" defer></script>
+    <script src="scripts/animations.js" defer></script>
+
+    <!-- Local SEO Dentist Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Vital Dental Care and Implant Center",
+      "image": "https://doonvitaldental.com/Photos/about.webp",
+      "@id": "https://doonvitaldental.com/#dentist",
+      "url": "https://doonvitaldental.com",
+      "telephone": "+919286898353",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Haripuram Colony, 2, GMS Rd, Engineers Enclave, Kanwali",
+        "addressLocality": "Dehradun",
+        "addressRegion": "Uttarakhand",
+        "postalCode": "248001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 30.30790766,
+        "longitude": 78.00608339
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Sunday"
+          ],
+          "opens": "10:00",
+          "closes": "14:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Sunday"
+          ],
+          "opens": "16:00",
+          "closes": "20:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/doonvitaldental"
+      ]
+    }
+    </script>
 </head>
 
 <body>
+    <!-- Accessibility Skip to Content Link -->
+    <a href="#main-content" class="skip-to-content">Skip to Main Content</a>
+
+    <!-- Page Preloader -->
+    <div id="preloader" class="preloader" aria-label="Loading page">
+        <div class="preloader-content">
+            <svg class="preloader-svg" viewBox="0 0 24 24" fill="none" stroke="var(--brand)" stroke-width="1.2" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C11.5 2 10 3.5 10 5.5C10 7.5 8.5 9 6.5 9C4.5 9 3 10.5 3 12.5C3 15.5 5 18 8 20C10 21 11.5 22 12 22C12.5 22 14 21 16 20C19 18 21 15.5 21 12.5C21 10.5 19.5 9 17.5 9C15.5 9 14 7.5 14 5.5C14 3.5 12.5 2 12 2Z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div class="preloader-wordmark">Vital Dental</div>
+            <div class="preloader-counter"><span class="preloader-number">0</span>%</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <div class="grain-overlay" aria-hidden="true"></div>
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="logo">Vital<span>Dental</span></a>
+            <a href="#" class="logo">
+                <svg class="logo-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C11.5 2 10 3.5 10 5.5C10 7.5 8.5 9 6.5 9C4.5 9 3 10.5 3 12.5C3 15.5 5 18 8 20C10 21 11.5 22 12 22C12.5 22 14 21 16 20C19 18 21 15.5 21 12.5C21 10.5 19.5 9 17.5 9C15.5 9 14 7.5 14 5.5C14 3.5 12.5 2 12 2Z" />
+                </svg>
+                Vital Dental
+            </a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
                     <li class="nav-item has-dropdown">
                         <a href="#services">Services <span class="dropdown-arrow"></span></a>
                         <ul class="dropdown-menu">
@@ -40,11 +136,12 @@
                             <li><a href="services/teeth-cleaning-gum-care.html">Gum Care &amp; Teeth Cleaning</a></li>
                         </ul>
                     </li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="#testimonials">Stories</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#blog">Insights</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
-                            class="btn btn-primary" target="_blank">Book Appointment</a></li>
+                            class="btn btn-primary magnetic-btn" target="_blank"><span>Book Now</span></a></li>
                 </ul>
             </nav>
             <button class="mobile-toggle" aria-label="Toggle Menu">
@@ -55,27 +152,146 @@
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-bg">
-                <div class="slide active" style="background-image: url('Photos/hero.webp');"></div>
-                <div class="slide" style="background-image: url('Photos/new_1.jpg');"></div>
-                <div class="slide" style="background-image: url('Photos/new_2.jpg');"></div>
-                <div class="slide" style="background-image: url('Photos/new_3.jpg');"></div>
-                <div class="slide" style="background-image: url('Photos/new_4.jpg');"></div>
-                <div class="slide" style="background-image: url('Photos/new_5.jpg');"></div>
-                <div class="overlay"></div>
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" aria-hidden="true">
+        <div class="mobile-nav-container">
+            <ul class="mobile-nav-list">
+                <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+                <li><a href="#services" class="mobile-nav-link">Services</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#testimonials" class="mobile-nav-link">Reviews</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-nav-footer">
+                <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment." 
+                   class="btn btn-primary mobile-cta">Book Appointment</a>
+                <a href="tel:+919286898353" class="mobile-phone">+91 92868 98353</a>
             </div>
-            <div class="container hero-content">
-                <h1 class="fade-in">Vital Dental Care and Implant center Dehradun</h1>
-                <p class="fade-in delay-1">Experience world-class care at the <strong>best dental clinic in
-                        Dehradun</strong>. From painless root canals to premium implants, we craft smiles that last a
-                    lifetime.</p>
-                <div class="hero-actions fade-in delay-2">
-                    <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20a%20consultation."
-                        class="btn btn-primary" target="_blank">Book Consultation</a>
-                    <a href="#services" class="btn btn-outline">Explore Services</a>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-noise"></div>
+            <div class="container">
+                <div class="hero-split">
+                    <!-- Left: Editorial Content -->
+                    <div class="hero-left">
+                        <div class="hero-eyebrow">Dental Care &amp; Implant Center · Dehradun</div>
+                        <h1 class="hero-title">
+                            <div class="line-mask"><span class="h1-line">Vital Dental <span class="h1-underline-container"><em class="accent-italic">Care</em><span class="draw-underline"></span></span></span></div>
+                            <div class="line-mask"><span class="h1-line">&amp; Implant Center</span></div>
+                        </h1>
+                        <p class="hero-subcopy">
+                            Experience world-class dental care in a premium, welcoming environment. We combine state-of-the-art technology with clinical warmth to craft smiles that last.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20a%20consultation."
+                                class="btn btn-primary magnetic-btn" target="_blank"><span>Book Consultation</span></a>
+                            <a href="#services" class="btn-ghost magnetic-btn">
+                                <span>Explore Services</span>
+                                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="hero-trust-row">
+                            <div class="trust-stars">★★★★★</div>
+                            <div class="trust-text">5.0 · 200+ Google reviews · 10+ years experience</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Tall Arch Image -->
+                    <div class="hero-right">
+                        <div class="hero-image-container">
+                            <div class="hero-image-wrapper">
+                                <img src="Photos/hero.webp" alt="Vital Dental Care Clinic Dehradun" width="791" height="1020" fetchpriority="high">
+                            </div>
+                            
+                            <!-- Rotating Circular Badge -->
+                            <div class="circular-badge">
+                                <svg viewBox="0 0 100 100" class="badge-svg">
+                                    <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                                    <text>
+                                        <textPath href="#circlePath" startOffset="0%">
+                                            BOOK • YOUR • VISIT • BOOK • YOUR • VISIT •
+                                        </textPath>
+                                    </text>
+                                </svg>
+                                <div class="badge-arrow">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <polyline points="19 12 12 19 5 12"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            
+                            <!-- Frosted-glass pill card -->
+                            <div class="hero-pill-card">
+                                <span class="pill-dot"></span>
+                                Painless RCT &amp; Implants
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats & Marquee Section -->
+        <section class="stats-marquee-section">
+            <!-- Stats Band -->
+            <div class="stats-band">
+                <div class="container stats-container">
+                    <div class="stat-column">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-count="2000">2,000</span><span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Happy Patients</div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-count="10">10</span><span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-count="8">8</span><span class="stat-suffix">+</span>
+                        </div>
+                        <div class="stat-label">Specialised Services</div>
+                    </div>
+                    <div class="stat-column">
+                        <div class="stat-number-wrapper">
+                            <span class="stat-number" data-count="4.9">4.9</span><span class="stat-suffix">★</span>
+                        </div>
+                        <div class="stat-label">Google Rating</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Value Marquee Band -->
+            <div class="marquee-band" aria-label="Our Core Strengths">
+                <div class="marquee-track">
+                    <div class="marquee-content">
+                        <span>Painless</span><span class="marquee-dot">·</span>
+                        <span>Hygienic</span><span class="marquee-dot">·</span>
+                        <span>Implants</span><span class="marquee-dot">·</span>
+                        <span>Invisalign</span><span class="marquee-dot">·</span>
+                        <span>Laser Dentistry</span><span class="marquee-dot">·</span>
+                        <span>Sedation</span><span class="marquee-dot">·</span>
+                        <span>Digital Smile Design</span><span class="marquee-dot">·</span>
+                    </div>
+                    <div class="marquee-content" aria-hidden="true">
+                        <span>Painless</span><span class="marquee-dot">·</span>
+                        <span>Hygienic</span><span class="marquee-dot">·</span>
+                        <span>Implants</span><span class="marquee-dot">·</span>
+                        <span>Invisalign</span><span class="marquee-dot">·</span>
+                        <span>Laser Dentistry</span><span class="marquee-dot">·</span>
+                        <span>Sedation</span><span class="marquee-dot">·</span>
+                        <span>Digital Smile Design</span><span class="marquee-dot">·</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -84,273 +300,926 @@
         <section id="services" class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Our Services</h2>
+                    <h2>Our <span class="accent-italic">Services</span></h2>
                     <p>Comprehensive care tailored to your unique needs.</p>
                 </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
-                            </svg>
+                <div class="accordion-list">
+                    <!-- Row 1: Cosmetic Dentistry -->
+                    <div class="accordion-row" data-href="services/cosmetic-fillings.html" data-reveal>
+                        <div class="accordion-header">
+                            <span class="accordion-num">01</span>
+                            <div class="accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+                                </svg>
+                            </div>
+                            <h3 class="accordion-title">Cosmetic Dentistry</h3>
+                            <div class="accordion-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
                         </div>
-                        <h3>Cosmetic Dentistry</h3>
-                        <p>Veneers, teeth whitening, and complete smile makeovers.</p>
-                        <a href="services/cosmetic-fillings.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                        <div class="accordion-body">
+                            <div class="accordion-desc-group">
+                                <p class="accordion-desc">Veneers, teeth whitening, and complete smile makeovers.</p>
+                                <a href="services/cosmetic-fillings.html" class="accordion-link">View Full Details &rarr;</a>
+                            </div>
+                            <div class="accordion-image-wrapper">
+                                <img src="Photos/blog_teeth_whitening.webp" alt="Cosmetic Dentistry" width="1024" height="1024" loading="lazy">
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <!-- Tooth Icon -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <path
-                                    d="M7 21c.5-4.5-1.5-6.5-3-9.5 0-4 1.5-5.5 4-7.5 1.5-1.2 5-1.2 6.5 0 2.5 2 4 3.5 4 7.5-1.5 3-3.5 5-3 9.5-2.5 1.5-3.5 1-4.5 1-1.5 0-2.5.5-5-1z" />
-                                <path d="M10.5 8c0 2-1 3.5-3 5" />
-                                <path d="M13.5 8c0 2 1 3.5 3 5" />
-                            </svg>
+
+                    <!-- Row 2: Dental Implants -->
+                    <div class="accordion-row" data-href="services/dental-implants.html" data-reveal>
+                        <div class="accordion-header">
+                            <span class="accordion-num">02</span>
+                            <div class="accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M7 21c.5-4.5-1.5-6.5-3-9.5 0-4 1.5-5.5 4-7.5 1.5-1.2 5-1.2 6.5 0 2.5 2 4 3.5 4 7.5-1.5 3-3.5 5-3 9.5-2.5 1.5-3.5 1-4.5 1-1.5 0-2.5.5-5-1z" />
+                                    <path d="M10.5 8c0 2-1 3.5-3 5" />
+                                    <path d="M13.5 8c0 2 1 3.5 3 5" />
+                                </svg>
+                            </div>
+                            <h3 class="accordion-title">Dental Implants</h3>
+                            <div class="accordion-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
                         </div>
-                        <h3>Dental Implants</h3>
-                        <p>Permanent solutions for missing teeth with natural aesthetics.</p>
-                        <a href="services/dental-implants.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                        <div class="accordion-body">
+                            <div class="accordion-desc-group">
+                                <p class="accordion-desc">Permanent solutions for missing teeth with natural aesthetics.</p>
+                                <a href="services/dental-implants.html" class="accordion-link">View Full Details &rarr;</a>
+                            </div>
+                            <div class="accordion-image-wrapper">
+                                <img src="Photos/I1.webp" alt="Dental Implants" width="722" height="1020" loading="lazy">
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
-                            </svg>
+
+                    <!-- Row 3: General Care / Root Canal -->
+                    <div class="accordion-row" data-href="services/root-canal-treatment.html" data-reveal>
+                        <div class="accordion-header">
+                            <span class="accordion-num">03</span>
+                            <div class="accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                                </svg>
+                            </div>
+                            <h3 class="accordion-title">General Care &amp; Root Canal</h3>
+                            <div class="accordion-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
                         </div>
-                        <h3>General Care</h3>
-                        <p>Routine checkups, cleaning, and root canal treatments.</p>
-                        <a href="services/root-canal-treatment.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Root Canal Option &rarr;</a>
+                        <div class="accordion-body">
+                            <div class="accordion-desc-group">
+                                <p class="accordion-desc">Routine checkups, cleanings, and painless root canal treatments.</p>
+                                <a href="services/root-canal-treatment.html" class="accordion-link">View Full Details &rarr;</a>
+                            </div>
+                            <div class="accordion-image-wrapper">
+                                <img src="Photos/p2.webp" alt="General Care &amp; Root Canal" width="765" height="1020" loading="lazy">
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
-                            </svg>
+
+                    <!-- Row 4: Orthodontics & Braces -->
+                    <div class="accordion-row" data-href="services/orthodontics-and-braces.html" data-reveal>
+                        <div class="accordion-header">
+                            <span class="accordion-num">04</span>
+                            <div class="accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                    <line x1="9" y1="9" x2="9.01" y2="9" stroke-width="2" />
+                                    <line x1="15" y1="9" x2="15.01" y2="9" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h3 class="accordion-title">Orthodontics &amp; Braces</h3>
+                            <div class="accordion-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
                         </div>
-                        <h3>Orthodontics</h3>
-                        <p>Invisalign and braces for a perfectly aligned smile.</p>
-                        <a href="services/orthodontics-and-braces.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                        <div class="accordion-body">
+                            <div class="accordion-desc-group">
+                                <p class="accordion-desc">Invisalign clear aligners and modern braces for a perfectly aligned smile.</p>
+                                <a href="services/orthodontics-and-braces.html" class="accordion-link">View Full Details &rarr;</a>
+                            </div>
+                            <div class="accordion-image-wrapper">
+                                <img src="Photos/blog_aligners.webp" alt="Orthodontics &amp; Braces" width="1024" height="1024" loading="lazy">
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.866 8.21 8.21 0 003 2.48z" />
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                            </svg>
+
+                    <!-- Row 5: Pediatric Dentistry -->
+                    <div class="accordion-row" data-href="services/pediatric-dentistry.html" data-reveal>
+                        <div class="accordion-header">
+                            <span class="accordion-num">05</span>
+                            <div class="accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2a5 5 0 00-5 5v3a5 5 0 0010 0V7a5 5 0 00-5-5zM7 15c0 2 2 3.5 5 3.5s5-1.5 5-3.5" />
+                                    <line x1="9.5" y1="8" x2="9.51" y2="8" stroke-width="2" />
+                                    <line x1="14.5" y1="8" x2="14.51" y2="8" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <h3 class="accordion-title">Pediatric Dentistry</h3>
+                            <div class="accordion-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
                         </div>
-                        <h3>Pediatric Dentistry</h3>
-                        <p>Child-friendly care, painless extractions, and cavity prevention.</p>
-                        <a href="services/pediatric-dentistry.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                        <div class="accordion-body">
+                            <div class="accordion-desc-group">
+                                <p class="accordion-desc">Child-friendly, compassionate dental care, painless extractions, and cavity prevention.</p>
+                                <a href="services/pediatric-dentistry.html" class="accordion-link">View Full Details &rarr;</a>
+                            </div>
+                            <div class="accordion-image-wrapper">
+                                <img src="Photos/P1.webp" alt="Pediatric Dentistry" width="765" height="1020" loading="lazy">
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                            </svg>
+
+                    <!-- Row 6: Teeth Cleaning & Gum Care -->
+                    <div class="accordion-row" data-href="services/teeth-cleaning-gum-care.html" data-reveal>
+                        <div class="accordion-header">
+                            <span class="accordion-num">06</span>
+                            <div class="accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 22a7 7 0 007-7c0-4.3-7-13-7-13S5 10.7 5 15a7 7 0 007 7z" />
+                                </svg>
+                            </div>
+                            <h3 class="accordion-title">Teeth Cleaning &amp; Gum Care</h3>
+                            <div class="accordion-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
                         </div>
-                        <h3>Teeth Cleaning & Gum Care</h3>
-                        <p>Advanced scaling, bleeding gum treatment and deep cleanings.</p>
-                        <a href="services/teeth-cleaning-gum-care.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                        <div class="accordion-body">
+                            <div class="accordion-desc-group">
+                                <p class="accordion-desc">Advanced scale cleaning, bleeding gum treatments, and deep hygiene maintenance.</p>
+                                <a href="services/teeth-cleaning-gum-care.html" class="accordion-link">View Full Details &rarr;</a>
+                            </div>
+                            <div class="accordion-image-wrapper">
+                                <img src="Photos/T1.webp" alt="Teeth Cleaning &amp; Gum Care" width="766" height="1020" loading="lazy">
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
-                            </svg>
+
+                    <!-- Row 7: Oral Surgery & Extractions -->
+                    <div class="accordion-row" data-href="services/oral-surgery-extractions.html" data-reveal>
+                        <div class="accordion-header">
+                            <span class="accordion-num">07</span>
+                            <div class="accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 8v8M8 12h8" />
+                                </svg>
+                            </div>
+                            <h3 class="accordion-title">Oral Surgery &amp; Extractions</h3>
+                            <div class="accordion-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
                         </div>
-                        <h3>Oral Surgery & Extractions</h3>
-                        <p>Painless wisdom tooth removal and safe oral cyst excisions.</p>
-                        <a href="services/oral-surgery-extractions.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                        <div class="accordion-body">
+                            <div class="accordion-desc-group">
+                                <p class="accordion-desc">Painless wisdom tooth extractions, minor oral surgery, and safe cyst excisions.</p>
+                                <a href="services/oral-surgery-extractions.html" class="accordion-link">View Full Details &rarr;</a>
+                            </div>
+                            <div class="accordion-image-wrapper">
+                                <img src="Photos/blog_wisdom_tooth.webp" alt="Oral Surgery &amp; Extractions" width="1024" height="1024" loading="lazy">
+                            </div>
+                        </div>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5" />
-                            </svg>
+
+                    <!-- Row 8: Crowns, Bridges & Dentures -->
+                    <div class="accordion-row" data-href="services/dental-crowns-dentures.html" data-reveal>
+                        <div class="accordion-header">
+                            <span class="accordion-num">08</span>
+                            <div class="accordion-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z" />
+                                    <path d="M3 20h18" />
+                                </svg>
+                            </div>
+                            <h3 class="accordion-title">Crowns, Bridges &amp; Dentures</h3>
+                            <div class="accordion-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </div>
                         </div>
-                        <h3>Crowns, Bridges & Dentures</h3>
-                        <p>Zirconia caps, comfortable complete dentures, and PFM restorations.</p>
-                        <a href="services/dental-crowns-dentures.html" style="font-size: 0.95rem; color: var(--color-primary); font-weight: 600; display: inline-block; margin-top: 10px; transition: var(--transition-base);">View Full Details &rarr;</a>
+                        <div class="accordion-body">
+                            <div class="accordion-desc-group">
+                                <p class="accordion-desc">High-strength Zirconia caps, bridges, and comfortable full or partial dentures.</p>
+                                <a href="services/dental-crowns-dentures.html" class="accordion-link">View Full Details &rarr;</a>
+                            </div>
+                            <div class="accordion-image-wrapper">
+                                <img src="Photos/blog_crowns.webp" alt="Crowns, Bridges &amp; Dentures" width="1024" height="1024" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section (Scroll-Scrubbed Lottie) -->
+        <section id="process" class="section process-section bg-alt" aria-labelledby="process-heading">
+            <div class="container process-container">
+                <!-- Section Header -->
+                <div class="process-header text-center" data-reveal>
+                    <span class="eyebrow">How we care</span>
+                    <h2 id="process-heading" class="process-title">A cleaner, healthier smile — step by step</h2>
+                </div>
+
+                <div class="process-layout-grid">
+                    <!-- Left: Sticky Lottie Wrapper -->
+                    <div class="process-left">
+                        <div class="lottie-frame">
+                            <div id="process-lottie" class="process-lottie-container"></div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Process Steps -->
+                    <div class="process-right">
+                        <!-- Vertical Progress Line -->
+                        <div class="process-progress-track" aria-hidden="true">
+                            <div class="process-progress-fill"></div>
+                        </div>
+
+                        <div class="process-steps-list">
+                            <!-- Step 1 -->
+                            <div class="process-step-item active" data-step="0">
+                                <div class="step-num-icon">
+                                    <span class="step-num">01</span>
+                                    <div class="step-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                            <line x1="11" y1="8" x2="11" y2="14"></line>
+                                            <line x1="8" y1="11" x2="14" y2="11"></line>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="step-body">
+                                    <h3 class="step-title">Examine &amp; Assess</h3>
+                                    <p class="step-desc">A detailed digital screening of your teeth and gums to customize your hygiene therapy.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="process-step-item" data-step="1">
+                                <div class="step-num-icon">
+                                    <span class="step-num">02</span>
+                                    <div class="step-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="step-body">
+                                    <h3 class="step-title">Clean &amp; Polish</h3>
+                                    <p class="step-desc">Gentle plaque removal and micro-polishing using advanced hygiene technology.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="process-step-item" data-step="2">
+                                <div class="step-num-icon">
+                                    <span class="step-num">03</span>
+                                    <div class="step-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="step-body">
+                                    <h3 class="step-title">Protect &amp; Prevent</h3>
+                                    <p class="step-desc">Fluoride treatment and guidance to safeguard your enamel against future decay.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section bg-alt">
+        <section id="about" class="section about-section bg-alt">
             <div class="container about-container">
-                <div class="about-image">
-                    <img src="Photos/about.webp" alt="Dr. Pragati Singh at Vital Dental">
-                </div>
-                <div class="about-content">
-                    <h2>Excellence in Dentistry</h2>
-                    <p>At <strong>Vital Dental Care and Implant center Dehradun</strong>, we combine advanced technology
-                        with a
-                        compassionate approach. Led by Dr. Pragati Singh, our team is dedicated to providing pain-free,
-                        high-quality treatments.</p>
-                    <p>"We believe a healthy smile is the gateway to confidence. Our clinic helps you achieve the best
-                        oral health in a relaxing environment."</p>
-                    <ul class="feature-list">
-                        <li>Advanced Implantology & Laser Filling</li>
-                        <li>Digital Smile Design & Orthodontics</li>
-                        <li>Painless Root Canals & Sedation Dentistry</li>
-                        <li>Pediatric Care & Emergency Services</li>
-                    </ul>
-                    <div class="amenities-block" style="margin-bottom: 2rem;">
-                        <h4 style="margin-bottom: 0.5rem; color: var(--color-primary-dark);">Clinic Amenities</h4>
-                        <ul
-                            style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; font-size: 0.9rem; color: var(--color-text-light);">
-                            <li>✓ Wheelchair Accessible</li>
-                            <li>✓ Restroom Available</li>
-                            <li>✓ Women-Owned Business</li>
-                            <li>✓ LGBTQ+ Friendly</li>
-                        </ul>
+                <!-- Left Column: Portrait + Parallax Text -->
+                <div class="about-left" data-reveal>
+                    <div class="about-image-container">
+                        <div class="about-bg-text" aria-hidden="true">CARE</div>
+                        <div class="about-image-wrapper">
+                            <img src="Photos/about.webp" alt="Dr. Pragati Singh at Vital Dental Care Clinic" width="765" height="1020" loading="lazy">
+                        </div>
                     </div>
-                    <a href="#contact" class="btn btn-outline">Meet the Team</a>
+                </div>
+
+                <!-- Right Column: Editorial Copy -->
+                <div class="about-content" data-reveal>
+                    <div class="about-eyebrow">About the Clinic</div>
+                    <h2 class="about-title">Excellence in <span class="accent-italic">Dentistry</span></h2>
+                    
+                    <p class="about-para">
+                        At <strong>Vital Dental Care and Implant center Dehradun</strong>, we combine advanced technology
+                        with a compassionate approach. Led by Dr. Pragati Singh, our team is dedicated to providing pain-free,
+                        high-quality treatments.
+                    </p>
+
+                    <!-- Capabilities checklist -->
+                    <div class="about-capabilities">
+                        <div class="capability-item">
+                            <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Advanced Implantology</span>
+                        </div>
+                        <div class="capability-item">
+                            <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Digital Smile Design</span>
+                        </div>
+                        <div class="capability-item">
+                            <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Painless Root Canals</span>
+                        </div>
+                        <div class="capability-item">
+                            <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Pediatric Care</span>
+                        </div>
+                    </div>
+
+                    <!-- Centerpiece Quote -->
+                    <blockquote class="about-quote">
+                        <p class="quote-text split-text">"A healthy smile is the gateway to confidence."</p>
+                        <cite class="quote-author">Dr. Pragati Singh</cite>
+                    </blockquote>
+
+                    <!-- Clinic Amenities -->
+                    <div class="about-amenities">
+                        <h3 class="amenities-title">Clinic Amenities</h3>
+                        <div class="amenities-row">
+                            <div class="amenity-chip" data-stagger>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="16" cy="4" r="1.5" />
+                                    <path d="M11 12H9l-2-2H4.5" />
+                                    <path d="M9 12v3.5l3 3.5h3.5" />
+                                    <path d="M16 10H11" />
+                                    <path d="M19 14.5a4.5 4.5 0 11-9 0" />
+                                </svg>
+                                <span>Wheelchair Accessible</span>
+                            </div>
+                            <div class="amenity-chip" data-stagger>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M10 22V12h4v10" />
+                                    <path d="M12 2a3 3 0 100 6 3 3 0 000-6z" />
+                                    <path d="M17 12H7a2 2 0 00-2 2v6h2v-6h10v6h2v-6a2 2 0 00-2-2z" />
+                                </svg>
+                                <span>Restroom Available</span>
+                            </div>
+                            <div class="amenity-chip" data-stagger>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="9" r="6" />
+                                    <path d="M12 15v6M9 18h6" />
+                                </svg>
+                                <span>Women-Owned</span>
+                            </div>
+                            <div class="amenity-chip" data-stagger>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 002 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                </svg>
+                                <span>LGBTQ+ Friendly</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Meet the Team -->
+                    <div class="about-action">
+                        <a href="#contact" class="btn-ghost meet-team-btn magnetic-btn">
+                            <span>Meet the Team</span>
+                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Real Results Section -->
+        <section id="results" class="section results-section bg-light" aria-labelledby="results-heading">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="badge-wrapper">
+                        <span class="section-badge">Real Results</span>
+                    </div>
+                    <h2 id="results-heading" class="results-title">Real Smiles, <span class="accent-italic">Real Results</span></h2>
+                    <p class="results-subcopy">Results shown are illustrative of potential treatment outcomes. Real clinical cases will be uploaded soon.</p>
+                    <!-- TODO: Replace placeholder whitening_demo.webp and veneers_demo.webp with actual patient treatment photos -->
+                </div>
+
+                <!-- Case Switcher Tabs -->
+                <div class="results-tabs-container">
+                    <div class="results-tabs" role="tablist" aria-label="Dental Treatment Cases">
+                        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="results-slider-panel" id="tab-whitening" data-case="whitening">
+                            Teeth Whitening
+                        </button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="results-slider-panel" id="tab-veneers" data-case="veneers">
+                            Dental Veneers
+                        </button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="results-slider-panel" id="tab-alignment" data-case="alignment">
+                            Smile Alignment
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Slider Display Panel -->
+                <div id="results-slider-panel" role="tabpanel" aria-labelledby="tab-whitening" class="results-slider-panel">
+                    <div class="comparison-slider-container">
+                        <div class="comparison-slider" id="before-after-slider" style="--slider-pos: 50%;">
+                            <!-- Before Image (Bottom Layer) -->
+                            <div class="image-wrapper before-image-wrapper">
+                                <img id="slider-before-img" class="before-img-filter" src="Photos/whitening_demo.webp" alt="Before dental whitening treatment placeholder" draggable="false" width="1024" height="1024" loading="lazy">
+                                <span class="slider-badge before-badge">Before</span>
+                            </div>
+                            
+                            <!-- After Image (Top Layer, Clipped) -->
+                            <div class="image-wrapper after-image-wrapper">
+                                <img id="slider-after-img" src="Photos/whitening_demo.webp" alt="After dental whitening treatment placeholder" draggable="false" width="1024" height="1024" loading="lazy">
+                                <span class="slider-badge after-badge">After</span>
+                            </div>
+
+                            <!-- Draggable Slider Handle -->
+                            <div class="slider-handle" id="slider-handle" role="slider" aria-label="Before and after comparison slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+                                <div class="slider-handle-line"></div>
+                                <button class="slider-handle-button" aria-hidden="true" tabindex="-1">
+                                    <svg class="handle-arrow handle-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                    <svg class="handle-arrow handle-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                                <div class="slider-handle-line"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Testimonials Section -->
-        <section id="testimonials" class="section">
+        <section id="testimonials" class="section testimonials-section bg-alt" aria-labelledby="testimonials-heading">
+            <div class="glass-blob blob-1"></div>
+            <div class="glass-blob blob-2"></div>
             <div class="container">
                 <div class="section-header">
-                    <h2>Patient Stories</h2>
-                    <p>Real experiences from our valued patients.</p>
+                    <div class="badge-wrapper">
+                        <span class="section-badge">Testimonials</span>
+                    </div>
+                    <h2 id="testimonials-heading">What our patients <span class="accent-italic">say</span></h2>
+                    <p>Discover how we've helped hundreds of patients achieve perfect smiles and oral health.</p>
                 </div>
-                <div class="testimonials-slider-container">
-                    <div class="testimonials-track">
-                        <!-- Review 1 -->
-                        <div class="testimonial-card">
-                            <div class="t-stars">★★★★★</div>
-                            <p class="t-text">"I was very nervous about my root extraction, but Dr. Pragati Singh made
-                                the entire process so easy and stress-free. She is incredibly skilled and ensured the
-                                procedure was smooth and completely pain-free. Dr. Pragati explained everything clearly,
-                                which really helped calm my anxiety. If you're looking for a gentle and professional
-                                dentist, I highly recommend her!"</p>
-                            <div class="t-author">
-                                <div class="t-avatar">RS</div>
-                                <div>
-                                    <h4>Richa Singh</h4>
-                                    <span>Patient</span>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Review 2 -->
-                        <div class="testimonial-card">
-                            <div class="t-stars">★★★★★</div>
-                            <p class="t-text">"I’m really happy with my dental treatment. Ma’am explained everything
-                                clearly and made sure I was comfortable throughout the procedure. I went there for
-                                scaling and cleaning, the results were great. Highly recommend!! I will prefer to visit
-                                her only if I face any dental issue in future."</p>
-                            <div class="t-author">
-                                <div class="t-avatar">YM</div>
-                                <div>
-                                    <h4>Yash Mahishwal</h4>
-                                    <span>Patient</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Review 3 -->
-                        <div class="testimonial-card">
-                            <div class="t-stars">★★★★★</div>
-                            <p class="t-text">"I had awesome experience from Vital Dental Care. Dr. Pragati is very
-                                humble, polite & knowledgeable. I got totally painless RCT. Clinic is very hygienic &
-                                fully equipped… highly recommend!"</p>
-                            <div class="t-author">
-                                <div class="t-avatar">NS</div>
-                                <div>
-                                    <h4>Neha Singh</h4>
-                                    <span>Patient</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Review 4 -->
-                        <div class="testimonial-card">
-                            <div class="t-stars">★★★★★</div>
-                            <p class="t-text">"I had this extreme fear of going to dentists but came to Vital Dental
-                                Care for my excruciating tooth pain. Dr. Pragati is such a gem as she explained
-                                everything to me clearly and made me feel so comfortable. In two visits my tooth pain is
-                                gone and so is my phobia. Can't thank her enough."</p>
-                            <div class="t-author">
-                                <div class="t-avatar">TS</div>
-                                <div>
-                                    <h4>Tej Suryawanshi</h4>
-                                    <span>Patient</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Review 5 -->
-                        <div class="testimonial-card">
-                            <div class="t-stars">★★★★★</div>
-                            <p class="t-text">"I had a fantastic experience at Vital Dental! The staff was welcoming and
-                                professional. The clinic is clean and well-organized. Dr. Pragati was thorough,
-                                explaining everything clearly and ensuring I felt no discomfort. I was in and out
-                                quickly. Highly recommend this clinic!"</p>
-                            <div class="t-author">
-                                <div class="t-avatar">LC</div>
-                                <div>
-                                    <h4>Lalit Chauhan</h4>
-                                    <span>Patient</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Review 6 -->
-                        <div class="testimonial-card">
-                            <div class="t-stars">★★★★★</div>
-                            <p class="t-text">"I had very informative & knowledgeable consultation from Vital Dental
-                                Care. Dr. Pragati explained everything in detail regarding my RCT & Bridge. Her clinic
-                                is very hygienic… I am very satisfied with my treatment!"</p>
-                            <div class="t-author">
-                                <div class="t-avatar">NS</div>
-                                <div>
-                                    <h4>Neelesh Singh</h4>
-                                    <span>Patient</span>
-                                </div>
-                            </div>
-                        </div>
+                <div class="testimonials-scroller" role="region" aria-label="Scrolling Testimonials">
+                    <!-- Column 1 -->
+                    <div class="testimonials-column" style="--duration: 25s">
+                        <ul class="testimonials-track">
+                            <!-- Set 1 -->
+                            <li class="testimonial-card" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(14,165,233,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I was very nervous about my root extraction, but Dr. Pragati Singh made the entire process so easy and stress-free. She is incredibly skilled and ensured the procedure was completely pain-free."</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150" alt="Richa Singh" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Richa Singh</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(139,92,246,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I had this extreme fear of going to dentists but came to Vital Dental Care for my excruciating tooth pain. Dr. Pragati explained everything to me clearly and made me feel so comfortable."</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150&h=150" alt="Tej Suryawanshi" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Tej Suryawanshi</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(244,63,94,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"The clinic has the most advanced equipment in Dehradun. I went for a dental implant and the 3D scanning made the whole process incredibly precise and reassuring. Best implant center!"</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150" alt="Karan Sharma" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Karan Sharma</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <!-- Set 2 -->
+                            <li class="testimonial-card" aria-hidden="true" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(14,165,233,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I was very nervous about my root extraction, but Dr. Pragati Singh made the entire process so easy and stress-free. She is incredibly skilled and ensured the procedure was completely pain-free."</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150" alt="Richa Singh" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Richa Singh</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" aria-hidden="true" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(139,92,246,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I had this extreme fear of going to dentists but came to Vital Dental Care for my excruciating tooth pain. Dr. Pragati explained everything to me clearly and made me feel so comfortable."</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150&h=150" alt="Tej Suryawanshi" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Tej Suryawanshi</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" aria-hidden="true" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(244,63,94,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"The clinic has the most advanced equipment in Dehradun. I went for a dental implant and the 3D scanning made the whole process incredibly precise and reassuring. Best implant center!"</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150" alt="Karan Sharma" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Karan Sharma</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                        </ul>
                     </div>
 
-                    <!-- Navigation Buttons -->
-                    <button class="slider-btn prev-btn" aria-label="Previous Review">❮</button>
-                    <button class="slider-btn next-btn" aria-label="Next Review">❯</button>
+                    <!-- Column 2 -->
+                    <div class="testimonials-column hidden-mobile" style="--duration: 35s">
+                        <ul class="testimonials-track">
+                            <!-- Set 1 -->
+                            <li class="testimonial-card" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(16,185,129,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I’m really happy with my dental treatment. Ma’am explained everything clearly and made sure I was comfortable throughout the procedure. I went there for scaling and cleaning, results were great."</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150" alt="Yash Mahishwal" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Yash Mahishwal</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(245,158,11,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I had a fantastic experience at Vital Dental! The staff was welcoming and professional. Dr. Pragati was thorough, explaining everything clearly and ensuring I felt no discomfort."</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150&h=150" alt="Lalit Chauhan" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Lalit Chauhan</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(99,102,241,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"Dr. Pragati takes her time to explain every single step. For someone who is terrified of needles, the local anesthesia was completely painless. Highly recommend for cosmetic dentistry!"</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=150&h=150" alt="Priya Verma" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Priya Verma</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <!-- Set 2 -->
+                            <li class="testimonial-card" aria-hidden="true" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(16,185,129,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I’m really happy with my dental treatment. Ma’am explained everything clearly and made sure I was comfortable throughout the procedure. I went there for scaling and cleaning, results were great."</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150" alt="Yash Mahishwal" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Yash Mahishwal</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" aria-hidden="true" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(245,158,11,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I had a fantastic experience at Vital Dental! The staff was welcoming and professional. Dr. Pragati was thorough, explaining everything clearly and ensuring I felt no discomfort."</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150&h=150" alt="Lalit Chauhan" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Lalit Chauhan</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" aria-hidden="true" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(99,102,241,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"Dr. Pragati takes her time to explain every single step. For someone who is terrified of needles, the local anesthesia was completely painless. Highly recommend for cosmetic dentistry!"</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=150&h=150" alt="Priya Verma" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Priya Verma</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div class="testimonials-column hidden-tablet" style="--duration: 29s">
+                        <ul class="testimonials-track">
+                            <!-- Set 1 -->
+                            <li class="testimonial-card" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(236,72,153,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I had awesome experience from Vital Dental Care. Dr. Pragati is very humble, polite & knowledgeable. I got totally painless RCT. Clinic is very hygienic & fully equipped!"</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150&h=150" alt="Neha Singh" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Neha Singh</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(20,184,166,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I had very informative & knowledgeable consultation from Vital Dental Care. Dr. Pragati explained everything in detail regarding my RCT & Bridge. I am very satisfied with my treatment!"</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150&h=150" alt="Neelesh Singh" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Neelesh Singh</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(132,204,22,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"Got my Invisalign braces from here. The clear aligners are so comfortable and the progress tracking is fantastic. Best orthodontics experience I've ever had."</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150&h=150" alt="Rohit Joshi" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Rohit Joshi</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <!-- Set 2 -->
+                            <li class="testimonial-card" aria-hidden="true" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(236,72,153,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I had awesome experience from Vital Dental Care. Dr. Pragati is very humble, polite & knowledgeable. I got totally painless RCT. Clinic is very hygienic & fully equipped!"</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150&h=150" alt="Neha Singh" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Neha Singh</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" aria-hidden="true" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(20,184,166,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"I had very informative & knowledgeable consultation from Vital Dental Care. Dr. Pragati explained everything in detail regarding my RCT & Bridge. I am very satisfied with my treatment!"</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150&h=150" alt="Neelesh Singh" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Neelesh Singh</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                            <li class="testimonial-card" aria-hidden="true" style="background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(132,204,22,0.15));">
+                                <blockquote class="t-blockquote">
+                                    <div class="t-stars" style="color: var(--accent); margin-bottom: 10px; font-size: 1.2rem; letter-spacing: 2px;">★★★★★</div>
+                                    <p class="t-text">"Got my Invisalign braces from here. The clear aligners are so comfortable and the progress tracking is fantastic. Best orthodontics experience I've ever had."</p>
+                                    <footer class="t-author">
+                                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=150&h=150" alt="Rohit Joshi" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 2px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" width="150" height="150" loading="lazy">
+                                        <div>
+                                            <h4>Rohit Joshi</h4>
+                                            <span>Patient</span>
+                                        </div>
+                                    </footer>
+                                </blockquote>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container contact-container">
-                <div class="contact-info">
-                    <h2>Visit Us</h2>
-                    <p>Experience the difference at Vital Dental.</p>
-                    <div class="contact-details">
-                        <p><strong>Address:</strong><br>Haripuram Colony, 2, GMS Rd, Engineers Enclave, Kanwali,
-                            Dehradun, Uttarakhand 248001</p>
-                        <p><strong>Phone:</strong><br>+91 92868 98353</p>
-                        <p><strong>Hours:</strong><br>Mon-Sun: 10:00 AM - 2:00 PM, 4:00 PM - 8:00 PM<br>Saturday: Closed
-                        </p>
+        <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="badge-wrapper">
+                        <span class="section-badge">Visit Us</span>
                     </div>
+                    <h2 id="contact-heading">Visit Our <span class="accent-italic">Clinic</span></h2>
+                    <p>Experience world-class dental care in the heart of Dehradun.</p>
                 </div>
-                <div class="contact-map">
-                    <iframe
-                        src="https://maps.google.com/maps?q=30.307907664188946,78.00608339440127&hl=en&z=14&output=embed"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+
+                <div class="contact-grid">
+                    <!-- Left Column: Info & Booking Form -->
+                    <div class="contact-left" data-reveal>
+                        <!-- Info Card -->
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <div class="status-pill-wrapper">
+                                    <div id="open-status-pill" class="status-pill closed">
+                                        <span class="status-dot"></span>Checking status...
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-details">
+                                <!-- Address -->
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                            <circle cx="12" cy="10" r="3" />
+                                        </svg>
+                                    </div>
+                                    <div class="info-content">
+                                        <h3>Location</h3>
+                                        <p><a href="https://maps.google.com/maps?q=30.307907664188946,78.00608339440127&hl=en&z=14" target="_blank" rel="noopener">Haripuram Colony, 2, GMS Rd, Engineers Enclave, Kanwali, Dehradun, Uttarakhand 248001</a></p>
+                                    </div>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                                        </svg>
+                                    </div>
+                                    <div class="info-content">
+                                        <h3>Phone Number</h3>
+                                        <p><a href="tel:+919286898353">+91 92868 98353</a></p>
+                                    </div>
+                                </div>
+
+                                <!-- Hours Table -->
+                                <div class="info-item align-start">
+                                    <div class="info-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <polyline points="12 6 12 12 16 14" />
+                                        </svg>
+                                    </div>
+                                    <div class="info-content w-100">
+                                        <h3>Hours of Operation</h3>
+                                        <table class="hours-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Mon - Fri</td>
+                                                    <td>10:00 AM - 2:00 PM<br>4:00 PM - 8:00 PM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td class="closed-day">Closed</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sunday</td>
+                                                    <td>10:00 AM - 2:00 PM<br>4:00 PM - 8:00 PM</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-actions">
+                                <a href="tel:+919286898353" class="btn btn-ghost contact-btn magnetic-btn">
+                                    <span>Call Now</span>
+                                </a>
+                                <a href="https://wa.me/919286898353" target="_blank" rel="noopener" class="btn btn-primary contact-btn magnetic-btn">
+                                    <span>WhatsApp Us</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Booking Form Card -->
+                        <div class="booking-card">
+                            <h3>Request an <span class="accent-italic">Appointment</span></h3>
+                            <p class="booking-sub">No pre-payment required. We will confirm your slot via WhatsApp.</p>
+                            
+                            <form id="appointment-form" class="booking-form" novalidate>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" id="booking-name" name="name" placeholder=" " required autocomplete="name">
+                                        <label for="booking-name">Your Full Name</label>
+                                        <div class="form-group-bar"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" id="booking-phone" name="phone" placeholder=" " required autocomplete="tel">
+                                        <label for="booking-phone">Phone Number</label>
+                                        <div class="form-group-bar"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <select id="booking-service" name="service" required>
+                                            <option value="" disabled selected hidden></option>
+                                            <option value="Cosmetic Dentistry">Cosmetic Dentistry</option>
+                                            <option value="Dental Implants">Dental Implants</option>
+                                            <option value="General Care / Root Canal">General Care / Root Canal</option>
+                                            <option value="Orthodontics & Braces">Orthodontics & Braces</option>
+                                            <option value="Pediatric Dentistry">Pediatric Dentistry</option>
+                                            <option value="Teeth Cleaning & Gum Care">Teeth Cleaning & Gum Care</option>
+                                            <option value="Oral Surgery & Extractions">Oral Surgery & Extractions</option>
+                                            <option value="Crowns, Bridges & Dentures">Crowns, Bridges & Dentures</option>
+                                        </select>
+                                        <label for="booking-service">Select Service</label>
+                                        <div class="form-group-bar"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="datetime-local" id="booking-time" name="datetime" required>
+                                        <label for="booking-time" class="datetime-label">Preferred Date & Time</label>
+                                        <div class="form-group-bar"></div>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary submit-btn">
+                                    <span>Request Via WhatsApp</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Customized Map Frame -->
+                    <div class="contact-right" data-reveal>
+                        <div class="contact-map">
+                            <iframe
+                                src="https://maps.google.com/maps?q=30.307907664188946,78.00608339440127&hl=en&z=15&output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <div class="map-overlay" aria-hidden="true"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -358,43 +1227,106 @@
         <!-- Latest Articles Section -->
         <section id="blog" class="section bg-alt">
             <div class="container">
-                <div class="section-header">
-                    <h2>Latest Insights</h2>
-                    <p>Expert advice from Dehradun's top dental team.</p>
+                <div class="blog-header-wrapper">
+                    <div class="section-header-left">
+                        <span class="section-eyebrow">From the Blog</span>
+                        <h2 style="margin-bottom: 0;">Latest <span class="accent-italic">Insights</span></h2>
+                    </div>
+                    <div class="section-header-right">
+                        <a href="blog.html" class="btn-ghost view-all-blog-btn magnetic-btn">
+                            <span>View All Articles</span>
+                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="blog-preview-grid">
-                    <a href="articles/wisdom-tooth-extraction.html" class="blog-card-mini">
-                        <img src="Photos/blog_wisdom_tooth.png" alt="Painless Wisdom Tooth Extraction" class="mini-img"
-                            loading="lazy">
-                        <div class="mini-content">
-                            <h4>Painless Wisdom Tooth Extraction</h4>
-                            <span class="read-link">Read More &rarr;</span>
+                
+                <div class="blog-grid">
+                    <!-- Card 1 -->
+                    <a href="articles/wisdom-tooth-extraction.html" class="blog-card">
+                        <div class="blog-card-img-frame">
+                            <img src="Photos/blog_wisdom_tooth.webp" alt="Painless Wisdom Tooth Extraction" width="1024" height="1024" loading="lazy">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span class="blog-category-pill">Oral Surgery</span>
+                                <span class="blog-read-time">5 min read</span>
+                            </div>
+                            <h3 class="blog-card-title">Painless Wisdom Tooth Extraction</h3>
+                            <span class="blog-read-link">
+                                <span>Read</span>
+                                <svg class="read-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
                         </div>
                     </a>
-                    <a href="articles/teeth-whitening-guide.html" class="blog-card-mini">
-                        <img src="Photos/blog_teeth_whitening.png" alt="Teeth Whitening" class="mini-img" loading="lazy">
-                        <div class="mini-content">
-                            <h4>Professional Teeth Whitening vs Home Kits</h4>
-                            <span class="read-link">Read More &rarr;</span>
+                    
+                    <!-- Card 2 -->
+                    <a href="articles/teeth-whitening-guide.html" class="blog-card">
+                        <div class="blog-card-img-frame">
+                            <img src="Photos/blog_teeth_whitening.webp" alt="Teeth Whitening" width="1024" height="1024" loading="lazy">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span class="blog-category-pill">Cosmetic</span>
+                                <span class="blog-read-time">4 min read</span>
+                            </div>
+                            <h3 class="blog-card-title">Professional Teeth Whitening vs Home Kits</h3>
+                            <span class="blog-read-link">
+                                <span>Read</span>
+                                <svg class="read-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
                         </div>
                     </a>
-                    <a href="articles/dental-crowns-and-bridges.html" class="blog-card-mini">
-                        <img src="Photos/blog_crowns.png" alt="Dental Crowns and Bridges" class="mini-img" loading="lazy">
-                        <div class="mini-content">
-                            <h4>Dental Crowns and Bridges Guide</h4>
-                            <span class="read-link">Read More &rarr;</span>
+                    
+                    <!-- Card 3 -->
+                    <a href="articles/dental-crowns-and-bridges.html" class="blog-card">
+                        <div class="blog-card-img-frame">
+                            <img src="Photos/blog_crowns.webp" alt="Dental Crowns and Bridges" width="1024" height="1024" loading="lazy">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span class="blog-category-pill">Restorative</span>
+                                <span class="blog-read-time">6 min read</span>
+                            </div>
+                            <h3 class="blog-card-title">Dental Crowns and Bridges Guide</h3>
+                            <span class="blog-read-link">
+                                <span>Read</span>
+                                <svg class="read-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
                         </div>
                     </a>
-                    <a href="articles/clear-aligners-vs-braces.html" class="blog-card-mini">
-                        <img src="Photos/blog_aligners.png" alt="Clear Aligners vs Braces" class="mini-img" loading="lazy">
-                        <div class="mini-content">
-                            <h4>Clear Aligners vs Traditional Braces</h4>
-                            <span class="read-link">Read More &rarr;</span>
+                    
+                    <!-- Card 4 -->
+                    <a href="articles/clear-aligners-vs-braces.html" class="blog-card">
+                        <div class="blog-card-img-frame">
+                            <img src="Photos/blog_aligners.webp" alt="Clear Aligners vs Braces" width="1024" height="1024" loading="lazy">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-meta">
+                                <span class="blog-category-pill">Orthodontics</span>
+                                <span class="blog-read-time">5 min read</span>
+                            </div>
+                            <h3 class="blog-card-title">Clear Aligners vs Traditional Braces</h3>
+                            <span class="blog-read-link">
+                                <span>Read</span>
+                                <svg class="read-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </span>
                         </div>
                     </a>
-                </div>
-                <div style="text-align: center; margin-top: 2rem;">
-                    <a href="blog.html" class="btn btn-outline">View All Articles</a>
                 </div>
             </div>
         </section>
@@ -402,51 +1334,156 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <h3>Vital<span>Dental</span></h3>
-                <p>Care & Implant Center</p>
+    <!-- Parallax content wrapper -->
+    <div class="footer-content-wrap">
+        <!-- CTA Band -->
+        <div class="footer-cta-band">
+            <div class="container footer-cta-container">
+                <h2 class="footer-cta-title">Ready for your best smile?</h2>
+                <div class="footer-cta-actions">
+                    <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment." 
+                       class="btn btn-primary footer-cta-btn" target="_blank">
+                       Book your visit
+                    </a>
+                    
+                    <!-- Rotating Circular Badge (Reused from hero, styled for dark background) -->
+                    <div class="footer-cta-badge-wrapper">
+                        <div class="circular-badge footer-badge">
+                            <svg viewBox="0 0 100 100" class="badge-svg">
+                                <path id="footerCirclePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                                <text>
+                                    <textPath href="#footerCirclePath" startOffset="0%">
+                                        BOOK • YOUR • VISIT • BOOK • YOUR • VISIT •
+                                    </textPath>
+                                </text>
+                            </svg>
+                            <div class="badge-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <polyline points="19 12 12 19 5 12"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="footer-links">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        </div>
+
+        <!-- Main Footer Columns -->
+        <div class="container footer-main-grid">
+            <!-- Column 1: Brand Info -->
+            <div class="footer-column brand-col">
+                <a href="index.html" class="footer-logo">Vital<span>Dental</span></a>
+                <p class="footer-tagline">Care & Implant Center</p>
+                <p class="footer-address">
+                    Haripuram Colony, 2, GMS Rd,<br>
+                    Engineers Enclave, Kanwali,<br>
+                    Dehradun, Uttarakhand 248001
+                </p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-column links-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#testimonials">Reviews</a></li>
+                    <li><a href="index.html#blog">Insights</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-contact">
-                <h4>Contact</h4>
-                <p>Haripuram Colony, 2, GMS Rd,<br>Kanwali, Dehradun, 248001</p>
-                <p>+91 92868 98353</p>
+
+            <!-- Column 3: Services List -->
+            <div class="footer-column services-col">
+                <h4 class="footer-heading">Services</h4>
+                <ul class="footer-links-list">
+                    <li><a href="services/root-canal-treatment.html">Root Canal Treatment</a></li>
+                    <li><a href="services/dental-implants.html">Dental Implants</a></li>
+                    <li><a href="services/orthodontics-and-braces.html">Orthodontics &amp; Braces</a></li>
+                    <li><a href="services/pediatric-dentistry.html">Pediatric Dentistry</a></li>
+                    <li><a href="services/oral-surgery-extractions.html">Oral Surgery &amp; Extractions</a></li>
+                    <li><a href="services/dental-crowns-dentures.html">Crowns &amp; Dentures</a></li>
+                    <li><a href="services/cosmetic-fillings.html">Cosmetic Dentistry</a></li>
+                    <li><a href="services/teeth-cleaning-gum-care.html">Gum Care &amp; Cleaning</a></li>
+                </ul>
             </div>
-            <div class="footer-social">
-                <h4>Follow Us</h4>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/doonvitaldental?igsh=MTlpZHZhZmkza3Njeg==" target="_blank"
-                        class="social-link" aria-label="Instagram">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+            <!-- Column 4: Hours & Contact -->
+            <div class="footer-column contact-col">
+                <h4 class="footer-heading">Hours &amp; Contact</h4>
+                <p class="footer-hours">
+                    <strong>Mon - Fri, Sun:</strong><br>
+                    10:00 AM - 2:00 PM<br>
+                    4:00 PM - 8:00 PM<br>
+                    <strong>Saturday:</strong> <span class="closed-tag">Closed</span>
+                </p>
+                <p class="footer-phone">
+                    <a href="tel:+919286898353">+91 92868 98353</a>
+                </p>
+                <div class="footer-socials">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/doonvitaldental?igsh=MTlpZHZhZmkza3Njeg==" target="_blank" aria-label="Instagram" class="social-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                         </svg>
                     </a>
+                    <!-- Google Search / Maps -->
+                    <a href="https://maps.google.com/maps?q=30.307907664188946,78.00608339440127&hl=en&z=14" target="_blank" aria-label="Google" class="social-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="currentColor" stroke="none"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="currentColor" stroke="none"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="currentColor" stroke="none"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </a>
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/919286898353" target="_blank" aria-label="WhatsApp" class="social-icon-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Vital Dental Care and Implant center Dehradun. All rights reserved.</p>
+        </div>
+
+        <!-- GIANT Outlined Wordmark Text-Texture -->
+        <div class="footer-giant-wordmark">
+            VITAL DENTAL
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom-bar">
+            <div class="container footer-bottom-container">
+                <p class="copyright">&copy; 2026 Vital Dental Care and Implant Center. All rights reserved.</p>
+                <p class="credit">Made with ♥ in Dehradun</p>
+                <a href="#top" class="back-to-top" aria-label="Scroll to top">
+                    <span class="arrow-up">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="19" x2="12" y2="5"></line>
+                            <polyline points="5 12 12 5 19 12"></polyline>
+                        </svg>
+                    </span>
+                    <span class="btn-text">Back to Top</span>
+                </a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
         class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <img src="Photos/whatsapp_logo.png" alt="WhatsApp" class="whatsapp-icon"
-            style="width: 100%; height: 100%; border-radius: 50%;">
+        <img src="Photos/whatsapp_logo.webp" alt="WhatsApp" class="whatsapp-icon"
+            style="width: 100%; height: 100%; border-radius: 50%;" width="662" height="664" loading="lazy">
     </a>
 
-    <script src="scripts/app.js"></script>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" aria-hidden="true">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"><span class="cursor-label"></span></div>
+    </div>
 </body>
 
 </html>
