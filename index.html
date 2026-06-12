@@ -18,20 +18,23 @@
     <!-- Fonts preconnect and preload -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Herr+Von+Muellerhoff&family=Inter:wght@400;500;600&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Herr+Von+Muellerhoff&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Herr+Von+Muellerhoff&family=Inter:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Herr+Von+Muellerhoff&family=Inter:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css?v=4">
+    <link rel="stylesheet" href="styles/vdc-hero.css?v=2">
 
     <!-- Scripts (Deferred to prevent render-blocking) -->
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie_light.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
     <script src="scripts/app.js" defer></script>
     <script src="lottie/toothclean.js" defer></script>
     <script src="scripts/animations.js" defer></script>
+    <script src="scripts/vdc-hero.js?v=2" defer></script>
 
     <!-- Local SEO Dentist Structured Data -->
     <script type="application/ld+json">
@@ -171,71 +174,111 @@
     </div>
 
     <main id="main-content">
-        <!-- Hero Section -->
-        <section class="hero" id="hero">
-            <div class="hero-noise"></div>
-            <div class="container">
-                <div class="hero-split">
-                    <!-- Left: Editorial Content -->
-                    <div class="hero-left">
-                        <div class="hero-eyebrow">Dental Care &amp; Implant Center · Dehradun</div>
-                        <h1 class="hero-title">
-                            <div class="line-mask"><span class="h1-line">Vital Dental <span class="h1-underline-container"><em class="accent-italic">Care</em><span class="draw-underline"></span></span></span></div>
-                            <div class="line-mask"><span class="h1-line">&amp; Implant Center</span></div>
-                        </h1>
-                        <p class="hero-subcopy">
-                            Experience world-class dental care in a premium, welcoming environment. We combine state-of-the-art technology with clinical warmth to craft smiles that last.
-                        </p>
-                        <div class="hero-actions">
-                            <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20a%20consultation."
-                                class="btn btn-primary magnetic-btn" target="_blank"><span>Book Consultation</span></a>
-                            <a href="#services" class="btn-ghost magnetic-btn">
-                                <span>Explore Services</span>
-                                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                    <polyline points="12 5 19 12 12 19"></polyline>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="hero-trust-row">
-                            <div class="trust-stars">★★★★★</div>
-                            <div class="trust-text">5.0 · 200+ Google reviews · 10+ years experience</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Right: Tall Arch Image -->
-                    <div class="hero-right">
-                        <div class="hero-image-container">
-                            <div class="hero-image-wrapper">
-                                <img src="Photos/hero.webp" alt="Vital Dental Care Clinic Dehradun" width="791" height="1020" fetchpriority="high">
-                            </div>
-                            
-                            <!-- Rotating Circular Badge -->
-                            <div class="circular-badge">
-                                <svg viewBox="0 0 100 100" class="badge-svg">
-                                    <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
-                                    <text>
-                                        <textPath href="#circlePath" startOffset="0%">
-                                            BOOK • YOUR • VISIT • BOOK • YOUR • VISIT •
-                                        </textPath>
-                                    </text>
-                                </svg>
-                                <div class="badge-arrow">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                                        <polyline points="19 12 12 19 5 12"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            
-                            <!-- Frosted-glass pill card -->
-                            <div class="hero-pill-card">
-                                <span class="pill-dot"></span>
-                                Painless RCT &amp; Implants
-                            </div>
-                        </div>
-                    </div>
+        <!-- Cinematic Hero Section -->
+        <section class="vdc-hero" id="hero" aria-label="Vital Dental Care — Every smile tells a story">
+            <div class="vdc-lattice" aria-hidden="true"></div>
+            <div class="vdc-ghost" aria-hidden="true">Vital</div>
+            <div class="vdc-arcs" aria-hidden="true">
+                <svg viewBox="0 0 100 100" fill="none">
+                    <circle cx="50" cy="50" r="48" stroke="rgba(11,91,83,.10)" stroke-width=".15" stroke-dasharray="1.2 2.2"/>
+                    <circle cx="50" cy="50" r="40" stroke="rgba(11,91,83,.08)" stroke-width=".15"/>
+                    <circle cx="50" cy="50" r="31" stroke="rgba(11,91,83,.07)" stroke-width=".15" stroke-dasharray="6 4"/>
+                    <circle cx="50" cy="50" r="22" stroke="rgba(11,91,83,.06)" stroke-width=".15"/>
+                    <path d="M 50 2 A 48 48 0 0 1 98 50" stroke="rgba(232,176,75,.45)" stroke-width=".3" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <canvas id="vdc-scene" aria-hidden="true"></canvas>
+            <div class="vdc-shadow" aria-hidden="true"></div>
+            <div class="vdc-motes" aria-hidden="true"></div>
+            <div class="vdc-dragzone" data-cursor="Drag" aria-hidden="true"></div>
+            <div class="vdc-frame" aria-hidden="true">
+                <i class="ft"></i><i class="fb"></i><i class="fl"></i><i class="fr"></i>
+                <b class="c1"></b><b class="c2"></b><b class="c3"></b><b class="c4"></b>
+            </div>
+
+            <!-- top-left meta strip -->
+            <div class="vdc-meta" aria-hidden="true">
+                <span class="m m-geo">Doon Valley<b>30.31° N · 78.01° E</b></span>
+                <span class="sep"></span>
+                <span class="m"><span class="live">Dehradun</span><b class="vdc-clock">—</b></span>
+                <span class="sep"></span>
+                <span class="m m-doc">Lead Clinician<b>Dr. Pragati Singh</b></span>
+            </div>
+
+            <!-- progress rail -->
+            <nav class="vdc-rail" aria-label="Hero story progress">
+                <span class="vdc-rail-line" aria-hidden="true"><i></i></span>
+                <button class="vdc-rail-node on" data-go="0" type="button"><b></b><span>The Story</span></button>
+                <button class="vdc-rail-node" data-go="0.40" type="button"><b></b><span>The Implant</span></button>
+                <button class="vdc-rail-node" data-go="0.86" type="button"><b></b><span>Begin</span></button>
+            </nav>
+
+            <!-- three acts -->
+            <div class="vdc-copy">
+                <div class="vdc-act vdc-act-1 live">
+                    <p class="vdc-eyebrow">Dental Care &amp; Implant Center — Dehradun</p>
+                    <h1 class="vdc-h1" aria-label="Every smile tells a story.">
+                        <span class="vdc-hline" aria-hidden="true"><span class="vdc-hin">Every smile</span></span>
+                        <span class="vdc-hline" aria-hidden="true"><span class="vdc-hin">tells a <em>story.</em></span></span>
+                    </h1>
+                    <p class="vdc-sub">
+                        Quiet, <span class="vdc-cycle">precise</span> dentistry in the heart of
+                        Dehradun. Scroll — and watch how we rebuild what nature began.
+                    </p>
                 </div>
+
+                <div class="vdc-act vdc-act-2" aria-hidden="true">
+                    <p class="vdc-eyebrow">The Signature — Implantology</p>
+                    <div class="vdc-h1">
+                        <span class="vdc-hline"><span class="vdc-hin">Precision,</span></span>
+                        <span class="vdc-hline"><span class="vdc-hin"><em>measured in microns.</em></span></span>
+                    </div>
+                    <p class="vdc-sub">
+                        A Grade-4 titanium root, engineered to disappear into your anatomy —
+                        and to stay for a lifetime.
+                    </p>
+                </div>
+
+                <div class="vdc-act vdc-act-3" aria-hidden="true">
+                    <p class="vdc-eyebrow">Begin</p>
+                    <div class="vdc-h1">
+                        <span class="vdc-hline"><span class="vdc-hin">Your story</span></span>
+                        <span class="vdc-hline"><span class="vdc-hin"><em>continues here.</em></span></span>
+                    </div>
+                    <div class="vdc-cta-row">
+                        <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20a%20consultation."
+                            class="btn btn-primary magnetic-btn" target="_blank"><span>Book Consultation</span></a>
+                        <a href="#services" class="btn-ghost magnetic-btn">
+                            <span>Explore Services</span>
+                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="vdc-trust"><span class="stars">★★★★★</span> 5.0 · 200+ Google reviews · 10+ years</div>
+                    <p class="vdc-addr"><b>Vital Dental Care &amp; Implant Center</b><br>Haripuram Colony, GMS Road · Dehradun, Uttarakhand</p>
+                </div>
+            </div>
+
+            <!-- implant annotations (drawn in during act 2) -->
+            <div class="vdc-anno flip vdc-anno-1" aria-hidden="true">
+                <span class="lab"><b>Grade-4 titanium</b><span>Biocompatible core</span></span>
+                <span class="ln"></span>
+            </div>
+            <div class="vdc-anno vdc-anno-2" aria-hidden="true">
+                <span class="ln"></span>
+                <span class="lab"><b>0.4&nbsp;mm thread pitch</b><span>Self-anchoring precision</span></span>
+            </div>
+            <div class="vdc-anno vdc-anno-3" aria-hidden="true">
+                <span class="ln"></span>
+                <span class="lab"><b>10+ years expertise</b><span>Implantology · smile design</span></span>
+            </div>
+
+            <!-- footer strip -->
+            <div class="vdc-foot">
+                <div class="vdc-doc">Painless RCT &amp; Implants — <b>by Dr. Pragati Singh</b></div>
+                <div class="vdc-scroll-cue"><span class="line" aria-hidden="true"></span><span>Scroll</span></div>
             </div>
         </section>
 
