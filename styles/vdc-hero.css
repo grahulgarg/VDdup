@@ -244,7 +244,8 @@
   .vdc-act{ top:auto; bottom:84px; }
   .vdc-h1{ font-size:clamp(42px,10.5vw,64px); }
   .vdc-sub{ font-size:14px; max-width:none; }
-  .vdc-anno,.vdc-rail,.vdc-shadow,.vdc-ghost,.vdc-meta .sep,.vdc-meta .m-geo,.vdc-meta .m-doc{ display:none; }
+  .vdc-anno,.vdc-rail,.vdc-shadow,.vdc-ghost,.vdc-meta .sep,
+  .vdc-meta .m-clock,.vdc-meta .m-doc{ display:none; }   /* keep the city on small screens */
   .vdc-meta{ top:88px; }
   .vdc-foot .vdc-doc{ display:none; }
   .vdc-cta-row{ margin-top:30px; }
@@ -254,4 +255,83 @@
 @media (prefers-reduced-motion:reduce){
   .vdc-arcs svg,.vdc-motes i,.vdc-scroll-cue .line::after,.vdc-meta .live::before{ animation:none !important; }
   .vdc-motes{ display:none; }
+}
+
+/* ============================================================
+   HERO IDENTITY — clinic name, city, doctor, clinic photos
+   ============================================================ */
+.vdc-eyebrow{ margin-bottom:18px; }
+
+.vdc-wordmark{
+  margin:0 0 22px; display:flex; align-items:baseline; flex-wrap:wrap; gap:.4em;
+  font-family:var(--vdc-sans); font-weight:700;
+  font-size:clamp(13px,1.05vw,15.5px); letter-spacing:.2em; text-transform:uppercase;
+  color:var(--ink); line-height:1.35;
+}
+.vdc-wordmark em{
+  font-family:var(--vdc-serif); font-style:italic; font-weight:600;
+  font-size:1.35em; letter-spacing:.02em; text-transform:none; color:var(--brand);
+}
+
+/* clinic photo strip + doctor credit */
+.vdc-idcard{
+  display:flex; align-items:center; gap:clamp(14px,1.5vw,22px);
+  margin-top:34px; flex-wrap:wrap;
+}
+.vdc-thumbs{
+  display:flex; align-items:center; gap:8px; text-decoration:none;
+  padding:6px; margin:-6px; border-radius:14px;
+  transition:background .35s var(--vdc-ease);
+}
+.vdc-thumbs:hover{ background:rgba(11,91,83,.05); }
+.vdc-thumb{
+  display:block; width:58px; height:72px; border-radius:9px; overflow:hidden;
+  background:var(--bg-alt); border:1px solid var(--line); flex:none;
+  box-shadow:0 6px 16px -8px rgba(11,91,83,.4);
+  transition:transform .45s var(--vdc-ease), width .45s var(--vdc-ease), box-shadow .35s;
+}
+.vdc-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+.vdc-thumbs:hover .vdc-thumb{ width:66px; }
+.vdc-thumb-more{
+  display:grid; place-items:center; width:62px; height:72px; flex:none;
+  border-radius:9px; border:1px dashed rgba(11,91,83,.35);
+  font-size:9px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--brand); text-align:center; line-height:1.5;
+  transition:background .35s, border-color .35s;
+}
+.vdc-thumb-more i{ font-style:normal; }
+.vdc-thumbs:hover .vdc-thumb-more{ background:rgba(11,91,83,.07); border-color:var(--brand); }
+
+.vdc-doctor{
+  margin:0; padding-left:clamp(14px,1.5vw,22px);
+  border-left:1px solid var(--line); line-height:1.5;
+}
+.vdc-doctor b{
+  display:block; font-family:var(--vdc-serif); font-weight:600;
+  font-size:20px; letter-spacing:.01em; color:var(--ink);
+}
+.vdc-doctor span{
+  display:block; margin-top:2px; font-size:9.5px; font-weight:700;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft);
+}
+
+/* entrance pre-states */
+.vdc-prestate .vdc-act-1 .vdc-wordmark,
+.vdc-prestate .vdc-act-1 .vdc-idcard{ opacity:0; }
+
+/* keep act 1 from crowding on short viewports */
+@media (max-height:760px) and (min-width:861px){
+  .vdc-act-1 .vdc-h1{ font-size:clamp(44px,4.8vw,72px); }
+  .vdc-idcard{ margin-top:24px; }
+  .vdc-thumb,.vdc-thumb-more{ height:60px; }
+  .vdc-sub{ margin-top:20px; }
+}
+@media (max-width:860px){
+  .vdc-wordmark{ font-size:11.5px; letter-spacing:.16em; margin-bottom:16px; }
+  .vdc-wordmark em{ font-size:1.3em; }
+  .vdc-idcard{ margin-top:24px; gap:14px; }
+  .vdc-thumb{ width:48px; height:58px; }
+  .vdc-thumb-more{ display:none; }
+  .vdc-doctor b{ font-size:17px; }
+  .vdc-doctor span{ font-size:8.5px; letter-spacing:.14em; }
 }

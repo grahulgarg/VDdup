@@ -1,0 +1,184 @@
+/* ============================================================
+   GALLERY — Vital Dental Care & Implant Center, Dehradun
+   Masonry photo wall, category filters, lightbox.
+   ============================================================ */
+
+body:has(.vgal-head){ background:var(--bg); }
+
+.vgal-head,
+.vgal-section,
+.vgal-cta{
+  --g-serif:'Cormorant Garamond',serif;
+  --g-sans:'Manrope','Inter',sans-serif;
+  --g-ease:cubic-bezier(.16,1,.3,1);
+  font-family:var(--g-sans);
+}
+
+/* ---------- opening ---------- */
+.vgal-head{
+  padding:clamp(8rem,16vh,11rem) 0 clamp(2.5rem,5vh,3.5rem);
+  background:
+    radial-gradient(80% 60% at 82% 0%, rgba(11,91,83,.05), transparent 62%),
+    radial-gradient(60% 50% at 0% 100%, rgba(232,176,75,.06), transparent 62%),
+    var(--bg);
+}
+.vgal-title{
+  margin:0 0 22px;
+  font-family:var(--g-serif); font-weight:500;
+  font-size:clamp(44px,6vw,92px); line-height:1.0; letter-spacing:-.015em; color:var(--ink);
+}
+.vgal-title em{ font-style:italic; color:var(--brand); }
+.vgal-lede{
+  margin:0 0 34px; max-width:58ch;
+  font-size:clamp(15px,1.2vw,17.5px); line-height:1.85; color:var(--ink-soft);
+}
+.vgal-by{
+  display:flex; align-items:center; gap:14px; margin:0;
+  padding-top:24px; border-top:1px solid var(--line); max-width:420px;
+}
+.vgal-by img{
+  width:52px; height:52px; border-radius:50%; object-fit:cover; object-position:50% 22%;
+  border:1px solid var(--line); flex:none;
+}
+.vgal-by span{ display:block; font-size:9.5px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-soft); line-height:1.6; }
+.vgal-by b{
+  display:block; font-family:var(--g-serif); font-weight:600;
+  font-size:20px; letter-spacing:.01em; text-transform:none; color:var(--ink); margin-bottom:3px;
+}
+
+/* ---------- filter bar ---------- */
+.vgal-filterbar{
+  position:sticky; top:0; z-index:40;
+  padding:14px 0; background:rgba(246,243,236,.82);
+  -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+  border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+}
+.vgal-filters{ display:flex; gap:8px; flex-wrap:wrap; }
+.vgal-f{
+  font-family:var(--g-sans); font-size:11px; font-weight:700;
+  letter-spacing:.18em; text-transform:uppercase;
+  padding:11px 20px; border-radius:100px; cursor:pointer;
+  color:var(--ink-soft); background:transparent; border:1px solid var(--line);
+  transition:color .3s, border-color .3s, background .3s;
+}
+.vgal-f:hover{ color:var(--brand); border-color:rgba(11,91,83,.4); }
+.vgal-f.is-on{ color:var(--bg); background:var(--brand); border-color:var(--brand); }
+
+/* ---------- masonry wall ---------- */
+.vgal-section{ padding:clamp(2.5rem,5vh,4rem) 0 clamp(4rem,8vh,6rem); }
+.vgal-grid{ columns:4; column-gap:clamp(12px,1.3vw,20px); }
+.vgal-item{
+  break-inside:avoid; margin:0 0 clamp(12px,1.3vw,20px);
+  position:relative; border-radius:16px; overflow:hidden;
+  border:1px solid var(--line); background:var(--bg-alt);
+  cursor:pointer; transform:translateZ(0);
+  transition:box-shadow .5s var(--g-ease), transform .5s var(--g-ease), border-color .4s;
+}
+.vgal-item img{ display:block; width:100%; height:auto; transition:transform .8s var(--g-ease); }
+.vgal-item:hover{
+  transform:translateY(-4px); border-color:rgba(11,91,83,.3);
+  box-shadow:0 30px 56px -30px rgba(11,91,83,.55);
+}
+.vgal-item:hover img{ transform:scale(1.035); }
+.vgal-item:focus-visible{ outline:2px solid var(--brand); outline-offset:3px; }
+
+.vgal-item figcaption{
+  position:absolute; left:0; right:0; bottom:0;
+  padding:34px 16px 14px;
+  background:linear-gradient(180deg, transparent, rgba(14,27,26,.78));
+  color:#F6F3EC; opacity:0; transform:translateY(8px);
+  transition:opacity .4s, transform .5s var(--g-ease);
+}
+.vgal-item:hover figcaption,
+.vgal-item:focus-visible figcaption{ opacity:1; transform:none; }
+.vgal-item figcaption b{
+  display:block; font-family:var(--g-serif); font-weight:600; font-size:19px; line-height:1.2;
+}
+.vgal-item figcaption span{
+  display:block; margin-top:3px;
+  font-size:8.5px; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
+  color:rgba(246,243,236,.72);
+}
+
+/* filter states */
+.vgal-item.is-hidden{ display:none; }
+
+.vgal-note{
+  margin:clamp(2rem,4vh,3rem) 0 0; max-width:62ch;
+  font-size:12px; line-height:1.9; letter-spacing:.02em; color:var(--ink-soft);
+  padding-top:20px; border-top:1px solid var(--line);
+}
+
+/* ---------- closing CTA ---------- */
+.vgal-cta{
+  padding:clamp(4rem,9vh,7rem) 0; text-align:center;
+  border-top:1px solid var(--line);
+  background:
+    radial-gradient(60% 90% at 50% 0%, rgba(11,91,83,.05), transparent 65%),
+    var(--bg-alt);
+}
+.vgal-cta h2{
+  margin:0 0 14px; font-family:var(--g-serif); font-weight:500;
+  font-size:clamp(32px,4.4vw,62px); line-height:1.05; color:var(--ink);
+}
+.vgal-cta h2 em{ font-style:italic; color:var(--brand); }
+.vgal-cta p{
+  margin:0 auto 34px; max-width:60ch;
+  font-size:11px; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft);
+}
+.vgal-cta-row{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+
+/* ---------- lightbox ---------- */
+.vgal-lightbox{
+  position:fixed; inset:0; z-index:2000;
+  display:flex; align-items:center; justify-content:center;
+  padding:clamp(16px,4vw,56px);
+  background:rgba(10,18,17,.93);
+  -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px);
+  opacity:0; transition:opacity .35s ease;
+}
+.vgal-lightbox[hidden]{ display:none; }
+.vgal-lightbox.is-open{ opacity:1; }
+.vgal-lb-figure{ margin:0; max-width:min(1100px,100%); max-height:100%; display:flex; flex-direction:column; gap:16px; }
+.vgal-lb-figure img{
+  display:block; max-width:100%; max-height:78vh; margin:0 auto;
+  object-fit:contain; border-radius:10px; background:#0E1B1A;
+  box-shadow:0 40px 90px -30px rgba(0,0,0,.8);
+}
+.vgal-lb-figure figcaption{
+  text-align:center; color:rgba(246,243,236,.82);
+  font-family:'Manrope','Inter',sans-serif; font-size:13.5px; line-height:1.7; letter-spacing:.02em;
+  max-width:62ch; margin:0 auto;
+}
+.vgal-lb-close,.vgal-lb-prev,.vgal-lb-next{
+  position:absolute; z-index:2; cursor:pointer;
+  background:rgba(246,243,236,.10); border:1px solid rgba(246,243,236,.22);
+  color:#F6F3EC; border-radius:50%;
+  display:grid; place-items:center; line-height:1;
+  transition:background .3s, border-color .3s, transform .3s;
+}
+.vgal-lb-close{ top:clamp(14px,3vw,28px); right:clamp(14px,3vw,28px); width:46px; height:46px; font-size:26px; }
+.vgal-lb-prev,.vgal-lb-next{ top:50%; margin-top:-26px; width:52px; height:52px; font-size:30px; }
+.vgal-lb-prev{ left:clamp(10px,2.5vw,28px); }
+.vgal-lb-next{ right:clamp(10px,2.5vw,28px); }
+.vgal-lb-close:hover,.vgal-lb-prev:hover,.vgal-lb-next:hover{
+  background:rgba(232,176,75,.22); border-color:var(--accent); transform:scale(1.06);
+}
+body.vgal-locked{ overflow:hidden; }
+
+/* ---------- responsive ---------- */
+@media (max-width:1200px){ .vgal-grid{ columns:3; } }
+@media (max-width:820px){
+  .vgal-grid{ columns:2; }
+  .vgal-item figcaption{ opacity:1; transform:none; padding:26px 12px 11px; }
+  .vgal-item figcaption b{ font-size:15px; }
+  .vgal-filters{ flex-wrap:nowrap; overflow-x:auto; scrollbar-width:none; }
+  .vgal-filters::-webkit-scrollbar{ display:none; }
+  .vgal-f{ flex:none; }
+  .vgal-lb-prev,.vgal-lb-next{ width:42px; height:42px; font-size:24px; margin-top:-21px; }
+}
+@media (max-width:460px){ .vgal-grid{ columns:1; } }
+
+@media (prefers-reduced-motion:reduce){
+  .vgal-item,.vgal-item img,.vgal-item figcaption,.vgal-lightbox{ transition:none; }
+}

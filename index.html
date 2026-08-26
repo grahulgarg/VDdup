@@ -23,7 +23,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css?v=4">
-    <link rel="stylesheet" href="styles/vdc-hero.css?v=2">
+    <link rel="stylesheet" href="styles/vdc-hero.css?v=3">
+    <link rel="stylesheet" href="styles/vdc-about.css?v=1">
 
     <!-- Scripts (Deferred to prevent render-blocking) -->
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
@@ -34,7 +35,7 @@
     <script src="scripts/app.js" defer></script>
     <script src="lottie/toothclean.js" defer></script>
     <script src="scripts/animations.js" defer></script>
-    <script src="scripts/vdc-hero.js?v=2" defer></script>
+    <script src="scripts/vdc-hero.js?v=3" defer></script>
 
     <!-- Local SEO Dentist Structured Data -->
     <script type="application/ld+json">
@@ -122,7 +123,7 @@
                 <svg class="logo-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2C11.5 2 10 3.5 10 5.5C10 7.5 8.5 9 6.5 9C4.5 9 3 10.5 3 12.5C3 15.5 5 18 8 20C10 21 11.5 22 12 22C12.5 22 14 21 16 20C19 18 21 15.5 21 12.5C21 10.5 19.5 9 17.5 9C15.5 9 14 7.5 14 5.5C14 3.5 12.5 2 12 2Z" />
                 </svg>
-                Vital Dental
+                <span class="logo-text">Vital Dental Care<em>&amp; Implant Center &middot; Dehradun</em></span>
             </a>
             <nav class="nav">
                 <ul class="nav-list">
@@ -140,6 +141,7 @@
                         </ul>
                     </li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="#testimonials">Reviews</a></li>
                     <li><a href="#blog">Insights</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -162,6 +164,7 @@
                 <li><a href="#hero" class="mobile-nav-link">Home</a></li>
                 <li><a href="#services" class="mobile-nav-link">Services</a></li>
                 <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
                 <li><a href="#testimonials" class="mobile-nav-link">Reviews</a></li>
                 <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
             </ul>
@@ -198,11 +201,11 @@
 
             <!-- top-left meta strip -->
             <div class="vdc-meta" aria-hidden="true">
-                <span class="m m-geo">Doon Valley<b>30.31° N · 78.01° E</b></span>
+                <span class="m m-geo">GMS Road, Kanwali<b>Dehradun · Uttarakhand</b></span>
                 <span class="sep"></span>
-                <span class="m"><span class="live">Dehradun</span><b class="vdc-clock">—</b></span>
+                <span class="m m-clock"><span class="live">Local time</span><b class="vdc-clock">&mdash;</b></span>
                 <span class="sep"></span>
-                <span class="m m-doc">Lead Clinician<b>Dr. Pragati Singh</b></span>
+                <span class="m m-doc">Sunday &ndash; Friday<b>10&ndash;2 &amp; 4&ndash;8</b></span>
             </div>
 
             <!-- progress rail -->
@@ -216,15 +219,29 @@
             <!-- three acts -->
             <div class="vdc-copy">
                 <div class="vdc-act vdc-act-1 live">
-                    <p class="vdc-eyebrow">Dental Care &amp; Implant Center — Dehradun</p>
-                    <h1 class="vdc-h1" aria-label="Every smile tells a story.">
+                    <p class="vdc-eyebrow">Dehradun &middot; Uttarakhand</p>
+                    <p class="vdc-wordmark">Vital Dental Care <em>&amp; Implant Center</em></p>
+                    <h1 class="vdc-h1" aria-label="Vital Dental Care and Implant Center, Dehradun — every smile tells a story.">
                         <span class="vdc-hline" aria-hidden="true"><span class="vdc-hin">Every smile</span></span>
                         <span class="vdc-hline" aria-hidden="true"><span class="vdc-hin">tells a <em>story.</em></span></span>
                     </h1>
                     <p class="vdc-sub">
-                        Quiet, <span class="vdc-cycle">precise</span> dentistry in the heart of
-                        Dehradun. Scroll — and watch how we rebuild what nature began.
+                        Quiet, <span class="vdc-cycle">precise</span> dentistry on GMS Road &mdash; led by an
+                        endodontist who treats the root of the problem, literally.
                     </p>
+
+                    <div class="vdc-idcard">
+                        <a class="vdc-thumbs" href="gallery.html" aria-label="See photos of the clinic">
+                            <span class="vdc-thumb"><img src="Photos/clinic/exterior-sm.webp" width="543" height="700" alt="Vital Dental Care &amp; Implant Center storefront on GMS Road, Dehradun"></span>
+                            <span class="vdc-thumb"><img src="Photos/clinic/operatory-wide-sm.webp" width="700" height="525" alt="Treatment room at Vital Dental Care" loading="lazy"></span>
+                            <span class="vdc-thumb"><img src="Photos/clinic/care-team-sm.webp" width="700" height="525" alt="Dr. Pragati Singh treating a patient" loading="lazy"></span>
+                            <span class="vdc-thumb-more"><i>See the<br>clinic</i></span>
+                        </a>
+                        <p class="vdc-doctor">
+                            <b>Dr. Pragati Singh</b>
+                            <span>B.D.S., M.D.S. &mdash; Endodontist</span>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="vdc-act vdc-act-2" aria-hidden="true">
@@ -583,6 +600,142 @@
             </div>
         </section>
 
+        <!-- About the Clinic -->
+        <section id="about" class="vdc-about" aria-labelledby="about-heading">
+            <div class="container">
+
+                <!-- The clinic -->
+                <div class="vdc-about-intro">
+                    <div class="vdc-about-copy" data-reveal>
+                        <p class="vdc-sec-eyebrow">About the clinic</p>
+                        <h2 id="about-heading" class="vdc-sec-title">
+                            Vital Dental Care <em>&amp; Implant Center</em>
+                        </h2>
+                        <p class="vdc-place">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Haripuram Colony, 2 GMS Road, Engineers Enclave, Kanwali &nbsp;&middot;&nbsp;
+                            <b>Dehradun, Uttarakhand&nbsp;248001</b>
+                        </p>
+                        <p class="vdc-lede">
+                            A calm, purpose-built dental practice on GMS Road, Kanwali &mdash; founded and run by
+                            <b>Dr.&nbsp;Pragati Singh</b>, an endodontist. Every chair is digital, every instrument is
+                            sterilised in-house, and no one is rushed through.
+                        </p>
+                        <ul class="vdc-about-points">
+                            <li><b>Endodontist-led.</b> Root canals, re-treatments and complex pulp cases are handled by a specialist, not referred elsewhere.</li>
+                            <li><b>Digital and chairside.</b> Portable X-ray, apex locator and rotary endodontics &mdash; diagnosis and treatment in the same visit.</li>
+                            <li><b>Painless by protocol.</b> Careful anaesthesia and unhurried technique, so treatment feels like far less than you expect.</li>
+                            <li><b>Sunday clinic.</b> Open Sunday through Friday, morning and evening, for people who work six days a week.</li>
+                        </ul>
+                        <div class="vdc-about-cta">
+                            <a href="gallery.html" class="btn btn-primary magnetic-btn"><span>See the clinic</span></a>
+                            <a href="#contact" class="btn-ghost magnetic-btn">
+                                <span>Visit us</span>
+                                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <figure class="vdc-about-shot" data-reveal>
+                        <img src="Photos/clinic/exterior-lg.webp" width="791" height="1020" loading="lazy"
+                             alt="Dr. Pragati Singh outside Vital Dental Care and Implant Center on GMS Road, Dehradun">
+                        <figcaption><b>GMS Road, Kanwali</b><span>Dehradun, Uttarakhand</span></figcaption>
+                    </figure>
+                </div>
+
+                <!-- Inside the clinic -->
+                <div class="vdc-strip" data-reveal>
+                    <figure class="vdc-strip-item">
+                        <img src="Photos/clinic/operatory-wide-sm.webp" width="700" height="525" loading="lazy" alt="The treatment room at Vital Dental Care, Dehradun">
+                        <figcaption>The treatment room</figcaption>
+                    </figure>
+                    <figure class="vdc-strip-item">
+                        <img src="Photos/clinic/care-team-sm.webp" width="700" height="525" loading="lazy" alt="Dr. Pragati Singh and an assistant treating a patient">
+                        <figcaption>Four hands, one focus</figcaption>
+                    </figure>
+                    <figure class="vdc-strip-item">
+                        <img src="Photos/clinic/imaging-sm.webp" width="525" height="700" loading="lazy" alt="Chairside portable digital X-ray unit">
+                        <figcaption>Chairside digital X-ray</figcaption>
+                    </figure>
+                    <figure class="vdc-strip-item">
+                        <img src="Photos/clinic/care-child-sm.webp" width="525" height="700" loading="lazy" alt="A young patient being treated at Vital Dental Care">
+                        <figcaption>Younger patients welcome</figcaption>
+                    </figure>
+                    <figure class="vdc-strip-item">
+                        <img src="Photos/clinic/signboard-night-sm.webp" width="525" height="700" loading="lazy" alt="The illuminated Vital Dental Care signboard at night">
+                        <figcaption>Open till 8 pm</figcaption>
+                    </figure>
+                </div>
+
+                <!-- Meet Dr. Pragati Singh -->
+                <div class="vdc-doc" data-reveal>
+                    <figure class="vdc-doc-photo">
+                        <img src="Photos/clinic/doctor-lg.webp" width="1200" height="1600" loading="lazy"
+                             alt="Dr. Pragati Singh, B.D.S., M.D.S., Endodontist, at Vital Dental Care and Implant Center">
+                    </figure>
+
+                    <div class="vdc-doc-copy">
+                        <p class="vdc-sec-eyebrow">Meet your dentist</p>
+                        <h3 class="vdc-doc-name">Dr. Pragati Singh</h3>
+                        <p class="vdc-doc-cred">B.D.S., M.D.S. &mdash; Conservative Dentistry &amp; Endodontics</p>
+                        <p class="vdc-doc-role">Endodontist &nbsp;&middot;&nbsp; Founder, Vital Dental Care &amp; Implant Center</p>
+
+                        <p class="vdc-doc-para">
+                            Dr. Pragati Singh is an <b>endodontist</b> &mdash; a dentist who spent three additional
+                            postgraduate years training on the inside of the tooth: the pulp, the nerve and the root
+                            canals. She holds an M.D.S. in Conservative Dentistry and Endodontics from Chaudhary
+                            Charan Singh University, Meerut, and is registered with the Dentists&rsquo; Registration
+                            Tribunal, State of Uttarakhand.
+                        </p>
+                        <p class="vdc-doc-para">
+                            In practice, that specialisation is the whole point of this clinic. The teeth other
+                            dentists hesitate over &mdash; the failed root canal, the tooth that still hurts, the one
+                            you were told to extract &mdash; are the cases she takes on. And when a tooth genuinely
+                            cannot be saved, she replaces it with an implant that behaves like the original.
+                        </p>
+
+                        <blockquote class="vdc-doc-quote">
+                            <p>Saving a natural tooth is almost always the better outcome. I would rather spend an extra hour on a root canal than an afternoon on an extraction.</p>
+                        </blockquote>
+
+                        <ul class="vdc-doc-creds">
+                            <li><b>M.D.S.</b><span>Conservative Dentistry &amp; Endodontics, CCS University, Meerut</span></li>
+                            <li><b>Registered</b><span>Dentists&rsquo; Registration Tribunal, State of Uttarakhand</span></li>
+                            <li><b>Member</b><span>Indian Association of Conservative Dentistry &amp; Endodontics</span></li>
+                            <li><b>Focus</b><span>Root canals &amp; re-treatment, implants, crowns, laser fillings, gum care</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Practical detail -->
+                <div class="vdc-visit" data-reveal>
+                    <div class="vdc-visit-card">
+                        <p class="vdc-visit-k">Consulting hours</p>
+                        <p class="vdc-visit-v">Sunday &ndash; Friday</p>
+                        <p class="vdc-visit-s">10:00 am &ndash; 2:00 pm<br>4:00 pm &ndash; 8:00 pm<br><i>Closed Saturday</i></p>
+                    </div>
+                    <div class="vdc-visit-card">
+                        <p class="vdc-visit-k">Find us</p>
+                        <p class="vdc-visit-v">GMS Road, Kanwali</p>
+                        <p class="vdc-visit-s">Haripuram Colony, 2 GMS Road,<br>Engineers Enclave, Dehradun,<br>Uttarakhand 248001</p>
+                    </div>
+                    <div class="vdc-visit-card">
+                        <p class="vdc-visit-k">Speak to us</p>
+                        <p class="vdc-visit-v"><a href="tel:+919286898353">92868&nbsp;98353</a></p>
+                        <p class="vdc-visit-s">
+                            <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">WhatsApp us</a>
+                            to book a consultation.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <!-- Process Section (Scroll-Scrubbed Lottie) -->
         <section id="process" class="section process-section bg-alt" aria-labelledby="process-heading">
             <div class="container process-container">
@@ -659,116 +812,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section about-section bg-alt">
-            <div class="container about-container">
-                <!-- Left Column: Portrait + Parallax Text -->
-                <div class="about-left" data-reveal>
-                    <div class="about-image-container">
-                        <div class="about-bg-text" aria-hidden="true">CARE</div>
-                        <div class="about-image-wrapper">
-                            <img src="Photos/about.webp" alt="Dr. Pragati Singh at Vital Dental Care Clinic" width="765" height="1020" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column: Editorial Copy -->
-                <div class="about-content" data-reveal>
-                    <div class="about-eyebrow">About the Clinic</div>
-                    <h2 class="about-title">Excellence in <span class="accent-italic">Dentistry</span></h2>
-                    
-                    <p class="about-para">
-                        At <strong>Vital Dental Care and Implant center Dehradun</strong>, we combine advanced technology
-                        with a compassionate approach. Led by Dr. Pragati Singh, our team is dedicated to providing pain-free,
-                        high-quality treatments.
-                    </p>
-
-                    <!-- Capabilities checklist -->
-                    <div class="about-capabilities">
-                        <div class="capability-item">
-                            <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>Advanced Implantology</span>
-                        </div>
-                        <div class="capability-item">
-                            <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>Digital Smile Design</span>
-                        </div>
-                        <div class="capability-item">
-                            <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>Painless Root Canals</span>
-                        </div>
-                        <div class="capability-item">
-                            <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                            <span>Pediatric Care</span>
-                        </div>
-                    </div>
-
-                    <!-- Centerpiece Quote -->
-                    <blockquote class="about-quote">
-                        <p class="quote-text split-text">"A healthy smile is the gateway to confidence."</p>
-                        <cite class="quote-author">Dr. Pragati Singh</cite>
-                    </blockquote>
-
-                    <!-- Clinic Amenities -->
-                    <div class="about-amenities">
-                        <h3 class="amenities-title">Clinic Amenities</h3>
-                        <div class="amenities-row">
-                            <div class="amenity-chip" data-stagger>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="16" cy="4" r="1.5" />
-                                    <path d="M11 12H9l-2-2H4.5" />
-                                    <path d="M9 12v3.5l3 3.5h3.5" />
-                                    <path d="M16 10H11" />
-                                    <path d="M19 14.5a4.5 4.5 0 11-9 0" />
-                                </svg>
-                                <span>Wheelchair Accessible</span>
-                            </div>
-                            <div class="amenity-chip" data-stagger>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M10 22V12h4v10" />
-                                    <path d="M12 2a3 3 0 100 6 3 3 0 000-6z" />
-                                    <path d="M17 12H7a2 2 0 00-2 2v6h2v-6h10v6h2v-6a2 2 0 00-2-2z" />
-                                </svg>
-                                <span>Restroom Available</span>
-                            </div>
-                            <div class="amenity-chip" data-stagger>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="9" r="6" />
-                                    <path d="M12 15v6M9 18h6" />
-                                </svg>
-                                <span>Women-Owned</span>
-                            </div>
-                            <div class="amenity-chip" data-stagger>
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 002 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                                </svg>
-                                <span>LGBTQ+ Friendly</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CTA Meet the Team -->
-                    <div class="about-action">
-                        <a href="#contact" class="btn-ghost meet-team-btn magnetic-btn">
-                            <span>Meet the Team</span>
-                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
                     </div>
                 </div>
             </div>

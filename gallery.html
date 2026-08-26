@@ -4,117 +4,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Vital Dental Care and Implant center Dehradun</title>
-    <meta name="description"
-        content="View our state-of-the-art clinic and patient transformations at Vital Dental Care and Implant center Dehradun.">
+    <title>Gallery | Vital Dental Care &amp; Implant Center, Dehradun</title>
+    <meta name="description" content="Inside Vital Dental Care &amp; Implant Center on GMS Road, Dehradun — the clinic, the team at work, and real treatment results by Dr. Pragati Singh, Endodontist.">
+    <link rel="canonical" href="https://doonvitaldental.com/gallery.html">
+
+    <meta property="og:title" content="Gallery | Vital Dental Care &amp; Implant Center, Dehradun">
+    <meta property="og:description" content="A look inside the clinic on GMS Road, Dehradun — treatment rooms, the team at work, and real results.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://doonvitaldental.com/gallery.html">
+    <meta property="og:image" content="https://doonvitaldental.com/Photos/clinic/exterior-lg.webp">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Urbanist:wght@400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Herr+Von+Muellerhoff&family=Inter:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/main.css?v=3">
+    <link rel="stylesheet" href="styles/main.css?v=4">
+    <link rel="stylesheet" href="styles/vdc-about.css?v=1">
+    <link rel="stylesheet" href="styles/vdc-gallery.css?v=1">
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/vdc-gallery.js?v=1" defer></script>
 </head>
 
 <body>
+    <a href="#main-content" class="skip-to-content">Skip to Main Content</a>
+
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <div class="grain-overlay" aria-hidden="true"></div>
+
     <header class="header">
         <div class="container header-container">
-            <a href="index.html" class="logo">Vital<span>Dental</span></a>
+            <a href="index.html" class="logo">
+                <svg class="logo-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C11.5 2 10 3.5 10 5.5C10 7.5 8.5 9 6.5 9C4.5 9 3 10.5 3 12.5C3 15.5 5 18 8 20C10 21 11.5 22 12 22C12.5 22 14 21 16 20C19 18 21 15.5 21 12.5C21 10.5 19.5 9 17.5 9C15.5 9 14 7.5 14 5.5C14 3.5 12.5 2 12 2Z" />
+                </svg>
+                <span class="logo-text">Vital Dental Care<em>&amp; Implant Center &middot; Dehradun</em></span>
+            </a>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="dropdown">
-    <a href="index.html#services" class="dropdown-toggle">Services <span class="arrow">&#9662;</span></a>
-    <ul class="dropdown-menu">
-        <li><a href="services/dental-implants.html">Dental Implants</a></li>
-        <li><a href="services/orthodontics-and-braces.html">Orthodontics &amp; Braces</a></li>
-        <li><a href="services/root-canal-treatment.html">General Care</a></li>
-        <li><a href="services/pediatric-dentistry.html">Pediatric Dentistry</a></li>
-        <li><a href="services/dental-crowns-dentures.html">Crowns, Bridges &amp; Dentures</a></li>
-        <li><a href="services/cosmetic-fillings.html">Cosmetic Dentistry</a></li>
-        <li><a href="services/teeth-cleaning-gum-care.html">Teeth Cleaning &amp; Gum Care</a></li>
-        <li><a href="services/oral-surgery-extractions.html">Oral Surgery &amp; Extractions</a></li>
-    </ul>
-</li>
-                    <li><a href="index.html#about">About Us</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="index.html#services">Services <span class="dropdown-arrow"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services/root-canal-treatment.html">Root Canal Treatment</a></li>
+                            <li><a href="services/dental-implants.html">Dental Implants</a></li>
+                            <li><a href="services/orthodontics-and-braces.html">Orthodontics &amp; Braces</a></li>
+                            <li><a href="services/pediatric-dentistry.html">Pediatric Dentistry</a></li>
+                            <li><a href="services/oral-surgery-extractions.html">Oral Surgery &amp; Extractions</a></li>
+                            <li><a href="services/dental-crowns-dentures.html">Crowns, Bridges &amp; Dentures</a></li>
+                            <li><a href="services/cosmetic-fillings.html">Cosmetic Dentistry</a></li>
+                            <li><a href="services/teeth-cleaning-gum-care.html">Gum Care &amp; Teeth Cleaning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#about">About</a></li>
                     <li><a href="gallery.html" class="active">Gallery</a></li>
-                    <li><a href="index.html#testimonials">Stories</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html#testimonials">Reviews</a></li>
+                    <li><a href="blog.html">Insights</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                     <li><a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
-                            class="btn btn-primary" target="_blank">Book Appointment</a></li>
+                            class="btn btn-primary magnetic-btn" target="_blank"><span>Book Now</span></a></li>
                 </ul>
             </nav>
             <button class="mobile-toggle" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </header>
 
-    <main>
-        <!-- Page Header -->
-        <section class="page-header section bg-alt">
+    <div class="mobile-nav-overlay" aria-hidden="true">
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li><a href="index.html#services" class="mobile-nav-link">Services</a></li>
+                <li><a href="index.html#about" class="mobile-nav-link">About</a></li>
+                <li><a href="gallery.html" class="mobile-nav-link">Gallery</a></li>
+                <li><a href="index.html#testimonials" class="mobile-nav-link">Reviews</a></li>
+                <li><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-nav-footer">
+                <a href="tel:+919286898353">92868 98353</a>
+                <p>Haripuram Colony, 2 GMS Road, Kanwali, Dehradun</p>
+            </div>
+        </nav>
+    </div>
+
+    <main id="main-content">
+
+        <!-- ── Page opening ─────────────────────────────────────── -->
+        <section class="vgal-head">
             <div class="container">
-                <div class="section-header">
-                    <h1>Our Gallery</h1>
-                    <p>A glimpse into our world-class facilities and happy smiles.</p>
+                <p class="vdc-sec-eyebrow">Vital Dental Care &amp; Implant Center</p>
+                <h1 class="vgal-title">Inside the <em>clinic</em></h1>
+                <p class="vgal-lede">
+                    Haripuram Colony, 2 GMS Road, Kanwali &mdash; Dehradun, Uttarakhand.
+                    The rooms you will sit in, the team who will treat you, and the work
+                    that comes out of it. Every photograph below was taken at the clinic.
+                </p>
+                <p class="vgal-by">
+                    <img src="Photos/clinic/doctor-alt-sm.webp" width="525" height="700" alt="Dr. Pragati Singh" loading="lazy">
+                    <span><b>Dr. Pragati Singh</b>B.D.S., M.D.S. &mdash; Endodontist</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- ── Filters ──────────────────────────────────────────── -->
+        <div class="vgal-filterbar">
+            <div class="container">
+                <div class="vgal-filters" role="tablist" aria-label="Filter photographs">
+                    <button class="vgal-f is-on" role="tab" aria-selected="true" data-filter="all">Everything</button>
+                    <button class="vgal-f" role="tab" aria-selected="false" data-filter="clinic">The clinic</button>
+                    <button class="vgal-f" role="tab" aria-selected="false" data-filter="care">Care in action</button>
+                    <button class="vgal-f" role="tab" aria-selected="false" data-filter="results">Results</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ── Grid ─────────────────────────────────────────────── -->
+        <section class="vgal-section">
+            <div class="container">
+                <div class="vgal-grid" id="vgal-grid">
+
+                    <!-- The clinic -->
+                    <figure class="vgal-item" data-cat="clinic" data-full="Photos/clinic/exterior-lg.webp"
+                            data-caption="The clinic on GMS Road, Kanwali — Dehradun, Uttarakhand.">
+                        <img src="Photos/clinic/exterior-sm.webp" width="543" height="700" loading="lazy"
+                             alt="Dr. Pragati Singh outside Vital Dental Care and Implant Center, GMS Road, Dehradun">
+                        <figcaption><b>The clinic, GMS Road</b><span>Exterior</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="clinic" data-full="Photos/clinic/operatory-wide-lg.webp"
+                            data-caption="The main treatment room, photographed on opening day.">
+                        <img src="Photos/clinic/operatory-wide-sm.webp" width="700" height="525" loading="lazy"
+                             alt="The main treatment room at Vital Dental Care, Dehradun">
+                        <figcaption><b>The treatment room</b><span>Interior</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="clinic" data-full="Photos/clinic/chair-lg.webp"
+                            data-caption="The dental chair, laid out and ready for the first patient of the day.">
+                        <img src="Photos/clinic/chair-sm.webp" width="700" height="525" loading="lazy"
+                             alt="Dental chair set up for treatment">
+                        <figcaption><b>Set up for the day</b><span>Interior</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="clinic" data-full="Photos/clinic/imaging-lg.webp"
+                            data-caption="Portable digital X-ray at the chairside — imaging without moving the patient.">
+                        <img src="Photos/clinic/imaging-sm.webp" width="525" height="700" loading="lazy"
+                             alt="Portable digital X-ray unit at the chairside">
+                        <figcaption><b>Chairside digital X-ray</b><span>Technology</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="clinic" data-full="Photos/clinic/operatory-open-lg.webp"
+                            data-caption="Opening day at Vital Dental Care & Implant Center.">
+                        <img src="Photos/clinic/operatory-open-sm.webp" width="700" height="525" loading="lazy"
+                             alt="The clinic decorated on opening day">
+                        <figcaption><b>Opening day</b><span>Interior</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="clinic" data-full="Photos/clinic/signboard-lg.webp"
+                            data-caption="What we do, on the board outside: root canals, laser fillings, crowns, dentures, implants, gum treatment and orthodontics.">
+                        <img src="Photos/clinic/signboard-sm.webp" width="525" height="700" loading="lazy"
+                             alt="Illuminated services board outside Vital Dental Care">
+                        <figcaption><b>What we do</b><span>Signage</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="clinic" data-full="Photos/clinic/signboard-night-lg.webp"
+                            data-caption="Open until 8 pm, Sunday through Friday.">
+                        <img src="Photos/clinic/signboard-night-sm.webp" width="525" height="700" loading="lazy"
+                             alt="The Vital Dental Care signboard lit up at night">
+                        <figcaption><b>Open till 8 pm</b><span>Signage</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="clinic" data-full="Photos/clinic/operatory-lg.webp"
+                            data-caption="Instruments laid out before a procedure.">
+                        <img src="Photos/clinic/operatory-sm.webp" width="525" height="700" loading="lazy"
+                             alt="Sterilised instruments laid out before a dental procedure">
+                        <figcaption><b>Before a procedure</b><span>Interior</span></figcaption>
+                    </figure>
+
+                    <!-- Care in action -->
+                    <figure class="vgal-item" data-cat="care" data-full="Photos/clinic/doctor-lg.webp"
+                            data-caption="Dr. Pragati Singh, B.D.S., M.D.S. — Endodontist, in front of the clinic's certification wall.">
+                        <img src="Photos/clinic/doctor-sm.webp" width="525" height="700" loading="lazy"
+                             alt="Dr. Pragati Singh in front of her qualifications at Vital Dental Care">
+                        <figcaption><b>Dr. Pragati Singh</b><span>Endodontist</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="care" data-full="Photos/clinic/care-team-lg.webp"
+                            data-caption="Four hands, one focus — a treatment underway.">
+                        <img src="Photos/clinic/care-team-sm.webp" width="700" height="525" loading="lazy"
+                             alt="Dr. Pragati Singh and an assistant treating a patient">
+                        <figcaption><b>Four hands, one focus</b><span>Treatment</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="care" data-full="Photos/clinic/care-child-lg.webp"
+                            data-caption="Younger patients are welcome — and are told exactly what is about to happen.">
+                        <img src="Photos/clinic/care-child-sm.webp" width="525" height="700" loading="lazy"
+                             alt="A child patient smiling in the dental chair">
+                        <figcaption><b>Younger patients</b><span>Pediatric care</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="care" data-full="Photos/clinic/care-adult-lg.webp"
+                            data-caption="An unhurried appointment — most procedures are finished in a single visit.">
+                        <img src="Photos/clinic/care-adult-sm.webp" width="700" height="525" loading="lazy"
+                             alt="Dr. Pragati Singh treating an adult patient">
+                        <figcaption><b>One visit, start to finish</b><span>Treatment</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="care" data-full="Photos/clinic/care-duo-lg.webp"
+                            data-caption="The clinical team at work.">
+                        <img src="Photos/clinic/care-duo-sm.webp" width="700" height="525" loading="lazy"
+                             alt="The clinical team treating a patient">
+                        <figcaption><b>The team</b><span>Treatment</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="care" data-full="Photos/clinic/care-child2-lg.webp"
+                            data-caption="No fear, no fuss — pediatric appointments at Vital Dental Care.">
+                        <img src="Photos/clinic/care-child2-sm.webp" width="525" height="700" loading="lazy"
+                             alt="A young patient being examined">
+                        <figcaption><b>No fuss</b><span>Pediatric care</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="care" data-full="Photos/clinic/care-room-lg.webp"
+                            data-caption="A procedure in progress.">
+                        <img src="Photos/clinic/care-room-sm.webp" width="700" height="525" loading="lazy"
+                             alt="A dental procedure in progress at the clinic">
+                        <figcaption><b>In progress</b><span>Treatment</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="care" data-full="Photos/clinic/care-closeup-lg.webp"
+                            data-caption="Close, careful work — the part of dentistry nobody sees.">
+                        <img src="Photos/clinic/care-closeup-sm.webp" width="525" height="700" loading="lazy"
+                             alt="Close-up of careful clinical work">
+                        <figcaption><b>Close work</b><span>Treatment</span></figcaption>
+                    </figure>
+
+                    <!-- Results -->
+                    <figure class="vgal-item" data-cat="results" data-full="Photos/clinic/case-rct-lg.webp"
+                            data-caption="A full root canal case, step by step: pre-operative, working length, obturation, post &amp; core, and the finished crown.">
+                        <img src="Photos/clinic/case-rct-sm.webp" width="700" height="525" loading="lazy"
+                             alt="Root canal treatment case documented step by step with X-rays">
+                        <figcaption><b>A root canal, step by step</b><span>Endodontic case</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="results" data-full="Photos/clinic/ba-front-lg.webp"
+                            data-caption="Missing front teeth, restored.">
+                        <img src="Photos/clinic/ba-front-sm.webp" width="525" height="700" loading="lazy"
+                             alt="Before and after: missing front teeth restored">
+                        <figcaption><b>Front teeth restored</b><span>Before &amp; after</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="results" data-full="Photos/clinic/ba-smile-lg.webp"
+                            data-caption="A full smile correction.">
+                        <img src="Photos/clinic/ba-smile-sm.webp" width="525" height="700" loading="lazy"
+                             alt="Before and after: full smile correction">
+                        <figcaption><b>Smile correction</b><span>Before &amp; after</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="results" data-full="Photos/clinic/ba-shade-lg.webp"
+                            data-caption="Shade and alignment brought back into line.">
+                        <img src="Photos/clinic/ba-shade-sm.webp" width="525" height="700" loading="lazy"
+                             alt="Before and after: shade and alignment corrected">
+                        <figcaption><b>Shade &amp; alignment</b><span>Before &amp; after</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="results" data-full="Photos/clinic/ba-gums-lg.webp"
+                            data-caption="Chronic periodontitis and decay, before and after treatment.">
+                        <img src="Photos/clinic/ba-gums-sm.webp" width="700" height="525" loading="lazy"
+                             alt="Before and after: chronic periodontitis and decay treated">
+                        <figcaption><b>Gum disease treated</b><span>Before &amp; after</span></figcaption>
+                    </figure>
+
+                    <figure class="vgal-item" data-cat="results" data-full="Photos/clinic/ba-veneer-lg.webp"
+                            data-caption="A cosmetic correction of the upper front teeth.">
+                        <img src="Photos/clinic/ba-veneer-sm.webp" width="700" height="525" loading="lazy"
+                             alt="Before and after: cosmetic correction of upper front teeth">
+                        <figcaption><b>Cosmetic correction</b><span>Before &amp; after</span></figcaption>
+                    </figure>
+
+                </div>
+
+                <p class="vgal-note">
+                    Clinical photographs are published with patient consent. Outcomes differ
+                    from person to person &mdash; the right plan for you is decided in consultation.
+                </p>
+            </div>
+        </section>
+
+        <!-- ── Closing CTA ──────────────────────────────────────── -->
+        <section class="vgal-cta">
+            <div class="container">
+                <h2>Come and see it <em>in person.</em></h2>
+                <p>Sunday &ndash; Friday &middot; 10:00&ndash;2:00 and 4:00&ndash;8:00 &middot; GMS Road, Kanwali, Dehradun</p>
+                <div class="vgal-cta-row">
+                    <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20a%20consultation."
+                       class="btn btn-primary magnetic-btn" target="_blank"><span>Book a consultation</span></a>
+                    <a href="tel:+919286898353" class="btn-ghost magnetic-btn"><span>Call 92868 98353</span></a>
                 </div>
             </div>
         </section>
 
-        <!-- Gallery Grid -->
-        <section class="section">
-            <div class="container">
-                <div class="gallery-grid">
-                    <div class="gallery-item fade-in">
-                        <img src="Photos/2026-01-01 (1).webp" alt="Vital Dental Facility">
-                    </div>
-                    <div class="gallery-item fade-in delay-1">
-                        <img src="Photos/2026-01-01.webp" alt="Patient Smile">
-                    </div>
-                    <div class="gallery-item fade-in delay-2">
-                        <img src="Photos/2026-01-06.webp" alt="Dental Procedure">
-                    </div>
-                    <div class="gallery-item fade-in">
-                        <img src="Photos/2026-01-16.jpg" alt="Clinic Interior">
-                    </div>
-                    <div class="gallery-item fade-in delay-1">
-                        <img src="Photos/2026-01-29 (1).webp" alt="Equipment">
-                    </div>
-                    <div class="gallery-item fade-in delay-2">
-                        <img src="Photos/2026-01-29 (2).webp" alt="Consultation">
-                    </div>
-                    <div class="gallery-item fade-in">
-                        <img src="Photos/2026-01-29.webp" alt="Treatment Room">
-                    </div>
-                    <div class="gallery-item fade-in delay-1">
-                        <img src="Photos/unnamed.jpg" alt="Happy Patient">
-                    </div>
-                    <div class="gallery-item fade-in delay-2">
-                        <img src="Photos/unnamed.webp" alt="Dental Care">
-                    </div>
-                    <div class="gallery-item fade-in">
-                        <img src="Photos/new_1.jpg" alt="Clinic Interior">
-                    </div>
-                    <div class="gallery-item fade-in delay-1">
-                        <img src="Photos/new_2.jpg" alt="Dental Equipment">
-                    </div>
-                    <div class="gallery-item fade-in delay-2">
-                        <img src="Photos/new_3.jpg" alt="Treatment Area">
-                    </div>
-                    <div class="gallery-item fade-in">
-                        <img src="Photos/new_4.jpg" alt="Patient Waiting Area">
-                    </div>
-                    <div class="gallery-item fade-in delay-1">
-                        <img src="Photos/new_5.jpg" alt="Clinic Exterior">
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
+
+    <!-- ── Lightbox ─────────────────────────────────────────────── -->
+    <div class="vgal-lightbox" id="vgal-lightbox" role="dialog" aria-modal="true" aria-label="Photograph viewer" hidden>
+        <button class="vgal-lb-close" aria-label="Close viewer">&times;</button>
+        <button class="vgal-lb-prev" aria-label="Previous photograph">&#8249;</button>
+        <button class="vgal-lb-next" aria-label="Next photograph">&#8250;</button>
+        <figure class="vgal-lb-figure">
+            <img id="vgal-lb-img" src="" alt="">
+            <figcaption id="vgal-lb-cap"></figcaption>
+        </figure>
+    </div>
 
     <footer class="footer">
     <!-- Parallax content wrapper -->
@@ -122,7 +330,7 @@
         <!-- CTA Band -->
         <div class="footer-cta-band">
             <div class="container footer-cta-container">
-                <h2 class="footer-cta-title">Ready for your best smile?</h1>
+                <h2 class="footer-cta-title">Ready for your best smile?</h2>
                 <div class="footer-cta-actions">
                     <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment." 
                        class="btn btn-primary footer-cta-btn" target="_blank">
@@ -135,7 +343,7 @@
                             <svg viewBox="0 0 100 100" class="badge-svg">
                                 <path id="footerCirclePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
                                 <text>
-                                    <textPath href="#footerCirclePath" startOffset="0%">
+                                    <textPath href="index.html#footerCirclePath" startOffset="0%">
                                         BOOK • YOUR • VISIT • BOOK • YOUR • VISIT •
                                     </textPath>
                                 </text>
@@ -242,7 +450,7 @@
             <div class="container footer-bottom-container">
                 <p class="copyright">&copy; 2026 Vital Dental Care and Implant Center. All rights reserved.</p>
                 <p class="credit">Made with ♥ in Dehradun</p>
-                <a href="#top" class="back-to-top" aria-label="Scroll to top">
+                <a href="#main-content" class="back-to-top" aria-label="Scroll to top">
                     <span class="arrow-up">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="12" y1="19" x2="12" y2="5"></line>
@@ -259,14 +467,15 @@
     <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment."
         class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
         <img src="Photos/whatsapp_logo.webp" alt="WhatsApp" class="whatsapp-icon"
-            style="width: 100%; height: 100%; border-radius: 50%;">
+            style="width: 100%; height: 100%; border-radius: 50%;" width="662" height="664" loading="lazy">
     </a>
 
-    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="scripts/animations.js"></script>
-    <script src="scripts/app.js"></script>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" aria-hidden="true">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"><span class="cursor-label"></span></div>
+    </div>
 </body>
 
 </html>
+

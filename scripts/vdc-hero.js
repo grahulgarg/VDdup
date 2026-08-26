@@ -452,8 +452,10 @@
       .to(".vdc-frame b",{opacity:1,duration:0.5,stagger:0.07},1.3)
       .to(".vdc-meta",{opacity:1,duration:0.9},0.9)
       .to(".vdc-act-1 .vdc-eyebrow",{opacity:1,duration:0.8},1.0)
-      .to(wordsEls,{yPercent:0,rotateZ:0,duration:1.4,stagger:0.09,ease:"power4.out"},1.05)
-      .to(".vdc-act-1 .vdc-sub",{opacity:1,duration:0.9},1.7)
+      .fromTo(".vdc-act-1 .vdc-wordmark",{opacity:0,y:10},{opacity:1,y:0,duration:0.9},1.12)
+      .to(wordsEls,{yPercent:0,rotateZ:0,duration:1.4,stagger:0.09,ease:"power4.out"},1.28)
+      .to(".vdc-act-1 .vdc-sub",{opacity:1,duration:0.9},1.9)
+      .fromTo(".vdc-act-1 .vdc-idcard",{opacity:0,y:16},{opacity:1,y:0,duration:1.0},2.05)
       .to(".vdc-rail",{opacity:1,duration:0.9},1.9)
       .to(".vdc-foot",{opacity:1,duration:0.9,onComplete(){ chromeLive=true; }},2.0)
       // the gold ring blooms once over the assembled tooth

@@ -757,10 +757,14 @@ function initAnimations() {
                         progress: 1,
                         ease: "none",
                         scrollTrigger: {
+                            // No pin: pinning this section added ~1.8 viewports of
+                            // empty scroll after Services and left the heading
+                            // frozen on screen. Scrub against its natural pass
+                            // through the viewport instead; .process-left stays
+                            // sticky via CSS so the Lottie still holds.
                             trigger: processSection,
-                            start: "top top",
-                            end: "+=180%",
-                            pin: true,
+                            start: "top 72%",
+                            end: "bottom 60%",
                             scrub: 1,
                             invalidateOnRefresh: true
                         },
