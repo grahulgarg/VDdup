@@ -726,11 +726,13 @@ function initAnimations() {
             const anim = lottie.loadAnimation({
                 container: lottieContainer,
                 renderer: 'svg',
-                loop: false,
-                autoplay: false,
+                // Plays by itself. It used to be scrubbed by scroll, which left
+                // it parked on frame 0; progressiveLoad then never built most of
+                // the shapes, so the panel rendered as an empty teal rectangle.
+                loop: true,
+                autoplay: true,
                 animationData: window.toothCleanLottieData,
                 rendererSettings: {
-                    progressiveLoad: true,
                     preserveAspectRatio: 'xMidYMid meet'
                 }
             });
@@ -739,9 +741,17 @@ function initAnimations() {
                 const totalFrames = anim.totalFrames;
                 ScrollTrigger.refresh();
 
+                // only animate while the section is on screen
+                ScrollTrigger.create({
+                    trigger: processSection,
+                    start: "top bottom",
+                    end: "bottom top",
+                    onToggle: self => { self.isActive ? anim.play() : anim.pause(); }
+                });
+
                 if (!allowMotion) {
                     // Reduced Motion: Freeze Lottie at final frame and show steps statically
-                    anim.goToAndStop(totalFrames - 1, true);
+                    anim.goToAndStop(0, true);
                     gsap.set(stepItems, { opacity: 1, scale: 1 });
                     return;
                 }
@@ -753,7 +763,6 @@ function initAnimations() {
                     const playhead = { frame: 0, progress: 0 };
 
                     gsap.to(playhead, {
-                        frame: totalFrames - 1,
                         progress: 1,
                         ease: "none",
                         scrollTrigger: {
@@ -769,15 +778,12 @@ function initAnimations() {
                             invalidateOnRefresh: true
                         },
                         onUpdate: () => {
-                            // 1. Scrub Lottie frame smoothly
-                            anim.goToAndStop(playhead.frame, true);
-
-                            // 2. Animate vertical progress line height
+                            // 1. Animate vertical progress line height
                             if (progressFill) {
                                 progressFill.style.height = `${playhead.progress * 100}%`;
                             }
 
-                            // 3. Highlight step items based on progress
+                            // 2. Highlight step items based on progress
                             const progress = playhead.progress;
                             let activeIndex = 0;
                             if (progress < 0.33) {

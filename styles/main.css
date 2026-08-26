@@ -3775,12 +3775,10 @@ textarea:focus-visible,
 }
 
 @media (min-width: 992px) {
+    /* sized by its content: a 100vh floor left a tall empty band
+       between Real Results and this heading */
     .process-section {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 4rem 0;
+        padding: clamp(4.5rem, 9vh, 7rem) 0;
         box-sizing: border-box;
     }
 }
@@ -3868,7 +3866,7 @@ textarea:focus-visible,
 .process-step-item {
     display: flex;
     gap: 1.5rem;
-    opacity: 0.3;
+    opacity: 0.55;
     transform: scale(0.97);
     transform-origin: left center;
     /* GSAP handles opacity and transform animations on desktop; no CSS transitions to prevent conflicts */
