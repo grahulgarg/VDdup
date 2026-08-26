@@ -125,15 +125,18 @@
   color:var(--ink-soft); opacity:0; transform:translateX(-6px);
   transition:opacity .4s, transform .4s var(--vdc-ease), color .4s;
 }
-.vdc-rail-node:hover span{ opacity:1; transform:none; }
+.vdc-rail-node:hover span,
+.vdc-rail-node:focus-visible span{ opacity:1; transform:none; }
 .vdc-rail-node.on b{ background:var(--brand); border-color:var(--brand); box-shadow:0 0 0 4px rgba(11,91,83,.12); }
-.vdc-rail-node.on span{ opacity:1; transform:none; color:var(--brand); }
+.vdc-rail-node.on:hover span{ color:var(--brand); }
+/* the rail sits beside the copy column, so labels stay hidden until hover */
+.vdc-rail-node span{ background:var(--bg); padding-right:6px; }
 
 /* ---------- copy column / acts ---------- */
 .vdc-copy{
   position:absolute; z-index:7;
-  left:clamp(64px,8vw,140px); top:0; bottom:0;
-  width:min(640px,44vw);
+  left:clamp(64px,8.6vw,150px); top:0; bottom:0;
+  width:min(660px,46vw);
 }
 .vdc-act{ position:absolute; left:0; top:50%; width:100%; opacity:0; pointer-events:none; }
 .vdc-act.live{ pointer-events:auto; }
@@ -258,20 +261,50 @@
 }
 
 /* ============================================================
-   HERO IDENTITY — clinic name, city, doctor, clinic photos
+   HERO IDENTITY — clinic name, address, doctor, clinic photos
+   The name is the headline; the address sits in a highlighted
+   bar directly beneath it so the area and city read instantly.
    ============================================================ */
 .vdc-eyebrow{ margin-bottom:18px; }
 
-.vdc-wordmark{
-  margin:0 0 22px; display:flex; align-items:baseline; flex-wrap:wrap; gap:.4em;
+/* the clinic name, as the headline */
+.vdc-name{ font-size:clamp(38px,5vw,72px); font-weight:600; }
+.vdc-name .vdc-hline-2 .vdc-hin{
+  font-style:italic; font-weight:600; color:var(--brand);
+}
+
+/* highlighted location bar */
+.vdc-address{
+  display:inline-flex; align-items:center; gap:11px; flex-wrap:wrap;
+  margin:26px 0 0; padding:13px 22px 13px 18px;
+  border-radius:100px; background:var(--brand); color:var(--bg);
   font-family:var(--vdc-sans); font-weight:700;
-  font-size:clamp(13px,1.05vw,15.5px); letter-spacing:.2em; text-transform:uppercase;
-  color:var(--ink); line-height:1.35;
+  font-size:clamp(11.5px,.95vw,13.5px); letter-spacing:.13em; text-transform:uppercase;
+  line-height:1.4;
+  box-shadow:0 16px 34px -18px rgba(11,91,83,.85);
 }
-.vdc-wordmark em{
-  font-family:var(--vdc-serif); font-style:italic; font-weight:600;
-  font-size:1.35em; letter-spacing:.02em; text-transform:none; color:var(--brand);
+.vdc-address svg{ width:17px; height:17px; flex:none; color:var(--accent); }
+.vdc-address .a-dot{
+  width:4px; height:4px; border-radius:50%; background:var(--accent); flex:none;
 }
+.vdc-address .a-city{ color:#fff; }
+
+/* the line the clinic is known by, now a tagline */
+.vdc-tagline{
+  margin:24px 0 0;
+  font-family:var(--vdc-serif); font-weight:500;
+  font-size:clamp(23px,2.3vw,34px); line-height:1.25; letter-spacing:-.005em;
+  color:var(--ink);
+}
+.vdc-tagline em{
+  font-style:italic; color:var(--brand); position:relative; white-space:nowrap;
+}
+.vdc-tagline em::after{
+  content:""; position:absolute; left:2%; right:2%; bottom:.02em; height:1px;
+  background:linear-gradient(90deg, var(--accent), rgba(232,176,75,.25));
+}
+
+.vdc-sub{ margin-top:18px; }
 
 /* clinic photo strip + doctor credit */
 .vdc-idcard{
@@ -316,19 +349,28 @@
 }
 
 /* entrance pre-states */
-.vdc-prestate .vdc-act-1 .vdc-wordmark,
+.vdc-prestate .vdc-act-1 .vdc-address,
+.vdc-prestate .vdc-act-1 .vdc-tagline,
 .vdc-prestate .vdc-act-1 .vdc-idcard{ opacity:0; }
 
 /* keep act 1 from crowding on short viewports */
-@media (max-height:760px) and (min-width:861px){
-  .vdc-act-1 .vdc-h1{ font-size:clamp(44px,4.8vw,72px); }
-  .vdc-idcard{ margin-top:24px; }
-  .vdc-thumb,.vdc-thumb-more{ height:60px; }
-  .vdc-sub{ margin-top:20px; }
+@media (max-height:780px) and (min-width:861px){
+  .vdc-act-1 .vdc-name{ font-size:clamp(34px,4vw,56px); }
+  .vdc-tagline{ font-size:clamp(20px,1.9vw,27px); margin-top:18px; }
+  .vdc-address{ margin-top:20px; padding:11px 19px 11px 15px; }
+  .vdc-sub{ margin-top:14px; }
+  .vdc-idcard{ margin-top:22px; }
+  .vdc-thumb,.vdc-thumb-more{ height:58px; }
 }
 @media (max-width:860px){
-  .vdc-wordmark{ font-size:11.5px; letter-spacing:.16em; margin-bottom:16px; }
-  .vdc-wordmark em{ font-size:1.3em; }
+  .vdc-name{ font-size:clamp(32px,8.6vw,46px); }
+  .vdc-address{
+    margin-top:20px; padding:11px 17px 11px 14px; gap:8px;
+    font-size:10.5px; letter-spacing:.1em;
+  }
+  .vdc-address svg{ width:15px; height:15px; }
+  .vdc-tagline{ font-size:clamp(19px,5.4vw,25px); margin-top:18px; }
+  .vdc-sub{ margin-top:14px; }
   .vdc-idcard{ margin-top:24px; gap:14px; }
   .vdc-thumb{ width:48px; height:58px; }
   .vdc-thumb-more{ display:none; }

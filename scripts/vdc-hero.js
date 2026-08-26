@@ -452,10 +452,13 @@
       .to(".vdc-frame b",{opacity:1,duration:0.5,stagger:0.07},1.3)
       .to(".vdc-meta",{opacity:1,duration:0.9},0.9)
       .to(".vdc-act-1 .vdc-eyebrow",{opacity:1,duration:0.8},1.0)
-      .fromTo(".vdc-act-1 .vdc-wordmark",{opacity:0,y:10},{opacity:1,y:0,duration:0.9},1.12)
-      .to(wordsEls,{yPercent:0,rotateZ:0,duration:1.4,stagger:0.09,ease:"power4.out"},1.28)
-      .to(".vdc-act-1 .vdc-sub",{opacity:1,duration:0.9},1.9)
-      .fromTo(".vdc-act-1 .vdc-idcard",{opacity:0,y:16},{opacity:1,y:0,duration:1.0},2.05)
+      // the clinic name is the headline: it cascades in word by word
+      .to(wordsEls,{yPercent:0,rotateZ:0,duration:1.4,stagger:0.09,ease:"power4.out"},1.12)
+      .fromTo(".vdc-act-1 .vdc-address",{opacity:0,y:14,scale:0.96},
+              {opacity:1,y:0,scale:1,duration:0.9,ease:"back.out(1.6)"},1.72)
+      .fromTo(".vdc-act-1 .vdc-tagline",{opacity:0,y:10},{opacity:1,y:0,duration:0.9},1.95)
+      .to(".vdc-act-1 .vdc-sub",{opacity:1,duration:0.9},2.1)
+      .fromTo(".vdc-act-1 .vdc-idcard",{opacity:0,y:16},{opacity:1,y:0,duration:1.0},2.25)
       .to(".vdc-rail",{opacity:1,duration:0.9},1.9)
       .to(".vdc-foot",{opacity:1,duration:0.9,onComplete(){ chromeLive=true; }},2.0)
       // the gold ring blooms once over the assembled tooth
