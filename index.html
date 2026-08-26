@@ -23,7 +23,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css?v=4">
-    <link rel="stylesheet" href="styles/vdc-hero.css?v=5">
+    <link rel="stylesheet" href="styles/vdc-hero.css?v=6">
     <link rel="stylesheet" href="styles/vdc-about.css?v=1">
 
     <!-- Scripts (Deferred to prevent render-blocking) -->
@@ -31,7 +31,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie_light.min.js" defer></script>
     <script src="scripts/app.js" defer></script>
+    <script src="lottie/toothclean.js" defer></script>
     <script src="scripts/animations.js" defer></script>
     <script src="scripts/vdc-hero.js?v=4" defer></script>
 
@@ -800,6 +802,87 @@
                                     </svg>
                                 </button>
                                 <div class="slider-handle-line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section (Scroll-Scrubbed Lottie) -->
+        <section id="process" class="section process-section bg-alt" aria-labelledby="process-heading">
+            <div class="container process-container">
+                <!-- Section Header -->
+                <div class="process-header text-center" data-reveal>
+                    <span class="eyebrow">How we care</span>
+                    <h2 id="process-heading" class="process-title">A cleaner, healthier smile — step by step</h2>
+                </div>
+
+                <div class="process-layout-grid">
+                    <!-- Left: Sticky Lottie Wrapper -->
+                    <div class="process-left">
+                        <div class="lottie-frame">
+                            <div id="process-lottie" class="process-lottie-container"></div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Interactive Process Steps -->
+                    <div class="process-right">
+                        <!-- Vertical Progress Line -->
+                        <div class="process-progress-track" aria-hidden="true">
+                            <div class="process-progress-fill"></div>
+                        </div>
+
+                        <div class="process-steps-list">
+                            <!-- Step 1 -->
+                            <div class="process-step-item active" data-step="0">
+                                <div class="step-num-icon">
+                                    <span class="step-num">01</span>
+                                    <div class="step-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                            <line x1="11" y1="8" x2="11" y2="14"></line>
+                                            <line x1="8" y1="11" x2="14" y2="11"></line>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="step-body">
+                                    <h3 class="step-title">Examine &amp; Assess</h3>
+                                    <p class="step-desc">A detailed digital screening of your teeth and gums to customize your hygiene therapy.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="process-step-item" data-step="1">
+                                <div class="step-num-icon">
+                                    <span class="step-num">02</span>
+                                    <div class="step-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="step-body">
+                                    <h3 class="step-title">Clean &amp; Polish</h3>
+                                    <p class="step-desc">Gentle plaque removal and micro-polishing using advanced hygiene technology.</p>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="process-step-item" data-step="2">
+                                <div class="step-num-icon">
+                                    <span class="step-num">03</span>
+                                    <div class="step-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="step-body">
+                                    <h3 class="step-title">Protect &amp; Prevent</h3>
+                                    <p class="step-desc">Fluoride treatment and guidance to safeguard your enamel against future decay.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

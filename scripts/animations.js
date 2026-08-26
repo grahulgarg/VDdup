@@ -716,6 +716,115 @@ function initAnimations() {
             revealAll();
         }
 
+        // ── System: Pinned & Scrubbed Process Section ────────────────
+        const processSection = document.getElementById('process');
+        const lottieContainer = document.getElementById('process-lottie');
+        const stepItems = document.querySelectorAll('.process-step-item');
+        const progressFill = document.querySelector('.process-progress-fill');
+
+        if (processSection && lottieContainer && typeof lottie !== 'undefined') {
+            const anim = lottie.loadAnimation({
+                container: lottieContainer,
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,
+                animationData: window.toothCleanLottieData,
+                rendererSettings: {
+                    progressiveLoad: true,
+                    preserveAspectRatio: 'xMidYMid meet'
+                }
+            });
+
+            const startScrollTrigger = () => {
+                const totalFrames = anim.totalFrames;
+                ScrollTrigger.refresh();
+
+                if (!allowMotion) {
+                    // Reduced Motion: Freeze Lottie at final frame and show steps statically
+                    anim.goToAndStop(totalFrames - 1, true);
+                    gsap.set(stepItems, { opacity: 1, scale: 1 });
+                    return;
+                }
+
+                const isDesktop = window.matchMedia("(min-width: 992px)").matches;
+
+                if (isDesktop) {
+                    // Create a playhead object to animate smoothly via GSAP scrub
+                    const playhead = { frame: 0, progress: 0 };
+
+                    gsap.to(playhead, {
+                        frame: totalFrames - 1,
+                        progress: 1,
+                        ease: "none",
+                        scrollTrigger: {
+                            // No pin: pinning this section added ~1.8 viewports of
+                            // empty scroll after Services and left the heading
+                            // frozen on screen. Scrub against its natural pass
+                            // through the viewport instead; .process-left stays
+                            // sticky via CSS so the Lottie still holds.
+                            trigger: processSection,
+                            start: "top 72%",
+                            end: "bottom 60%",
+                            scrub: 1,
+                            invalidateOnRefresh: true
+                        },
+                        onUpdate: () => {
+                            // 1. Scrub Lottie frame smoothly
+                            anim.goToAndStop(playhead.frame, true);
+
+                            // 2. Animate vertical progress line height
+                            if (progressFill) {
+                                progressFill.style.height = `${playhead.progress * 100}%`;
+                            }
+
+                            // 3. Highlight step items based on progress
+                            const progress = playhead.progress;
+                            let activeIndex = 0;
+                            if (progress < 0.33) {
+                                activeIndex = 0;
+                            } else if (progress < 0.66) {
+                                activeIndex = 1;
+                            } else {
+                                activeIndex = 2;
+                            }
+
+                            stepItems.forEach((item, idx) => {
+                                if (idx === activeIndex) {
+                                    if (!item.classList.contains('active')) {
+                                        item.classList.add('active');
+                                        gsap.to(item, { opacity: 1, scale: 1, duration: 0.3, ease: "power2.out", overwrite: "auto" });
+                                    }
+                                } else {
+                                    if (item.classList.contains('active')) {
+                                        item.classList.remove('active');
+                                        gsap.to(item, { opacity: 0.3, scale: 0.97, duration: 0.3, ease: "power2.out", overwrite: "auto" });
+                                    }
+                                }
+                            });
+                        }
+                    });
+                } else {
+                    // Mobile fallback: stack normally and play Lottie once on enter
+                    gsap.set(stepItems, { opacity: 1, scale: 1 });
+                    ScrollTrigger.create({
+                        trigger: processSection,
+                        start: "top 75%",
+                        onEnter: () => {
+                            anim.play();
+                        }
+                    });
+                }
+            };
+
+            // If Lottie loads the animation synchronously (common with local animationData),
+            // totalFrames is available immediately. Otherwise, listen for DOMLoaded.
+            if (anim.isLoaded || anim.totalFrames > 0) {
+                startScrollTrigger();
+            } else {
+                anim.addEventListener('DOMLoaded', startScrollTrigger);
+            }
+        }
+
         // ── ScrollTrigger Refresh: Fonts, Resize & Page Load ─────────────
         if (document.fonts && document.fonts.ready) {
             document.fonts.ready.then(() => ScrollTrigger.refresh());
