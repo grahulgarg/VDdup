@@ -263,14 +263,20 @@ function initAnimations() {
                 if (el.closest('.contact-left') || el.closest('.contact-right')) return;
                 if (el.closest('.about-left') || el.closest('.about-content')) return;
 
+                // Nested [data-reveal] elements would otherwise animate twice.
+                if (el.parentElement && el.parentElement.closest('[data-reveal]')) {
+                    gsap.set(el, { opacity: 1, y: 0 });
+                    return;
+                }
+
+                // A fixed pixel rise, not yPercent: 18% of a tall article body
+                // is a ~200px lurch. Plays once, so content never fades back
+                // out when the visitor scrolls up.
                 gsap.fromTo(el,
-                    { yPercent: 18, opacity: 0 },
+                    { y: 22, opacity: 0 },
                     {
-                        yPercent: 0, opacity: 1, duration: 1, ease: "power3.out",
-                        scrollTrigger: {
-                            trigger: el, start: "top 85%",
-                            toggleActions: "play none none reverse"
-                        }
+                        y: 0, opacity: 1, duration: 0.75, ease: "power2.out",
+                        scrollTrigger: { trigger: el, start: "top 88%", once: true }
                     }
                 );
             });
