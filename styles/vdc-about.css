@@ -127,10 +127,10 @@
 .vdc-doc{
   display:grid; grid-template-columns:.8fr 1.2fr;
   gap:clamp(2.5rem,5vw,5.5rem); align-items:start;
-  margin-top:clamp(4.5rem,9vh,7.5rem);
-  padding-top:clamp(3rem,6vh,4.5rem);
-  border-top:1px solid var(--line);
 }
+/* Meet the Doctor stands alone between How We Care and Real Results */
+.vdc-doctor-section{ background:var(--bg-alt); }
+.vdc-doctor-section .vdc-visit{ margin-top:clamp(3rem,6vh,4.5rem); }
 .vdc-doc-photo{
   position:relative; margin:0;
   border-radius:var(--r-lg,32px); overflow:hidden;

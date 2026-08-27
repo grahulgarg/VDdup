@@ -3802,8 +3802,8 @@ textarea:focus-visible,
 }
 
 .process-left {
-    position: sticky;
-    top: 18vh;
+    /* plain flow: the section is content-sized, so sticky only risked
+       lifting this column out of its parent's height */
     display: flex;
     justify-content: center;
 }
