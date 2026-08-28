@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# No crawl value, and they waste crawl budget
+Disallow: /replace.py
+Disallow: /replace_css.py
+Disallow: /replace_css2.py
+Disallow: /replace_css3.py
+Disallow: /replace_html_stars.py
+
+Sitemap: https://doonvitaldental.com/sitemap.xml
