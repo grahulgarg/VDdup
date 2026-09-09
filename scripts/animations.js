@@ -111,10 +111,12 @@ function initAnimations() {
 
         const casesData = {
             whitening: {
-                beforeSrc: 'Photos/whitening_demo.webp', afterSrc: 'Photos/whitening_demo.webp',
-                beforeClass: 'before-img-filter', afterClass: '',
-                beforeAlt: 'Before dental whitening treatment placeholder',
-                afterAlt: 'After dental whitening treatment placeholder'
+                // Real before/after frames, so no CSS tint is needed to fake the "before"
+                beforeSrc: 'Photos/clinic/whitening-before.webp',
+                afterSrc: 'Photos/clinic/whitening-after.webp',
+                beforeClass: '', afterClass: '',
+                beforeAlt: 'Before teeth whitening: heavily stained and discoloured teeth',
+                afterAlt: 'After teeth whitening: visibly brighter, evenly shaded teeth'
             },
             veneers: {
                 beforeSrc: 'Photos/veneers_demo.webp', afterSrc: 'Photos/veneers_demo.webp',
