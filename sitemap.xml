@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://doonvitaldental.com/index.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://doonvitaldental.com/blog.html</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -67,6 +67,12 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://doonvitaldental.com/articles/baby-teething-guide.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://doonvitaldental.com/articles/bad-breath-causes-cure.html</loc>
     <lastmod>2026-03-19</lastmod>
     <changefreq>yearly</changefreq>
@@ -97,6 +103,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://doonvitaldental.com/articles/cavities-in-baby-teeth.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/charcoal-toothpaste-risk.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://doonvitaldental.com/articles/chipped-broken-tooth-first-aid.html</loc>
     <lastmod>2026-08-06</lastmod>
     <changefreq>yearly</changefreq>
@@ -105,6 +123,18 @@
   <url>
     <loc>https://doonvitaldental.com/articles/clear-aligners-vs-braces.html</loc>
     <lastmod>2026-02-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/crooked-teeth-causes.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/dental-anxiety-fear.html</loc>
+    <lastmod>2026-12-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -151,8 +181,44 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://doonvitaldental.com/articles/dry-mouth-causes.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/dry-socket-symptoms.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/first-visit-what-to-expect.html</loc>
+    <lastmod>2026-12-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://doonvitaldental.com/articles/flossing-vs-water-flosser.html</loc>
     <lastmod>2026-07-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/fluoride-safety-facts.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/gap-between-front-teeth.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/gum-abscess-swelling.html</loc>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -163,8 +229,20 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://doonvitaldental.com/articles/jaw-pain-clicking-tmj.html</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://doonvitaldental.com/articles/kids-dentistry.html</loc>
     <lastmod>2026-02-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/milk-teeth-chart.html</loc>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -177,6 +255,18 @@
   <url>
     <loc>https://doonvitaldental.com/articles/mouth-ulcers-causes.html</loc>
     <lastmod>2026-08-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/mouthwash-which-one.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/oil-pulling-evidence.html</loc>
+    <lastmod>2026-10-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -205,6 +295,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://doonvitaldental.com/articles/root-canal-vs-extraction.html</loc>
+    <lastmod>2026-12-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://doonvitaldental.com/articles/sensitive-teeth-treatment.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>yearly</changefreq>
@@ -229,8 +325,26 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://doonvitaldental.com/articles/thumb-sucking-teeth.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/tobacco-gutkha-oral-cancer.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://doonvitaldental.com/articles/tooth-decay-stages.html</loc>
     <lastmod>2026-06-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/tooth-extraction-aftercare.html</loc>
+    <lastmod>2026-10-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -243,6 +357,12 @@
   <url>
     <loc>https://doonvitaldental.com/articles/wisdom-tooth-extraction.html</loc>
     <lastmod>2026-03-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://doonvitaldental.com/articles/wisdom-tooth-removal-needed.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
