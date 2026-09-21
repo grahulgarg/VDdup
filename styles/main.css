@@ -4010,3 +4010,34 @@ textarea:focus-visible,
   .logo-glyph{ width:22px; height:22px; }
   .logo-text em{ font-size:7.5px; letter-spacing:.14em; margin-top:3px; }
 }
+
+/* ============================================================
+   HEADER FIT — the logo and links never wrap or get squeezed.
+   Gaps tighten as the screen narrows; below 1080px there is not
+   room for the clinic name, seven links and the booking button
+   on one line, so the tap-to-open menu takes over.
+   ============================================================ */
+.logo { flex-shrink: 0; }
+.logo, .logo-text { white-space: nowrap; }
+.nav-list { gap: clamp(1.1rem, 2.1vw, 3rem); }
+.nav-list > li > a, .nav-list .btn { white-space: nowrap; }
+
+@media (max-width: 1280px) and (min-width: 1081px) {
+    .nav-list > li > a:not(.btn) { font-size: 0.93rem; }
+    .nav-list .btn { padding-left: 1.15rem; padding-right: 1.15rem; }
+}
+
+@media (max-width: 1080px) {
+    .nav { display: none; }
+    .mobile-toggle {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1002;
+        background: var(--surface);
+        padding: 5px;
+        border-radius: 4px;
+        backdrop-filter: blur(5px);
+    }
+}
