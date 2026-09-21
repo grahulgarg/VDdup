@@ -1,9 +1,10 @@
 /* ============================================================
    CAREERS — application form behaviour
-   The form posts natively (multipart) to FormSubmit so a CV can
-   travel as an attachment; this script only enhances it: role
-   preselection, the dentist-only field, validation, the CV
-   picker, and the thank-you state after FormSubmit redirects back.
+   Applications are sent in the background to a Google Apps Script
+   web app (see careers-form.gs), which emails them with the CV
+   attached and logs them to a Google Sheet. The page never
+   navigates away, so a failed send shows an in-page fallback
+   instead of a browser error screen.
    ============================================================ */
 (function () {
   "use strict";
@@ -14,19 +15,6 @@
 
   const MAX_BYTES = 5 * 1024 * 1024;
   const OK_EXT = /\.(pdf|doc|docx)$/i;
-  const roleLabel = {
-    assistant: "Dental Assistant & Receptionist",
-    dentist: "Dentist (BDS / MDS)",
-  };
-
-  /* ---------- thank-you state after FormSubmit's redirect ---------- */
-  const params = new URLSearchParams(window.location.search);
-  if (params.get("applied") === "1") {
-    apply.classList.add("is-done");
-    requestAnimationFrame(() => apply.scrollIntoView({ block: "start" }));
-    return;
-  }
-
   /* ---------- role: preselect from the job cards ---------- */
   const radios = form.querySelectorAll('input[name="Role"]');
   function syncRole() {
@@ -126,21 +114,33 @@
 
   /* ---------- submit ---------- */
   const submit = form.querySelector(".vcar-submit");
+  const sendErr = form.querySelector(".vcar-send-err");
+  const endpoint = form.dataset.endpoint || "";
 
-  form.addEventListener("submit", (e) => {
-    // Never post applicants' details to an unconfigured address.
-    if (/REPLACE_WITH/i.test(form.getAttribute("action") || "")) {
-      e.preventDefault();
-      alert("The application form has not been connected to an inbox yet. Please call or WhatsApp 92868 98353 to apply.");
-      return;
-    }
+  function readFile(file) {
+    return new Promise((resolve, reject) => {
+      const r = new FileReader();
+      r.onload = () => resolve(String(r.result).split(",")[1] || "");
+      r.onerror = () => reject(r.error);
+      r.readAsDataURL(file);
+    });
+  }
+
+  function busy(on) {
+    submit.disabled = on;
+    submit.querySelector("span").textContent = on ? "Sending your application\u2026" : "Send my application";
+  }
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();                    // always handled here: the page never navigates away
+    if (sendErr) sendErr.hidden = true;
 
     let firstBad = null;
     const picked = form.querySelector('input[name="Role"]:checked');
     if (!picked) {
       roleSet.classList.add("is-bad");
       if (roleErr) roleErr.style.display = "block";
-      firstBad = firstBad || roleSet;
+      firstBad = roleSet;
     } else if (roleErr) {
       roleSet.classList.remove("is-bad");
       roleErr.style.display = "none";
@@ -153,23 +153,46 @@
       consentRow.classList.add("is-bad");
       firstBad = firstBad || consent;
     }
-
     if (firstBad) {
-      e.preventDefault();
-      const top = (firstBad.closest(".vcar-field, .vcar-fieldset, .vcar-consent") || firstBad);
+      const top = firstBad.closest(".vcar-field, .vcar-fieldset, .vcar-consent") || firstBad;
       top.scrollIntoView({ behavior: "smooth", block: "center" });
       if (firstBad.focus) setTimeout(() => firstBad.focus({ preventScroll: true }), 400);
       return;
     }
 
-    // A readable subject line, and a way back to this page afterwards.
-    const name = form.elements.Name.value.trim();
-    form.elements._subject.value = "New application: " + roleLabel[picked.dataset.role] + " — " + name;
-    const back = new URL(window.location.href);
-    back.search = "?applied=1"; back.hash = "apply";
-    form.elements._next.value = back.toString();
+    // Never send applicants' details to an unconfigured address.
+    if (!/^https:\/\/script\.google\.com\//.test(endpoint)) {
+      if (sendErr) sendErr.hidden = false;
+      return;
+    }
 
-    submit.disabled = true;
-    submit.querySelector("span").textContent = "Sending your application…";
+    busy(true);
+    try {
+      const payload = { Role: picked.value };
+      ["Name", "Phone", "email", "Location", "Qualification", "Experience",
+       "Registration", "Workplace", "CanJoin", "Note", "_honey"].forEach((k) => {
+        const el = form.elements[k];
+        if (el) payload[k] = el.value.trim();
+      });
+      if (picked.dataset.role !== "dentist") delete payload.Registration;
+      const f = fileInput && fileInput.files && fileInput.files[0];
+      if (f) payload.cv = { name: f.name, type: f.type, data: await readFile(f) };
+
+      // text/plain keeps this a "simple" request, so Apps Script needs no CORS preflight.
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload),
+      });
+      const out = await res.json().catch(() => ({}));
+      if (!res.ok || !out.ok) throw new Error(out.error || "HTTP " + res.status);
+
+      apply.classList.add("is-done");
+      if (window.lenis) window.lenis.scrollTo(apply, { offset: -60 });
+      else apply.scrollIntoView({ behavior: "smooth", block: "start" });
+    } catch (err) {
+      busy(false);
+      if (sendErr) { sendErr.hidden = false; sendErr.scrollIntoView({ behavior: "smooth", block: "center" }); }
+    }
   });
 })();

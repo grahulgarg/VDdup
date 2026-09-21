@@ -22,14 +22,14 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/main.css?v=9">
     <link rel="stylesheet" href="styles/vdc-about.css?v=1">
-    <link rel="stylesheet" href="styles/vdc-careers.css?v=1">
+    <link rel="stylesheet" href="styles/vdc-careers.css?v=2">
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="scripts/app.js" defer></script>
-    <script src="scripts/vdc-careers.js?v=1" defer></script>
+    <script src="scripts/vdc-careers.js?v=2" defer></script>
 
     <script type="application/ld+json">
 {
@@ -329,15 +329,9 @@
                 </div>
 
                 <div>
-                    <form class="vcar-form" id="vcar-form" novalidate
-                          action="https://formsubmit.co/shivpr14@gmail.com" method="POST" enctype="multipart/form-data">
+                    <form class="vcar-form" id="vcar-form" novalidate method="POST"
+                          data-endpoint="REPLACE_WITH_APPS_SCRIPT_URL">
 
-                        <!-- FormSubmit settings -->
-                        <input type="hidden" name="_subject" value="New job application">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="">
-                        <input type="hidden" name="_autoresponse" value="Thank you for applying to Vital Dental Care &amp; Implant Center, Dehradun. We read every application personally, and if there is a fit we will call you within a week. - Dr. Pragati Singh">
                         <input type="text" name="_honey" class="vcar-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
                         <fieldset class="vcar-fieldset vcar-role-set">
@@ -398,16 +392,16 @@
                         </div>
                         <div class="vcar-field vcar-dentist-only">
                             <label for="f-reg">Dental Council registration number <i>(optional)</i></label>
-                            <input id="f-reg" name="Dental Council Registration" type="text" placeholder="State Dental Council or DCI number">
+                            <input id="f-reg" name="Registration" type="text" placeholder="State Dental Council or DCI number">
                         </div>
                         <div class="vcar-row">
                             <div class="vcar-field">
                                 <label for="f-work">Current or last workplace <i>(optional)</i></label>
-                                <input id="f-work" name="Current Workplace" type="text">
+                                <input id="f-work" name="Workplace" type="text">
                             </div>
                             <div class="vcar-field">
                                 <label for="f-join">When could you join? <i>(optional)</i></label>
-                                <select id="f-join" name="Can Join">
+                                <select id="f-join" name="CanJoin">
                                     <option value="">Choose one</option>
                                     <option>Immediately</option>
                                     <option>Within 2 weeks</option>
@@ -438,7 +432,15 @@
                             <label for="vcar-consent">I agree to Vital Dental Care &amp; Implant Center keeping these details to consider my application. They are not shared with anyone else.</label>
                         </div>
 
+                        <div class="vcar-send-err" role="alert" hidden>
+                            <b>Your application could not be sent.</b>
+                            <span>Please try again in a moment, or apply directly on
+                            <a href="https://wa.me/919286898353?text=Hello%2C%20I%20would%20like%20to%20apply%20for%20a%20job%20at%20Vital%20Dental%20Care." target="_blank" rel="noopener">WhatsApp</a>
+                            or <a href="tel:+919286898353">92868&nbsp;98353</a>.</span>
+                        </div>
+
                         <button type="submit" class="btn btn-primary vcar-submit"><span>Send my application</span></button>
+                        <noscript><p class="vcar-fineprint">This form needs JavaScript. Please call or WhatsApp 92868 98353 to apply.</p></noscript>
                         <p class="vcar-fineprint">You will get an email confirming we have received it.</p>
                     </form>
 
