@@ -141,6 +141,14 @@
   background:linear-gradient(180deg, transparent 62%, rgba(11,91,83,.10));
 }
 .vdc-doc-photo img{ display:block; width:100%; aspect-ratio:3/4; object-fit:cover; }
+/* a square portrait with the clinic's name in frame: show it whole rather than crop the lettering */
+.vdc-doc-photo.is-square img{ aspect-ratio:1/1; }
+/* shorter than the text beside it, so it stays in view while the profile is read */
+@media (min-width:1101px){
+  .vdc-doc-photo.is-square{ position:sticky; top:110px; }
+  /* overflow:hidden would stop sticky from working; clip trims the same way */
+  .vdc-doctor-section{ overflow:clip; }
+}
 
 .vdc-doc-name{
   margin:0; font-family:var(--a-serif); font-weight:600;
