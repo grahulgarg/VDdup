@@ -1,0 +1,16 @@
+# Kept in the repo but not published: build scripts, working notes,
+# and original photos that no page uses (search engines could index them).
+*.py
+skills/
+lottie/
+Photos/2026-*
+Photos/new_*.jpg
+Photos/BA1.webp
+Photos/t2.webp
+Photos/t3.webp
+Photos/unnamed.jpg
+Photos/unnamed.webp
+Photos/veneers_demo.png
+Photos/whitening_demo.png
+Photos/whatsapp.svg
+Photos/whatsapp_logo.png
