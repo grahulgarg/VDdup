@@ -1,0 +1,202 @@
+/* ============================================================
+   OUR DOCTORS — Vital Dental Care & Implant Center
+   A short intro, the lead dentist's profile, and one grid of
+   cards for the rest of the team. Gold marks the lead only.
+   Uses the site tokens: --bg --bg-alt --brand --brand-700
+   --accent --ink --ink-soft --line --r-md --r-lg
+   ============================================================ */
+
+.vt{
+  --t-serif:'Cormorant Garamond',serif;
+  --t-sans:'Manrope','Inter',sans-serif;
+  --t-ease:cubic-bezier(.16,1,.3,1);
+  font-family:var(--t-sans);
+  color:var(--ink);
+}
+
+/* ---------- shared type ---------- */
+.vt-eyebrow{
+  display:flex; align-items:center; gap:14px; margin:0 0 20px;
+  font-size:10px; font-weight:700; letter-spacing:.34em; text-transform:uppercase;
+  color:var(--brand);
+}
+.vt-eyebrow::before{ content:""; width:40px; height:1px; background:var(--accent); flex:none; }
+
+.vt-h2{
+  margin:0 0 clamp(2rem,4vh,3rem); font-family:var(--t-serif); font-weight:500;
+  font-size:clamp(32px,3.6vw,52px); line-height:1.05; letter-spacing:-.01em; color:var(--ink);
+}
+.vt-h2 em{ font-style:italic; color:var(--brand); }
+
+.vt-link{
+  font-size:13.5px; font-weight:600; color:var(--brand); text-decoration:none;
+  border-bottom:1px solid rgba(11,91,83,.3); transition:border-color .3s;
+}
+.vt-link:hover{ border-bottom-color:var(--brand); }
+
+/* ============ Intro ============ */
+.vt-head{
+  position:relative; overflow:hidden;
+  padding:clamp(8.5rem,17vh,11rem) 0 clamp(3rem,6vh,4.5rem);
+  background:
+    radial-gradient(90% 70% at 90% 10%, rgba(11,91,83,.06), transparent 60%),
+    radial-gradient(60% 50% at 0% 100%, rgba(232,176,75,.07), transparent 60%),
+    var(--bg);
+}
+.vt-title{
+  margin:0 0 22px; font-family:var(--t-serif); font-weight:500;
+  font-size:clamp(44px,5.6vw,84px); line-height:1; letter-spacing:-.015em; color:var(--ink);
+}
+.vt-title em{ font-style:italic; color:var(--brand); }
+.vt-lede{
+  margin:0; max-width:54ch;
+  font-size:clamp(16px,1.25vw,18px); line-height:1.8; color:var(--ink-soft);
+}
+.vt-lede b{ color:var(--ink); font-weight:600; }
+
+@media (prefers-reduced-motion:no-preference){
+  .vt-head .container > *{ animation:vt-rise 1.1s var(--t-ease) both; }
+  .vt-head .container > :nth-child(2){ animation-delay:.08s; }
+  .vt-head .container > :nth-child(3){ animation-delay:.16s; }
+}
+@keyframes vt-rise{ from{ opacity:0; transform:translateY(26px); } }
+
+/* ============ Lead dentist ============ */
+.vt-lead{
+  position:relative;
+  padding:clamp(4.5rem,9vh,7rem) 0;
+  background:var(--bg-alt);
+}
+.vt-lead::before,
+.vt-team::before{
+  content:""; position:absolute; top:0; left:0; right:0; height:1px;
+  background:linear-gradient(90deg,transparent,var(--line) 18%,var(--line) 82%,transparent);
+}
+.vt-lead-grid{
+  display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);
+  gap:clamp(2.5rem,5vw,5.5rem); align-items:center;
+}
+.vt-lead-photo{
+  position:relative; margin:0; width:100%; max-width:480px;
+  border-radius:var(--r-lg,32px); overflow:hidden;
+  box-shadow:0 40px 80px -40px rgba(11,91,83,.45);
+}
+.vt-lead-photo img{ display:block; width:100%; aspect-ratio:3/4; object-fit:cover; }
+/* gold is reserved for the lead */
+.vt-badge{
+  position:absolute; top:18px; left:18px; z-index:2;
+  display:inline-flex; align-items:center; gap:8px; padding:8px 14px 8px 11px;
+  border-radius:999px; background:var(--accent); color:var(--ink);
+  font-size:9.5px; font-weight:700; letter-spacing:.22em; text-transform:uppercase;
+  box-shadow:0 10px 24px -12px rgba(120,80,10,.6);
+}
+.vt-badge::before{ content:""; width:6px; height:6px; border-radius:50%; background:var(--ink); }
+
+.vt-name{
+  margin:0; font-family:var(--t-serif); font-weight:600;
+  font-size:clamp(40px,4.4vw,66px); line-height:1; letter-spacing:-.015em; color:var(--ink);
+}
+.vt-cred{
+  margin:12px 0 0; font-family:var(--t-serif); font-style:italic;
+  font-size:clamp(19px,1.6vw,23px); line-height:1.4; color:var(--brand);
+}
+.vt-role{
+  margin:14px 0 24px; padding-bottom:20px; border-bottom:1px solid var(--line);
+  font-size:10px; font-weight:700; letter-spacing:.24em; text-transform:uppercase; color:var(--ink-soft);
+}
+.vt-intro{
+  margin:0 0 26px; max-width:56ch;
+  font-size:15.5px; line-height:1.85; color:var(--ink-soft);
+}
+.vt-ledger{ list-style:none; margin:0; padding:0; max-width:62ch; }
+.vt-ledger li{
+  display:grid; grid-template-columns:120px 1fr; gap:18px;
+  padding:13px 0; border-top:1px solid var(--line);
+  font-size:13.5px; line-height:1.65; color:var(--ink-soft);
+}
+.vt-ledger li:last-child{ border-bottom:1px solid var(--line); }
+.vt-ledger b{
+  padding-top:3px; font-size:9.5px; font-weight:700; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--brand);
+}
+
+/* ============ The team ============ */
+.vt-team{
+  position:relative;
+  padding:clamp(4.5rem,9vh,7rem) 0 clamp(5rem,10vh,7.5rem);
+  background:var(--bg);
+}
+.vt-cards{
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(1.4rem,2.6vw,2.6rem) clamp(1.2rem,2.2vw,2.2rem);
+  margin:0; padding:0; list-style:none;
+}
+.vt-card-photo{
+  position:relative; aspect-ratio:4/5; margin-bottom:18px;
+  border-radius:var(--r-md,20px); overflow:hidden; background:var(--bg-alt);
+  box-shadow:0 30px 60px -44px rgba(11,91,83,.55);
+}
+.vt-card-photo img{
+  display:block; width:100%; height:100%; object-fit:cover; object-position:50% 18%;
+  transition:transform 1s var(--t-ease);
+}
+.vt-card:hover .vt-card-photo img{ transform:scale(1.03); }
+/* initials stand in until a photo is added */
+.vt-card-mono{
+  position:absolute; inset:0; display:grid; place-items:center;
+  background:
+    radial-gradient(90% 60% at 100% 0%, rgba(232,176,75,.18), transparent 60%),
+    linear-gradient(160deg,var(--brand),var(--brand-700));
+  font-family:var(--t-serif); font-style:italic; font-weight:500;
+  font-size:clamp(64px,7vw,104px); letter-spacing:.02em; color:rgba(246,243,236,.92);
+}
+.vt-card-role{
+  margin:0 0 6px; font-size:9.5px; font-weight:700; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--ink-soft);
+}
+.vt-card-name{
+  margin:0; font-family:var(--t-serif); font-weight:600;
+  font-size:clamp(24px,2.1vw,30px); line-height:1.15; color:var(--ink);
+}
+.vt-card-cred{
+  margin:4px 0 0; font-family:var(--t-serif); font-style:italic;
+  font-size:18px; line-height:1.4; color:var(--brand);
+}
+.vt-card-meta{ margin:6px 0 0; font-size:13px; line-height:1.6; color:var(--ink-soft); }
+
+/* one booking, for the whole team */
+.vt-book{
+  display:flex; align-items:center; justify-content:space-between; gap:1.4rem 2rem; flex-wrap:wrap;
+  margin-top:clamp(3rem,6vh,4.5rem); padding:clamp(1.3rem,2.4vw,1.8rem) clamp(1.4rem,2.6vw,2.2rem);
+  border:1px solid var(--line); border-radius:var(--r-lg,32px); background:rgba(255,255,255,.55);
+}
+.vt-book p{ margin:0; max-width:52ch; font-size:14.5px; line-height:1.7; color:var(--ink-soft); }
+.vt-book p b{
+  display:block; margin-bottom:2px;
+  font-family:var(--t-serif); font-weight:600; font-size:clamp(21px,1.8vw,26px); line-height:1.25; color:var(--ink);
+}
+.vt-book-cta{ display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+
+/* ============ Scroll reveals (only once JS has confirmed motion is fine) ============ */
+.vt-motion .vt-rv{
+  opacity:0; transform:translateY(24px);
+  transition:opacity .9s ease, transform 1s var(--t-ease);
+  transition-delay:calc(var(--i,0) * 90ms);
+}
+.vt-motion .vt-rv.is-in{ opacity:1; transform:none; }
+
+/* ============ Responsive ============ */
+@media (max-width:1000px){
+  .vt-lead-grid{ grid-template-columns:1fr; }
+  .vt-lead-photo{ max-width:440px; }
+  .vt-cards{ grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:600px){
+  .vt-cards{ grid-template-columns:1fr; max-width:380px; }
+  .vt-ledger li{ grid-template-columns:1fr; gap:4px; }
+  .vt-book-cta{ width:100%; }
+  .vt-book-cta .btn{ flex:1 1 auto; justify-content:center; }
+}
+@media (prefers-reduced-motion:reduce){
+  .vt-card-photo img{ transition:none; }
+}
