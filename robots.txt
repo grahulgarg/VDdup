@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://doonvitaldental.com/sitemap.xml
+Sitemap: https://www.vitaldentaldoon.in/sitemap.xml
