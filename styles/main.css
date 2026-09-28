@@ -236,12 +236,10 @@ img {
 }
 
 .logo-glyph {
-    width: 28px;
-    height: 28px;
-    color: var(--accent);
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.5;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    object-fit: contain;
     transition: transform 0.4s ease;
 }
 
@@ -2013,11 +2011,21 @@ img {
 }
 
 .brand-col .footer-logo {
+    display: inline-flex;
+    align-items: center;
     font-family: var(--font-display);
     font-size: var(--step-2);
     color: var(--surface);
     text-decoration: none;
     font-weight: 700;
+}
+
+.footer-mark {
+    width: 44px;
+    height: 44px;
+    margin-right: 0.75rem;   /* space after the mark only, so "VitalDental" stays one word */
+    flex-shrink: 0;
+    object-fit: contain;
 }
 
 .brand-col .footer-logo span {
@@ -3414,15 +3422,20 @@ html.lenis, html.lenis body {
     text-align: center;
 }
 
-.preloader-svg {
-    width: 60px;
-    height: 60px;
+/* the logo mark wipes up into view while the page loads */
+.preloader-mark {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    clip-path: inset(100% 0 0 0);
+    animation: revealMark 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
-.preloader-svg path {
-    stroke-dasharray: 200;
-    stroke-dashoffset: 200;
-    animation: drawTooth 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+@media (prefers-reduced-motion: reduce) {
+    .preloader-mark {
+        clip-path: none;
+        animation: none;
+    }
 }
 
 .preloader-wordmark {
@@ -3442,9 +3455,9 @@ html.lenis, html.lenis body {
     font-weight: 500;
 }
 
-@keyframes drawTooth {
+@keyframes revealMark {
     to {
-        stroke-dashoffset: 0;
+        clip-path: inset(0 0 0 0);
     }
 }
 
@@ -4007,7 +4020,7 @@ textarea:focus-visible,
 }
 @media (max-width:600px){
   .logo{ font-size:1rem; gap:.4rem; }
-  .logo-glyph{ width:22px; height:22px; }
+  .logo-glyph{ width:26px; height:26px; }
   .logo-text em{ font-size:7.5px; letter-spacing:.14em; margin-top:3px; }
 }
 
